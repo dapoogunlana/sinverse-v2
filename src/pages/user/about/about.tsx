@@ -22,38 +22,6 @@ function Home() {
         <div className='header-spacer'></div>
         <h1 className='text-center pt-5'>About Manilla</h1>
         <div className='py-3 md-close'></div>
-        <div className='top-grid'>
-          <div className='text-sect md-open text-center'>
-            <p>
-              Sinverse is an innovative and highly scalable project bridging traditional fintech solutions from Web2.0 
-              to Web3.0 and enabling multiple bills settlement in cryptocurrency. The platform also sports an intuitive P2P 
-              exchange. 
-            </p>
-            <p>
-              With intent to serve millions of people in 44 countries, we are providing a safe and trustworthy 
-              mechanism having financial features such as spot lending, staking, ticketing, utilities bill payment and 
-              airtime/data purchase using cryptocurrency. The Sinverse is powered by Manilla Technogies along with 
-              other ecosystem development partners. 
-            </p>
-          </div>
-          <div className='floated-img'>
-            <img src={AboutImg} alt="" />
-          </div>
-          <div className='text-sect md-close'>
-            <p>
-              Sinverse is an innovative cryptocurrency exchange with advancements from conventional 
-              financial services on the blockchain. You can be a part of the family that takes passion in disrupting the rather 
-              unfavorable status quo and further decentralizing purchase and sale of cryptocurrencies as you enjoy a dozen 
-              tokens to buy and sell on Sinverse. 
-            </p>
-            <p>
-              With intent to serve millions of people in 44 countries, we are providing a safe and trustworthy 
-              mechanism having financial features such as spot lending, staking, ticketing, utilities bill payment and 
-              airtime/data purchase using cryptocurrency. The Sinverse is powered by Manilla Technogies along with 
-              other ecosystem development partners. 
-            </p>
-          </div>
-        </div>
       </div>
       <div className='sub-info py-5'>
         <div className='w96 max1200'>

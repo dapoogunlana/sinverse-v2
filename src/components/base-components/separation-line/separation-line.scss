@@ -1,0 +1,21 @@
+@import '../../../assets/styles/variables.scss';
+
+.separation-line{
+    width: 100%;
+    div{
+        width: 90%;
+        margin: auto;
+        height: 3px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $white, rgba(255, 255, 255, 0));
+    }
+}
+.sl-stick-top{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sl-stick-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

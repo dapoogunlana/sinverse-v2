@@ -4,10 +4,6 @@ import './sin-button.scss';
 
 function SinButton (props: IsinButton) {
 
-    const styles = {
-        padding: 5,
-    }
-
     const clickHolder = () => {}
     
     const className = `${
@@ -15,7 +11,7 @@ function SinButton (props: IsinButton) {
         + (props.size ? ('sb-' + props.size) : 'sb-mid')
         + ' ' + (props.tint ? ('sb-' + props.tint) : 'sb-red')
         + ' ' + (props.className || '')
-        
+        + (props.fill ? ' sb-fill-up' : '')
     }`;
 
     return (

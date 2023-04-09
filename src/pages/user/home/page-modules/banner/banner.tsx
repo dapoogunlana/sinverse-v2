@@ -1,87 +1,61 @@
 import React, {  } from 'react';
-import {
-  AppleButton,
-  PlaystoreButton,
-  CommingSoon,
-  newScrollScreen,
-  topPartnerKirobo,
-  topPartnerReloadly,
-  topPartnerSayfer,
-  topPartnerSumsub,
-} from '../../../../../assets/images';
-import './banner.scss';
-import { WebIntroVid, MobileIntroVid } from '../../../../../assets/videos';
 import { WhitePaper } from '../../../../../assets/files';
+import { HeroDownloadGame, HeroDownloadWhitepaper, SINVERSE, HeroImgMobile, HeroScrollDownCircle, HeroScrollDownArrow } from '../../../../../assets/images/new';
+import './banner.scss';
 
-function Hero() {
+function Hero2() {
 
-  const downloadPdf = () => {
+  const downloadWhitepaper = () => {
     window.open(WhitePaper);
+  }
+  const downloadGame = () => {
+    window.open(WhitePaper);
+  }
+  const goDown = () => {
+    document.getElementById('arrow-holder')?.scrollIntoView({behavior: 'smooth'})
   }
 
   return (
     <div className='hero-case'>
-      <div className='hero-case-bg'>
-        <div className='bg-shape'></div>
-      </div>
-      <div className="underband">
-          <video muted={true} playsInline={true} autoPlay={true} src={MobileIntroVid} loop id="myVideo">
-              Your browser does not support HTML5 video.
-          </video>
-      </div>
-      <div className='hero pt-5'>
-        <div className='w96 max700 top-space' data-aos='fade-up'>
-          <h3 className='center-mobile increased-xl-mobile md-close'>
-            Bridging payment solutions from traditional fintech to Web 3.0 & 
-            enabling utility bills settlement in Crypto
-          </h3>
-          <h3 className='center-mobile md-open'>
-            Bridging Payment Solutions From Traditional Fintech to Web 3.0
-          </h3>
-          <div className='sect90-max350 mb-center'>
-            {/* <div className='text-center w96 max250'>
-              <button className='download-button increased rad-10-im' onClick={downloadPdf}>Download&nbsp;Whitepaper</button>
-            </div> */}
-            <div className='action-buttons'>
-              <div className='input-divider mt-4 imh full'>
-                <img src={ AppleButton } className='store-link' alt="" />
-                <span></span>
-                <img src={ PlaystoreButton } className='store-link' alt="" />
-              </div>
-              <div className='coming-soon imh max200'>
-                <img src={CommingSoon} alt="" />
+      <div className='hero'>
+        <div className='hero-img-case'></div>
+        <div className='hero-content-case'>
+          <div className='w100'>
+            <h4>Wecome to</h4>
+            <div className='hollow-line'></div>
+          </div>
+          <div className='content-features'>
+            <div className='sinverse-topic imh'>
+              <img src={SINVERSE} alt="" />
+            </div>
+            <div className='w100-flat'>
+              <div className='mobile-image'>
+                <img src={HeroImgMobile} alt="" />
               </div>
             </div>
-          </div>
-
-          <div className='max550 text-center parter-sect'>
-            <h6 className='increased trans-soft'>Development Partners</h6>
-            <div className='spread-info'>
-              <div className='imh max125'>
-                <img src={topPartnerKirobo} alt="" />
+            <div className='spread-info-top w100-flat'>
+              <div className='hero-download' onClick={downloadWhitepaper}>
+                <img src={HeroDownloadWhitepaper} alt="" />
+                <p className='reduced-soft'>Download Whitepaper</p>
               </div>
-              <div className='imh max125 mx-2'>
-                <img src={topPartnerReloadly} alt="" />
-              </div>
-              <div className='imh max125 mx-2'>
-                <img src={topPartnerSayfer} alt="" />
-              </div>
-              <div className='imh max125'>
-                <img src={topPartnerSumsub} alt="" />
+              <div className='hero-download' onClick={downloadGame}>
+                <img src={HeroDownloadGame} alt="" />
+                <p className='reduced-soft'>Download Game</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div className='w90 max450 md-close'>
-          <div className='imh max350' data-aos='flip-left' data-aos-delay='500'>
-            <img src={newScrollScreen} alt="" />
+        <div className='scroll-down' onClick={goDown}>
+          <div className='circle-holder'>
+            <img src={HeroScrollDownCircle} alt="" />
+          </div>
+          <div className='arrow-holder' id='arrow-holder'>
+            <img src={HeroScrollDownArrow} alt="" />
           </div>
         </div>
-
       </div>
     </div>
   );
 }
 
-export default Hero;
+export default Hero2;

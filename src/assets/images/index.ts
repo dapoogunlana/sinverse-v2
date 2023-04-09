@@ -102,7 +102,6 @@ import DashboardIconSubscribe from './icons/dashboard-icon-subscribe.svg';
 import DashboardIconTimeLeft from './icons/dashboard-icon-time-left.svg';
 import DashboardIconEmail from './icons/dashboard-icon-email.svg';
 import SwiperNextArrowIcon from './icons/swiper-next-arrow.svg';
-import HamburgerButton from './icons/Hamburger-Button.svg';
 
 import SbCardIconEarn from './icons/sb-card-icon-earn.svg';
 import SbCardIconExperience from './icons/sb-card-icon-experience.svg';
@@ -334,7 +333,6 @@ export {
     DashboardIconTimeLeft,
     DashboardIconEmail,
     SwiperNextArrowIcon,
-    HamburgerButton,
 
     SbCardIconEarn,
     SbCardIconExperience,

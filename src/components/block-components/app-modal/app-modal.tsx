@@ -1,7 +1,8 @@
 import React, { forwardRef, useEffect, useImperativeHandle } from "react";
+import { IAppModalProps } from "../../../services/constants/interfaces/component-schemas";
 import './app-modal.scss';
 
-const AppModal = forwardRef((props: any, ref: any) => {
+const AppModal = forwardRef((props: IAppModalProps, ref: any) => {
 
   const closeModal = () => {
     document.body.style.overflow = '';

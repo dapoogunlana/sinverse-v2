@@ -160,7 +160,7 @@ function UserFooter(props: any) {
                 </div>
                 <div className="col-sm-6">
                   <p className="reduced-soft">
-                    <Link to={routeConstants.userLogin}>About</Link>
+                    <Link to={routeConstants.about}>About</Link>
                   </p>
                   <p className="reduced-soft">
                     <Link to={routeConstants.userLogin}>Game Info</Link>

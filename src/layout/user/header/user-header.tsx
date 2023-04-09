@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import "../../../assets/styles/layout.scss";
-import { LogoWhite, HamburgerButton } from "../../../assets/images";
+import { HamburgerButton } from "../../../assets/images/new";
 import { routeConstants } from "../../../services/constants/route-constants";
 import UserHeaderDropdown from "./header-dropdown";
 import SinButton from "../../../components/base-components/sin-button/sin-button";
-import { LogoRed } from "../../../assets/images/new";
+import { LogoWhite } from "../../../assets/images/new";
 
 function UserHeader2(props: any) {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -61,7 +61,7 @@ function UserHeader2(props: any) {
         <div className="case spread-info md-open relative">
           <Link to={routeConstants.home} onClick={closeMobileMenu}>
             <div className="logo-mini">
-              <img src={LogoRed} alt="" />
+              <img src={LogoWhite} alt="" />
             </div>
           </Link>
           <div className="spread-info">
@@ -73,7 +73,7 @@ function UserHeader2(props: any) {
         <div className="w90 spread-nav-web relative">
           <Link to={routeConstants.home} onClick={closeMobileMenu}>
             <div className="logo md-close-im">
-              <img src={LogoRed} alt="" />
+              <img src={LogoWhite} alt="" />
             </div>
           </Link>
           <div className="nav">

@@ -1,0 +1,19 @@
+@import '../../../../../assets/styles/variables.scss';
+
+.kuCoin-space{
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    padding: 5em 0;
+    h2{
+        @include mediaM (750px) {
+            font-size: 1.6em;
+        }
+    }
+    .content2{
+        background-image: url(../../../../../assets/images/new/bg-spiral.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

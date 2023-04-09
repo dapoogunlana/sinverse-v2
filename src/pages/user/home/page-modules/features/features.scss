@@ -1,0 +1,95 @@
+@import '../../../../../assets/styles/variables.scss';
+
+.features{
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    padding: 5em 0;
+    background-image: url(../../../../../assets/images/new/feature-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    h2{
+        @include mediaM (750px) {
+            font-size: 1.6em;
+        }
+    }
+    .feature{
+        background-color: rgba(75, 0, 98, 0.8);
+        border-radius: 10px;
+        border: 1px solid #FF3FA7;
+        padding: 12px;
+        color: $white;
+        width: 94%;
+        max-width: 350px;
+        margin: 1.5em auto;
+        h6{
+            font-weight: 700;
+            text-align: center;
+        }
+        p{
+            opacity: 0.8;
+            font-size: 0.8em;
+        }
+        span{
+            font-weight: 700;
+            color: #FF65B8;
+            text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.45);
+            font-size: 0.82em;
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover{
+                color: #ffc8e6;
+            }
+            &:active{
+                color: #aa1567;
+            }
+        }
+    }
+}
+.silent{
+    max-width: 550px !important;
+    .modal-content{
+        // background-color: rgba(0, 0, 0, 0) !important;
+        background-color: rgba(75, 0, 98, 0.8) !important;
+        border-radius: 10px;
+        border: 1px solid #FF3FA7;
+        padding: 12px;
+        color: $white;
+        width: 100%;
+        margin: 1.5em auto;
+    }
+    .feature-popup{
+        // background-color: rgba(75, 0, 98, 0.8);
+        // border-radius: 10px;
+        // border: 1px solid #FF3FA7;
+        // padding: 12px;
+        // color: $white;
+        width: 100%;
+        // margin: 1.5em auto;
+        max-height: 80vh;
+        overflow: auto;
+        h6{
+            font-weight: 700;
+            text-align: center;
+        }
+        p{
+            opacity: 0.8;
+            font-size: 0.8em;
+        }
+        span{
+            font-weight: 700;
+            color: #FF65B8;
+            text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.45);
+            font-size: 0.82em;
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover{
+                color: #ffc8e6;
+            }
+            &:active{
+                color: #aa1567;
+            }
+        }
+    }
+}

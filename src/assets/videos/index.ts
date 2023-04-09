@@ -1,10 +1,12 @@
-import IntroVid from './Manilla_P2P_intro_web.mp4';
-import WebIntroVid from './Manilla_P2P_intro_web.mp4';
-import MobileIntroVid from './Manilla_P2P_intro_mobile.mp4';
+import GameplayVidGame from './Manilla_P2P_intro_web.mp4';
+import GameplayVidPickDrop from './Manilla_P2P_intro_mobile.mp4';
+import GameplayVidShootingRange from './Manilla_P2P_intro_web.mp4';
+import GameplayVidSquidGames from './Manilla_P2P_intro_mobile.mp4';
 
 
 export {
-    IntroVid,
-    WebIntroVid,
-    MobileIntroVid,
+    GameplayVidGame,
+    GameplayVidPickDrop,
+    GameplayVidShootingRange,
+    GameplayVidSquidGames,
 }

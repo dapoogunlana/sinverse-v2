@@ -1,0 +1,15 @@
+@import '../../../assets/styles/variables.scss';
+
+.width-100{
+    width: 100%;
+}
+.topic-holder{
+    .line{
+        width: 70%;
+        height: 2.7px;
+        background-image: linear-gradient(to right, $white, rgba(255, 255, 255, 0));
+        @include mediaM(850px) {
+            height: 1.7px;
+        }
+    }
+}

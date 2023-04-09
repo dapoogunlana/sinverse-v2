@@ -1,6 +1,7 @@
 
 import LogoRed from './logo-red.png';
 import LogoWhite from './logo-white.png';
+import HamburgerButton from './icons/Hamburger-Button.svg';
 import FeatureImgEcosystem from './feature-img-ecosystem.jpg';
 import FeatureImgMetavarse from './feature-img-metavarse.jpg';
 import FeatureImgOmniverse from './feature-img-omniverse.jpg';
@@ -8,9 +9,11 @@ import GameplayImgGame from './gameplay-img-game.jpg';
 import GameplayImgPickDrop from './gameplay-img-pick_drop.jpg';
 import GameplayImgShootingRange from './gameplay-img-shooting_range.jpg';
 import GameplayImgSquidGames from './gameplay-img-squid_games.jpg';
+import GameplayOverlay from './game-play-overlay.png';
 import HeroDownloadGame from './hero-download-game.jpg';
 import HeroDownloadWhitepaper from './hero-download-whitepaper.jpg';
 import HeroImg from './hero-img.png';
+import HeroImgMobile from './hero-img-mobile.png';
 import LandsDistrict from './lands-district.jpg';
 import LandsPrivate from './lands-private.jpg';
 import LandsPublic from './lands-public.jpg';
@@ -18,6 +21,7 @@ import LandsRoads from './lands-roads.jpg';
 import SINVERSE from './SINVERSE.svg';
 import HeroScrollDownArrow from './icons/hero-scroll-down-arrow.svg';
 import HeroScrollDownCircle from './icons/hero-scroll-down-circle.svg';
+import BgSpiral from './bg-spiral.png';
 import PartnersArcadenetwork from './partners/partners-arcadenetwork.png';
 import PartnersAu21Capital from './partners/partners-au21-capital.png';
 import PartnersBullPerks from './partners/partners-bull-perks.png';
@@ -42,6 +46,7 @@ import ExchangeGateIo from './exchange-gate_io.jpg';
 export {
     LogoRed,
     LogoWhite,
+    HamburgerButton,
     FeatureImgEcosystem,
     FeatureImgMetavarse,
     FeatureImgOmniverse,
@@ -49,9 +54,11 @@ export {
     GameplayImgPickDrop,
     GameplayImgShootingRange,
     GameplayImgSquidGames,
+    GameplayOverlay,
     HeroDownloadGame,
     HeroDownloadWhitepaper,
     HeroImg,
+    HeroImgMobile,
     LandsDistrict,
     LandsPrivate,
     LandsPublic,
@@ -59,6 +66,7 @@ export {
     SINVERSE,
     HeroScrollDownArrow,
     HeroScrollDownCircle,
+    BgSpiral,
     PartnersArcadenetwork,
     PartnersAu21Capital,
     PartnersBullPerks,

@@ -2,59 +2,39 @@
 
 .sub-hero{
     width: 100%;
-    .sb-card{
-        padding: 1px;
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: 70px auto;
-        // background-color: $white-faint4;
-        // box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
-        width: 94%;
-        padding: 12px;
-        margin: auto;
-        @include mediaM(650px) {
-            grid-template-columns: 50px auto;
-        }
-        .ich{
-            width: 100%;
-            padding-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            p, img{
-                width: 100%;
-            }
-            p{
-                font-size: 1em;
-                padding-left: 0.5em;
-                // min-height: 102px;
-            }
-        }
-    }
-    .spc-right{
-        margin-left: 6%;
+    background-image: url(../../../../../assets/images/new/sub-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    .text{
+        font-size: 0.85em;
+        opacity: 0.8;
     }
     .vid-space{
         width: 96%;
         max-width: 600px;
         margin: auto;
         position: relative;
-        .top-sphare-curve{
-            width: 100px;
-            height: 80px;
-            border-radius: 25px;
-            background-color: $orange;
-            right: -10px;
+        .big-sphare-curve{
+            width: 140px;
+            height: 120px;
+            border-radius: 35px;
+            // background-color: $orange;
+            border: 5px dashed $white-faint3;
+            left: -40px;
             position: absolute;
-            top: -10px;
+            top: -40px;
+            @include mediaM(676px) {
+                display: none;
+            }
         }
-        .bottom-sphare-curve{
+        .small-sphare-curve{
             width: 100px;
             height: 80px;
             border-radius: 25px;
-            background-color: $orange;
-            left: -10px;
-            bottom: -10px;
+            border: 5px dashed $white-faint3;
+            left: -20px;
+            top: -20px;
             position: absolute;
         }
         .vid-holder{
@@ -71,6 +51,7 @@
                 left: 0;
                 border-radius: 15px;
                 overflow: hidden;
+                border: 3px dashed $white-faint3;
             }
         }
     }

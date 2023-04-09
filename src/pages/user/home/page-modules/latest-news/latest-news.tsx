@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import {  } from '../../../../../assets/images';
+import SinButton from '../../../../../components/base-components/sin-button/sin-button';
 import { Carousel } from '../../../../../components/block-components/carousel';
 import { routeConstants } from '../../../../../services/constants/route-constants';
 import { clipToLength, convertStringForUrl, formatDate } from '../../../../../services/utils/data-manipulation-utilits';
@@ -34,7 +35,6 @@ function LatestNews(props: any) {
     sendRequest({
       url: 'blog',
     }, (res: any) => {
-      console.log({started: true});
       const selectedList: any[] = res.data.map((item: any) => {
         const newItem = {
           id: item._id,
@@ -74,10 +74,11 @@ function LatestNews(props: any) {
           <div className='text-holder'>
             <h6 className=''>{item.title}</h6>
             <p className='faint-font reduced-soft content mb-2 faint-font'>
-              {clipToLength(item.content[0].point || item.content[0].topic || item.content[1].point, 100)}
+              {clipToLength(item.content[0].point || item.content[0].topic || item.content[1].point, 90)}
             </p>
-            <p className='faint-font reduced-soft mb-0 faint-font'>{item.date}</p>
-            <button className='hollow-button-2cw stld-btn rad-5' onClick={() => goToItem(item)}>Read More</button>
+            <p className='faint-font reduced-soft mb-2 faint-font'>{item.date}</p>
+            <button className='news-button' onClick={() => goToItem(item)}>Read More</button>
+            {/* <SinButton fill action={() => goToItem(item)}>Read More</SinButton> */}
           </div>
         </div>
       </div>
@@ -93,7 +94,7 @@ function LatestNews(props: any) {
   },[currentNewsList]);
   
   return (
-    <div className='latest-news py-5'>
+    <div className='latest-news pt-5'>
       <div className='w96 max1200 py-4'>
         <h3 className='text-center'>Latest News</h3>
         {
