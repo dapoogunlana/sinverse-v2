@@ -1,5 +1,5 @@
 
-export const faqData  = [
+export const tokenFaqData  = [
     {
         question: `What is SIN  token?`,
         answer: `

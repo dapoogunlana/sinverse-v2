@@ -77,7 +77,7 @@ function About(props: any) {
           <h3 className='text-center topic pt-5'>Advisors</h3>
           <div className='row'>
             {advisorList.map((member, index) => {
-              return <div className='col-lg-12' key={index}>
+              return <div className='col-lg-12' key={index} data-aos='fade-up'>
                 <SinCard className='team-card' dark>
                   <div className='member-img'>
                     <img src={SleakRoundedCube} alt="" />

@@ -23,6 +23,7 @@ function DistrictReveal(props: any) {
   return (
     <div className='district-reveal'>
       <div className='district-gradient'>
+        <SeparationLine stickBottom></SeparationLine>
         <div className='w96 max1200 py-5'>
         <div className='header-spacer'></div>
           <TopicHolder>District Reveal</TopicHolder>

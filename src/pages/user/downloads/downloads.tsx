@@ -1,12 +1,10 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { downloadList } from './downloads-data';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
-import { SleakHalfCurveSquare, DownloadBulldog } from '../../../assets/images/new';
+import { DownloadBulldog } from '../../../assets/images/new';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
 import SinCard from '../../../components/base-components/sin-card/sin-card';
-import { clipToLength } from '../../../services/utils/data-manipulation-utilits';
 import './downloads.scss';
-import AppModal from '../../../components/block-components/app-modal/app-modal';
 import SinButton from '../../../components/base-components/sin-button/sin-button';
 
 function Downloads(props: any) {
@@ -39,7 +37,12 @@ function Downloads(props: any) {
               </p>
             </div>
             <div className='im-case'>
-              <img src={DownloadBulldog} alt="" />
+              <div className='structure'>
+                <img src={DownloadBulldog} alt="" />
+              </div>
+              <div className='dispay'>
+                <img src={DownloadBulldog} alt="" />
+              </div>
             </div>
           </div>
         </div>

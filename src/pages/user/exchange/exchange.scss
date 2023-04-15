@@ -12,7 +12,7 @@
     .radial-cover{
         position: absolute;
         left: 0;
-        top: -30%;
+        top: -10%;
         width: 100%;
         height: 100%;
         background-image: radial-gradient(#240089, rgba(0, 0, 0, 0) 80%);
@@ -20,7 +20,7 @@
     .list-sect{
         border-radius: 10px;
         padding: 0.7em;
-        border: 1.5px dashed #17FFFF;
+        border: 1.5px dashed rgba(23, 255, 255, 0.7);
         .list-card{
             text-align: center;
             margin: 0.7em auto;

@@ -22,8 +22,32 @@
             .im-case{
                 width: 45%;
                 max-width: 500px;
+                position: relative;
+                .structure{
+                    opacity: 0;
+                    width: 80%;
+                    margin: auto;
+                }
+                .dispay{
+                    position: absolute;
+                    width: 120%;
+                    left: -10%;
+                    top: -20%;
+                    z-index: 2;
+                }
                 img{
                     width: 100%;
+                }
+            }
+            @include mediaM(850px){
+                flex-direction: column;
+                .txt-case{
+                    width: 90%;
+                    text-align: center;
+                    z-index: 3;
+                }
+                .im-case{
+                    width: 90%;
                 }
             }
         }

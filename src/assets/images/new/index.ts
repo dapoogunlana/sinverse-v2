@@ -72,6 +72,8 @@ import TeamCatalin from './team-members/team-catalin.jpg';
 import AdvisorJamie from './team-members/advisor-jamie.jpg';
 
 import CardStretchBg from './card-stretch-bg.png';
+import SinToken from './sin-token.png';
+import TokenWhereToBuy from './token-where-to-buy.png';
 
 export {
     LogoRed,
@@ -147,4 +149,6 @@ export {
     AdvisorJamie,
 
     CardStretchBg,
+    SinToken,
+    TokenWhereToBuy,
 }

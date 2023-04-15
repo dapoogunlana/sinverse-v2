@@ -5,13 +5,11 @@ import Loader from '../components/block-components/loader/loader';
 
 
 const UserModule = lazy(() => import("../layout/user/user-module"));
-const HomePage = lazy(() => import("../pages/user/home/home"));
 const RegisterPage = lazy(() => import("../pages/user/register/register"));
 const LoginPage = lazy(() => import("../pages/user/login/login"));
 const AboutPage = lazy(() => import("../pages/user/about/about"));
 const NewsPage = lazy(() => import("../pages/user/news/news"));
 const NewsDetailPage = lazy(() => import("../pages/user/news-detail/news-detail"));
-const FaqPage = lazy(() => import("../pages/user/faq/faq"));
 const HelpPage = lazy(() => import("../pages/user/help/help"));
 const HelpDetailPage = lazy(() => import("../pages/user/help-detail/help-detail"));
 const LearnPage = lazy(() => import("../pages/user/learn/learn"));
@@ -25,15 +23,17 @@ const CareerDetailPage = lazy(() => import("../pages/user/careers-detail/careers
 const ContactPage = lazy(() => import("../pages/user/contact/contact"));
 const CryptoListPage = lazy(() => import("../pages/user/crypto-list/crypto-list"));
 const ManillaCardPage = lazy(() => import("../pages/user/manilla-card/manilla-card"));
-const ManillaTokenPage = lazy(() => import("../pages/user/manilla-token/manilla-token"));
 const ImageResources = lazy(() => import("../pages/user/image-resources/image-resources"));
 
+const HomePage = lazy(() => import("../pages/user/home/home"));
 const ExchangePage = lazy(() => import("../pages/user/exchange/exchange"));
 const GameInfoPage = lazy(() => import("../pages/user/game-info/game-info"));
 const StakingPage = lazy(() => import("../pages/user/staking/staking"));
 const DistrictRevealPage = lazy(() => import("../pages/user/district-reveal/district-reveal"));
 const DocumentPage = lazy(() => import("../pages/user/documents/documents"));
 const DownloadPage = lazy(() => import("../pages/user/downloads/downloads"));
+const TokenPage = lazy(() => import("../pages/user/token/token"));
+const FaqPage = lazy(() => import("../pages/user/faq/faq"));
 
 function UserRoute() {
   return (
@@ -41,10 +41,9 @@ function UserRoute() {
       <Routes>
         <Route path={routeConstants.all} element={<UserModule/>}>
           <Route path={routeConstants.home2} element={<HomePage/>}></Route>
-          <Route path={routeConstants.register} element={<RegisterPage/>}></Route>
-          <Route path={routeConstants.userLogin} element={<LoginPage/>}></Route>
+          {/* <Route path={routeConstants.register} element={<RegisterPage/>}></Route>
+          <Route path={routeConstants.userLogin} element={<LoginPage/>}></Route> */}
           <Route path={routeConstants.about} element={<AboutPage/>}></Route>
-          <Route path={routeConstants.faq} element={<FaqPage/>}></Route>
           <Route path={routeConstants.help} element={<HelpPage/>}></Route>
           <Route path={routeConstants.help + '/:id'} element={<HelpDetailPage/>}></Route>
           <Route path={routeConstants.learn} element={<LearnPage/>}></Route>
@@ -58,7 +57,6 @@ function UserRoute() {
           <Route path={routeConstants.contact} element={<ContactPage/>}></Route>
           <Route path={routeConstants.cryptoCurrencies} element={<CryptoListPage/>}></Route>
           <Route path={routeConstants.manillaCard} element={<ManillaCardPage/>}></Route>
-          <Route path={routeConstants.manillaToken} element={<ManillaTokenPage/>}></Route>
           <Route path={routeConstants.imageResources} element={<ImageResources/>}></Route>
 
           <Route path={routeConstants.exchange} element={<ExchangePage/>}></Route>
@@ -69,6 +67,8 @@ function UserRoute() {
           <Route path={routeConstants.districtReveal} element={<DistrictRevealPage/>}></Route>
           <Route path={routeConstants.documents} element={<DocumentPage/>}></Route>
           <Route path={routeConstants.download} element={<DownloadPage/>}></Route>
+          <Route path={routeConstants.token} element={<TokenPage/>}></Route>
+          <Route path={routeConstants.faq} element={<FaqPage/>}></Route>
           <Route path={routeConstants.all} element={<Navigate to={routeConstants.home2}/>}></Route>
         </Route>
       </Routes>

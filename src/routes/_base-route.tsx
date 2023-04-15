@@ -11,7 +11,7 @@ function BaseRoute() {
     <Router>
       <Suspense fallback={<Loader/>}>
         <Routes>
-          <Route path={'admin/*'} element={<AdminRoutes/>}></Route>
+          {/* <Route path={'admin/*'} element={<AdminRoutes/>}></Route> */}
           <Route path={'*'} element={<UserRoutes/>}></Route>
         </Routes>
       </Suspense>

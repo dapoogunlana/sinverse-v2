@@ -1,0 +1,187 @@
+@import "../../../assets/styles/variables.scss";
+
+.token{
+    background-image: url(../../../assets/images/new/about-bg.jpg);
+    color: $white;
+    .banner{
+        width: 100%;
+        background-image: linear-gradient(-45deg, #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8), #0A0025);
+        position: relative;
+        .top-card{
+            // padding: 1em;
+            border: 1.5px dashed rgba(23, 255, 255, 0.5);
+            border-radius: 20px;
+            width: 94%;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(74, 125, 255, 0.2);
+            .img-sect{
+                width: 94%;
+                max-width: 400px;
+                margin: auto;
+                img{
+                    width: 100%;
+                }
+                @include mediaM(650px){
+                    width: 70%;
+                }
+            }
+            .text-sect{
+                p{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    .stats-sect{
+        width: 94%;
+        max-width: 1200px;
+        background-color: rgba(74, 125, 255, 0.2);
+        border: 1.5px dashed rgba(23, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1em auto 3em;
+        position: relative;
+        box-shadow: 7px 7px 0 0 $black-faint4;
+        h6{
+            color: #FF3FA7;
+            font-size: 1.4em;
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 0.8em;
+        }
+        span{
+            display: block;
+            width: 5px;
+            height: 50px;
+            background-color: rgba(170, 33, 255, 0.51);
+        }
+        @include mediaM(680px) {
+            flex-direction: column;
+            h6{
+                margin-bottom: 0;
+            }
+            span{
+                height: 5px;
+                width: 90%;
+                margin: 0.7em 0;
+            }
+        }
+    }
+    .where-to{
+        background-image: url(../../../assets/images/new/game-info-bg-3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 8em 0 4em;
+        color: $white;
+        .text-holder{
+            position: relative;
+            padding: 1.2em;
+            .case-bg{
+                position: absolute;
+                width: calc(100% + 6px);
+                height: calc(100% + 6px);
+                left: -3px;
+                top: -2px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                position: relative;
+                font-size: 0.8em;
+                @include mediaM(750px) {
+                    font-size: 0.95em;
+                }
+            }
+        }
+        .face-images-holder{
+            img{
+                width: 100%;
+                border-radius: 15px;
+                box-shadow: 0 3px 25px 2px $white-faint3;
+            }
+            @include mediaM(767px){
+                display: none;
+            }
+        }
+    }
+    .token-download{
+        position: relative;
+        background-image: url(../../../assets/images/new/roadmap-bg-plain.jpg);
+        .token-download-bg{
+            background-color: rgba(13, 15, 37, 0.877);
+        }
+        .download{
+            width: 90%;
+            max-width: 250px;
+            margin: auto;
+            img{
+                border-radius: 3px;
+                border: 1px solid #AD6B8F;
+                transition: 0.3s ease;
+                &:hover{
+                    border: 2px solid #d64595;
+                }
+            }
+        }
+    }
+    .rewards{
+        background-image: url(../../../assets/images/new/high_rise.jpg);
+        background-size: cover;
+        background-position: center;
+        .bg-cover{
+            background-image: radial-gradient(rgba(37, 0, 137, 0.795), $black);
+            position: relative;
+            padding: 5em 0 4em;
+        }
+        .text-holder{
+            position: relative;
+            padding: 1.2em;
+            .case-bg{
+                position: absolute;
+                width: calc(100% + 6px);
+                height: calc(100% + 6px);
+                left: -3px;
+                top: -2px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                position: relative;
+                font-size: 0.8em;
+                @include mediaM(750px) {
+                    font-size: 0.95em;
+                }
+            }
+        }
+    }
+    .faq-sect{
+        position: relative;
+        background-image: linear-gradient(-45deg, #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8), #0A0025);
+        .question-space{
+            border-top: 1px solid $white;
+            .answer{
+                max-height: 0;
+                overflow: hidden;
+                transition: 0.3s ease;
+            }
+            .full{
+                max-height: 1000px;
+                transition: 0.3s ease;
+            }
+            .rotated{
+                transform: rotate(180deg);
+                transition: 0.3s ease;
+            }
+        }
+    }
+}

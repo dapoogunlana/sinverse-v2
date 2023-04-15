@@ -994,6 +994,12 @@
     font-size: 0.9em !important;
   }
 }
+.reduced-web {
+  font-size: 0.8em;
+  @include mediaM(767px){
+    font-size: 0.95em;
+  }
+}
 .increased {
   font-size: 1.2em;
 }

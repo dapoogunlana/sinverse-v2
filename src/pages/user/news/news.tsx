@@ -9,11 +9,13 @@ import ContactSect from '../../../components/block-components/contact-sect/conta
 import { sendRequest } from '../../../services/utils/request';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
+import MiniLoader from '../../../components/block-components/mini-loader/mini-loader';
 
 function News(props: any) {
 
   const navigate = useNavigate();
   const [currentNewsList, setCurrenctNewsList] = useState<any[]>([]);
+  const [newsLoaded, setNewsLoaded] = useState(false);
 
   const goToItem = (news: any) => {
     navigate(`/${routeConstants.industryNews}/${news.id}?${convertStringForUrl(news.title)}`);
@@ -23,6 +25,7 @@ function News(props: any) {
     sendRequest({
       url: 'blog',
     }, (res: any) => {
+      setNewsLoaded(true);
       const selectedList: any[] = res.data.map((item: any) => {
         const newItem = {
           id: item._id,
@@ -92,7 +95,7 @@ function News(props: any) {
       
       <div className='lower-space'>
         <div className='w90 max1200 pt-5'>
-
+          {!newsLoaded && <MiniLoader/>}
           <div className='row'>
               {currentNewsList.map((item, index) => {
                 if (index > 0 && index < 4) {
