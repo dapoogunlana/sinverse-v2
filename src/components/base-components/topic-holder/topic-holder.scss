@@ -5,11 +5,12 @@
 }
 .topic-holder{
     .line{
-        width: 70%;
+        width: 60%;
         height: 2.7px;
         background-image: linear-gradient(to right, $white, rgba(255, 255, 255, 0));
         @include mediaM(850px) {
             height: 1.7px;
+            width: 85%;
         }
     }
 }

@@ -21,7 +21,9 @@ export const externalLinkConstants = {
  
  
 export const socialLinks = {
-    telegram: 'http://t.me/manilla_finance',
-    twitter: 'https://twitter.com/manilla_finance',
-    linkedin: 'https://www.linkedin.com/company/manilla-technologies/',
+    telegram: 'https://t.me/thesinverse',
+    twitter: 'https://twitter.com/TheSinVerse',
+    instagram: 'https://www.instagram.com/sin.verse',
+    medium: 'https://medium.com/@TheSinVerse',
+    discord: 'https://discord.gg/SinVerse',
 };

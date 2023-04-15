@@ -31,9 +31,8 @@ export const gamePlayInfo = [
         image: GameplayImgPickDrop,
         video: GameplayVidPickDrop,
         info: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate.
+            In China Town, discover the parcel pick-up and delivery quest. Earn daily rewards of Gold SIN coins for successful 
+            participation in parcel drops!
         `,
         active: false,
     },
@@ -42,9 +41,8 @@ export const gamePlayInfo = [
         image: GameplayImgShootingRange,
         video: GameplayVidShootingRange,
         info: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate.
+            Visit China Town's shooting range for a thrilling challenge! Test your aim in single player or multiplayer mode, 
+            hitting as many targets as possible within time limits for a chance to win lucrative prizes.
         `,
         active: false,
     },
@@ -53,9 +51,8 @@ export const gamePlayInfo = [
         image: GameplayImgSquidGames,
         video: GameplayVidSquidGames,
         info: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate.
+            Located in the Strip, experience the intense 'Squid Games'. Outlast opponents in the traffic light game for thrilling 
+            player vs player rewards. Can you make it to the end?
         `,
         active: false,
     },

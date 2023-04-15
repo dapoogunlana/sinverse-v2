@@ -636,6 +636,9 @@
 .max1200 {
   max-width: 1200px;
 }
+.max1250 {
+  max-width: 1250px;
+}
 .max1300 {
   max-width: 1300px;
 }
@@ -1322,7 +1325,7 @@
   width: 100%;
   height: 83px;
   @include mediaM(885px) {
-    height: 55px;
+    height: 61px;
   }
 }
 .highlight {
@@ -1367,6 +1370,9 @@
 }
 .c-pr-blue {
   color: $primary-blue;
+}
+.c-pr-light-blue {
+  color: #17FFFF;
 }
 .c-sc-blue {
   color: $primary-blue-bright;
@@ -2247,7 +2253,7 @@
 }
 
 
-[data-aos="example-anim1"] {
+[data-aos="skew"] {
   transform: skewX(45deg);
   opacity: 0;
   transition-property: transform, opacity;

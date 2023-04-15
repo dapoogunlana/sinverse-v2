@@ -1,11 +1,11 @@
 
 
-import { FeatureImgMetavarse, FeatureImgEcosystem, FeatureImgOmniverse } from '../../../../../assets/images/new';
+import { FeatureImgMetaverse, FeatureImgEcosystem, FeatureImgOmniverse } from '../../../../../assets/images/new';
 
 export const features = [
     {
         name: 'Metaverse',
-        image: FeatureImgMetavarse,
+        image: FeatureImgMetaverse,
         info: `
             Sinverse originally begins as an undeveloped digital real estate with 15,000 parcels of land. As Sinverse 
             development kicks-off following the blueprint of the virtual city, the built Urban environment begins to 

@@ -6,9 +6,10 @@ export interface IsinButton {
     children: any;
     style?: object;
     className?: string;
-    size?: 'small' | 'mid' | 'big';
+    size?: 'slim' | 'small' | 'mid' | 'big';
     tint?: 'red' | 'blue';
     fill?: boolean
+    disabled?: boolean
 }
 
 export interface IseparationComponent {
@@ -27,6 +28,14 @@ export interface IAppModalProps {
     children: any;
     onCloseModal: Function;
     styleClass?: string;
+}
+
+export interface IsinCard {
+    children: any;
+    className?: string;
+    width?: number;
+    noShadow?: boolean;
+    dark?: boolean;
 }
 
 export interface IclassProp {

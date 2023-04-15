@@ -47,3 +47,16 @@ export interface IoperatorOperator {
     title: string,
     image: string,
 }[]
+
+export interface IdownloadInfo {
+    version: string;
+    image: string;
+    section: {
+        points: {
+            note: string;
+            subPoints: string[] | never[];
+        }[]
+        disclaimer?: string;
+    }[];
+    link: string;
+}[];

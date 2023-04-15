@@ -82,53 +82,53 @@ function UserHeader2(props: any) {
               <ul>
                 <li>
                   <div className="text-center">
-                    <NavLink to={routeConstants.userLogin} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <NavLink to={`/${routeConstants.about}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>About</span>
                     </NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="text-center">
-                    <NavLink to={routeConstants.userLogin} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <NavLink to={`/${routeConstants.gameInfo}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>Game Info</span>
                     </NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="text-center">
-                    <NavLink to={routeConstants.userLogin} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <NavLink to={`/${routeConstants.staking}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>Staking</span>
                     </NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="text-center">
-                    <NavLink to={routeConstants.userLogin} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <NavLink to={`/${routeConstants.exchange}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>Exchange</span>
                     </NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="text-center">
-                    <NavLink to={routeConstants.userLogin} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <NavLink to={`/${routeConstants.industryNews}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>News</span>
                     </NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="text-center">
-                    <NavLink to={routeConstants.userLogin} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <NavLink to={`/${routeConstants.districtReveal}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>District Reveals</span>
                     </NavLink>
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <div className="text-center">
                     <NavLink to={routeConstants.register} onClick={closeMobileMenu}>
-                      {/* <SinButton>Download</SinButton> */}
+                      <SinButton>Download</SinButton>
                     </NavLink>
                   </div>
-                </li>
+                </li> */}
                 {/* <li className="md-close-im">
                   <div className="text-center">
                     <i className="fas fa-bars" onClick={toggleWebDialogue}></i>
@@ -136,7 +136,9 @@ function UserHeader2(props: any) {
                 </li> */}
               </ul>
               <div className="text-center">
-                <SinButton size={'small'} >Download</SinButton>
+                <Link to={`/${routeConstants.download}`}>
+                  <SinButton size={'small'} >Download</SinButton>
+                </Link>
               </div>
             </div>
           </div>

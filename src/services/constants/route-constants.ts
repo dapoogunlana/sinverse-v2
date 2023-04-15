@@ -11,7 +11,6 @@
      terms: 'terms',
      amlPolicy: 'aml-policy',
      faq: 'faq',
-     industryNews: 'news',
      help: 'help',
      learn: 'learn',
      productUpdates: 'product-updates',
@@ -23,6 +22,15 @@
      manillaCard: 'card',
      manillaToken: 'token',
      imageResources: 'image-resources',
+
+     exchange: 'exchange',
+     industryNews: 'news',
+     token: 'token',
+     documents: 'documents',
+     download: 'download',
+     gameInfo: 'game-info',
+     staking: 'staking',
+     districtReveal: 'district-reveal',
 
      admin: 'admin',
      dashboard: 'dashboard',

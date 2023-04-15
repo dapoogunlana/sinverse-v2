@@ -14,16 +14,16 @@
     .bg-spinner{
         position: absolute;
         width: 250%;
-        height: 600%;
+        height: 670%;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%) rotate(-75deg);
         // background-image: linear-gradient(40deg, #3840FF, #3840FF, #FF3FA7, #17ACFF, #17ACFF);
         // padding: 5px;
-        transition: 0.7s ease;
+        transition: 1.2s ease;
         &:hover{
             // background-image: linear-gradient(130deg, #ff008c, #006eff, #b700ff);
-            transform: translate(-50%, -50%) rotate(70deg);
+            transform: translate(-50%, -50%) rotate(285deg);
         }
     }
     button{
@@ -38,12 +38,23 @@
     }
 }
 
-.sb-small{
-    border-radius: 9px;
-    padding: 1.5px;
+.sb-slim{
+    border-radius: 5px;
+    padding: 0.6px;
     button{
-        padding: 5px 16px;
-        border-radius: 7.5px;
+        padding: 5px 24px;
+        border-radius: 4.4px;
+        font-size: 0.75em;
+        font-weight: 600;
+    }
+}
+
+.sb-small{
+    border-radius: 6px;
+    padding: 0.9px;
+    button{
+        padding: 3px 16px;
+        border-radius: 5.1px;
         font-size: 0.9em;
     }
 }
@@ -87,10 +98,10 @@
 }
 .sb-blue{
     .bg-spinner{
-        background-image: linear-gradient(40deg, #3888FF, #3888FF, #3888FF, #CD3FFF, #17FFFF, #17FFFF, #17FFFF);
+        background-image: linear-gradient(240deg, #3888FF, #3888FF, #3888FF, #CD3FFF, #17FFFF, #17FFFF, #17FFFF, #17FFFF);
     }
     button{
-        background-image: linear-gradient(#34018A, #130131);
+        background-image: linear-gradient(#2D3B9B, #222578);
         color: $white;
     }
 }
@@ -99,4 +110,9 @@
     button{
         width: 100%
     }
+}
+
+.sb-disabled{
+    filter: grayscale(0.5);
+    pointer-events: none;
 }

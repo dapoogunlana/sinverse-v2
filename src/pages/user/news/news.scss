@@ -1,10 +1,25 @@
 @import "../../../assets/styles/variables.scss";
 
 .news{
-    background-color: $white;
-    hr{
-        background-color: $primary-blue;
-        opacity: 0.4;
+    color: $white;
+    background-image: url(../../../assets/images/new/about-bg.jpg);
+    position: relative;
+    .news-banner{
+        background-image: url(../../../assets/images/new/news-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .lower-space{
+        background-image: linear-gradient(45deg, #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8));
+    }
+    .imh-dotted-holder{
+        padding: 0.6em;
+        background-color: rgba(74, 125, 255, 0.25);
+        border: 1.5px dashed rgba(56, 136, 255, 0.6);
+        border-radius: 20px;
+        box-shadow: 0 1px 15px 2px rgba(0, 0, 0, 0.7);
+        max-width: 500px;
     }
     .im-enclose{
         height: 0;
@@ -12,11 +27,12 @@
         border-radius: 10px;
         position: relative;
         background-image: url(./../../../assets/images/sample-news-image.jpeg);
+        border:1px solid rgba(56, 136, 255, 0.1);
         // box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.40);
-        box-shadow: 0 2px 25px 0 $black-faint4;
+        box-shadow: 0 2px 25px 0 $black-faint2;
         background-size: cover;
         overflow: hidden;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
         img{
             position: absolute;
             left: 0;

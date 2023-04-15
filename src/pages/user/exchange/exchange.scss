@@ -1,0 +1,62 @@
+@import "../../../assets/styles/variables.scss";
+
+.exchange{
+    color: $white;
+    background-image: url(../../../assets/images/new/roadmap-bg-plain.jpg);
+    background-size: cover;
+    background-position: center;
+    .bg-cover{
+        background-image: radial-gradient(rgba(37, 0, 137, 0.795), $black);
+        position: relative;
+    }
+    .radial-cover{
+        position: absolute;
+        left: 0;
+        top: -30%;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(#240089, rgba(0, 0, 0, 0) 80%);
+    }
+    .list-sect{
+        border-radius: 10px;
+        padding: 0.7em;
+        border: 1.5px dashed #17FFFF;
+        .list-card{
+            text-align: center;
+            margin: 0.7em auto;
+            max-width: 300px;
+            transition: 0.3s ease;
+            width: 96%;
+            .sin-card{
+                padding: 0.5em;
+                // border: 1px dashed #17FFFF;
+                // background-color: rgba(74, 125, 255, 0.15);
+                // border-radius: 15px;
+                position: relative;
+                .exchange-img{
+                    position: relative;
+                    width: 60%;
+                    margin: 0 auto 1em;
+                    img{
+                        width: 100%;
+                    }
+                    .image-float{
+                        position: absolute;
+                        top: 7%;
+                        left: 8%;
+                        width: 84%;
+                        height: 86%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            border-radius: 5% 5% 0 0;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                transform: scale(1.07);
+            }
+        }
+    }
+}

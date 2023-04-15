@@ -1,0 +1,141 @@
+@import "../../../assets/styles/variables.scss";
+
+.staking{
+    color: $white;
+    background-image: url(../../../assets/images/new/roadmap-bg-plain.jpg);
+    background-size: cover;
+    background-position: center;
+    .bg-cover{
+        background-image: radial-gradient(rgba(37, 0, 137, 0.795), $black);
+        position: relative;
+    }
+    .radial-cover{
+        position: absolute;
+        left: 0;
+        top: -30%;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(#240089, rgba(0, 0, 0, 0) 80%);
+    }
+    .list-sect{
+        border-radius: 10px;
+        padding: 0.4em;
+        border: 1.5px dashed rgba(3, 151, 151, 0.76);
+        box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+        background-color: rgba(74, 125, 255, 0.08);
+        .list-card{
+            text-align: center;
+            margin: 1em auto;
+            width: 96%;
+            max-width: 300px;
+            transition: 0.3s ease;
+            .staking-info{
+                .tag{
+                    text-align: left;
+                    font-size: 0.8em;
+                }
+                .answer{
+                    text-align: right;
+                    font-size: 0.9em;
+                    font-weight: 700;
+                }
+            }
+            .guide-link{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 1em;
+                .link-text{
+                    color: #17FFFF;
+                    transition: 0.3s ease;
+                    display: block;
+                    font-size: 0.8em;
+                    font-weight: 700;
+                }
+                .under-line{
+                    display: block;
+                    margin: auto;
+                    width: 60px;
+                    height: 1px;
+                    background-image: linear-gradient(to right, #fff, #17FFFF, #fff);
+                }
+                a{
+                    &:hover{
+                        .link-text{
+                            color: #00c9c9;
+                            text-decoration: none;
+                        }
+                        .under-line{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+            .sin-card{
+                padding: 0.5em;
+                // border: 1px dashed #17FFFF;
+                // background-color: rgba(74, 125, 255, 0.15);
+                // border-radius: 15px;
+                position: relative;
+                .staking-img{
+                    position: relative;
+                    width: 50%;
+                    max-width: 110px;
+                    margin: 0 auto 1em;
+                    img{
+                        width: 100%;
+                    }
+                    .image-float{
+                        position: absolute;
+                        top: 12.5%;
+                        left: 15%;
+                        width: 70%;
+                        height: 70%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            border-radius: 42%;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        .list-card2{
+            max-width: 500px;
+        }
+    }
+    .stake-info-card{
+        margin: auto;
+        .icon-sect{
+            width: 95%;
+            max-width: 300px;
+            margin: auto;
+            .media-icons{
+                a{
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                background-color: $white-faint3;
+                border-radius: 7px;
+                // border: 1px solid rgba(255, 255, 255, 0.6);
+                transition: 0.4s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 0 8px $white-faint4;
+                border: 1px solid $white-faint3;
+                font-size: 14px;
+                &:hover{
+                    background-color: $white;
+                    color: $primary-blue-hover;
+                }
+                }
+            }
+        }
+    }
+}

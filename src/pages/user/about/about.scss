@@ -1,206 +1,173 @@
 @import "../../../assets/styles/variables.scss";
 
 .about{
-    .banner{
-        background-image: url(../../../assets/images/yellow-brick-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        .top-grid{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            .text-sect{
-                padding: 4vmax;
-            }
-            .floated-img{
-                background-color: $primary-blue-active;
-                margin-bottom: -40vh;
-                width: 90%;
-                border-radius: 0 10px 10px 0;
-                box-shadow: 10px 10px 0 0 $black-faint4;
-                padding: 5em 2em;
-                position: relative;
-                img{
-                    width: 100%;
-                }
-            }
-            @include mediaM(885px){
-                display: block;
-                .floated-img{
-                    background-color: $primary-blue-active;
-                    margin: 1vh auto -25vh;
-                    border-radius: 10px;
-                    padding: 1em 2em;
-                }
-            }
-        }
-    }
-    .sub-info{
-        background-image: url(../../../assets/images/flip-line-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        .sub-grid{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            .more-info{
-                background-color: $primary-blue-hover-faint4;
-                border-radius: 10px;
-                padding: 2em;
-                border: 1px solid $primary-blue-hover;
-                box-shadow: 10px 10px 0 0 $black-faint4;
-                width: 96%;
-                margin: 10vh auto;
-            }
-            @include mediaM(885px){
-                display: block;
-                .more-info{
-                    
-                    margin: 26vh auto 0vh;
-                }
-            }
-        }
-        .card-image{
-            border-radius: 10px;
-            border: 1px solid $primary-blue-hover;
-            box-shadow: 10px 10px 0 0 $black-faint4;
-            margin: auto;
+    color: $white;
+    background-color: black;
+    .intro-case{
+        background-image: url(../../../assets/images/new/about-bg.jpg);
+        .intro{
+            padding: 2em 0 45vh;
             overflow: hidden;
-            img{
-                width: 100%;
-            }
-            @include mediaM(885px){
+            background-image: radial-gradient(rgba(55, 14, 204, 0.555), $black 80%);
+            .intro-writeup{
                 width: 90%;
+                max-width: 1000px;
+                margin: 2em auto 3em;
+                padding: 1.2em;
+                border: 1px dashed #17FFFF;
+                background-color: rgba(74, 125, 255, 0.15);
+                border-radius: 15px;
+                position: relative;
+                p{
+                    font-size: 0.86em;
+                    text-align: center;
+                }
             }
         }
     }
     .team-sect{
-        background-image: url(../../../assets/images/blue-brick-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        color: $white;
+        // background-color: $black;
+        margin-top: -45vh;
+        // position: relative;
         .team-card{
-            background-color: $primary-card;
             text-align: center;
-            width: 90%;
-            max-width: 250px;
             margin: 1em auto;
-            padding: 25px 15px 35px;
-            border-radius: 15px;
-            box-shadow: 10px 10px 2px 0 $black-faint4;
-            transition: 0.4s ease;
-            position: relative;
-            .member-img{
-                border-radius: 50%;
-                overflow: hidden;
-                width: 70%;
-                margin: 1em auto;
-                img{
-                    width: 100%;
+            max-width: 300px;
+            transition: 0.3s ease;
+            .sin-card{
+                padding: 0.5em;
+                // border: 1px dashed #17FFFF;
+                // background-color: rgba(74, 125, 255, 0.15);
+                // border-radius: 15px;
+                position: relative;
+                .member-img{
+                    position: relative;
+                    width: 60%;
+                    margin: 0 auto 1em;
+                    img{
+                        width: 100%;
+                    }
+                    .image-float{
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                        width: 80%;
+                        height: 80%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            border-radius: 42%;
+                        }
+                    }
                 }
-            }
-            h6{
-                margin-top: 1em;
-            }
-            .position{
-                font-size: 0.9em;
-                min-height: 40px;
-                color: $primary-card-highlight;
-            }
-            .linked-in{
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                border: 1px solid $white;
-                position: absolute;
-                left: 50%;
-                bottom: 14px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: 0.3s ease;
-                transform: translateX(-50%);
-                cursor: pointer;
-                &:hover{
-                    color: $primary-card;
-                    background-color: $white;
+                h6{
+                    margin-top: 1em;
+                }
+                .position{
+                    font-size: 0.8em;
+                    color: $white-faint2;
+                    font-style: italic;
+                }
+                .read-more{
+                    color: #17FFFF;
+                    font-weight: 700;
+                    font-size: 0.8em;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    &:active{
+                        transform: scale(1.2);
+                    }
+                }
+                .linked-in{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin: 0.5em auto;
+                    border: 1px solid $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    &:hover{
+                        color: $primary-card;
+                        background-color: $white;
+                    }
                 }
             }
             &:hover{
-                background-color: $primary-card-highlight;
                 transform: scale(1.07);
-                h3,h6,p{
-                    color: $black;
-                }
-                .position{
-                    color: $black-faint2;
-                }
             }
         }
     }
-    .advisor-sect{
-        background-image: url(../../../assets/images/flip-line-bg.jpg);
-        background-size: cover;
-        background-position: center;
+}
+.silent-sin{
+    max-width: 550px !important;
+    .modal-content{
         color: $white;
-        .topic{
-            color: $primary-blue-active;
-        }
-        .advisor-card{
-            background-color: $primary-card;
+        width: 100%;
+    }
+    .team-card{
+        width: 100%;
+        .sin-card{
+            padding: 1em;
             text-align: center;
-            width: 90%;
-            max-width: 350px;
-            margin: 1em auto;
-            padding: 25px 15px 15px;
-            border-radius: 15px;
-            box-shadow: 10px 10px 2px 0 $black-faint4;
-            transition: 0.4s ease;
-            position: relative;
             .member-img{
-                border-radius: 20px 50px;
-                overflow: hidden;
-                width: 80%;
-                margin: 1em auto;
+                position: relative;
+                width: 60%;
+                max-width: 200px;
+                margin: 0 auto;
                 img{
                     width: 100%;
+                }
+                .image-float{
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    width: 80%;
+                    height: 80%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        border-radius: 42%;
+                    }
                 }
             }
             h6{
                 margin-top: 1em;
-                font-size: 1.1em;
             }
             .position{
-                font-size: 0.9em;
-                min-height: 40px;
-                color: $primary-card-highlight;
+                font-size: 0.8em;
+                color: $white-faint2;
+                font-style: italic;
             }
-            .linked-in{
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                border: 1px solid $white;
-                // position: absolute;
-                // left: 50%;
-                // bottom: 14px;
-                margin: 0px auto 5px;
+            .links{
+                width: 100%;
+                text-align: center;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: 0.3s ease;
-                // transform: translateX(-50%);
-                cursor: pointer;
-                &:hover{
-                    color: $primary-card;
-                    background-color: $white;
-                }
-            }
-            &:hover{
-                background-color: $primary-card-highlight;
-                transform: scale(1.07);
-                h3,h6,p{
-                    color: $black;
-                }
-                .position{
-                    color: $black-faint2;
+                .icon-case{
+                    display: inline-block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid $white-faint1;
+                    background-color: $black;
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    i{
+                        color: $white-faint1;
+                    }
+                    &:hover{
+                        border-color: $white;
+                        i{
+                            color: $white;
+                        }
+                    }
                 }
             }
         }

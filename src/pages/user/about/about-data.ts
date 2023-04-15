@@ -1,118 +1,87 @@
 import {
+    TeamMarouane,
     TeamRutherford,
-    TeamTunde,
-    TeamEtenikang,
-    TeamObinna,
-    TeamOyakhire,
-    TeamBen,
-    TeamAdeshina,
-    TeamEliko,
-    TeamMohammad,
-    TeamDapo,
-
-    AdviserMar,
-    AdviserCosti,
-} from '../../../assets/images';
+    TeamConstantine,
+    TeamCatalin,
+    AdvisorJamie,
+} from '../../../assets/images/new';
+import { VulcanButton } from '../../../assets/images/new';
 
 export const teamList = [
     {
-        name: 'Rutherford Atayobo',
+        name: 'Marouane',
+        image: TeamMarouane,
+        position: 'Chief Executive Officer',
+        linkedIn: 'https://www.linkedin.com/mwlite/in/marouane-fikri-169a9619a',
+        faceBook: 'facebook',
+        twitter: 'twitter',
+        email: 'mailto:marouane@sin-city.io',
+        info: `
+            Following an unparalleled performance managing the core team of Vanilla Network, Marouane progresses to 
+            Sinverse as CEO. Just as in Vanilla Network, he manages and oversees all marketing, growth strategy and 
+            partnership decisions including forging new alliances with outstanding corporate associates while also 
+            ensuring that the relationships with these ecosystem partners are maintained and accelerated. Marouane 
+            brings over six years of Blockchain industry experience to Sinverse.
+        `,
+    },
+    {
+        name: 'Rutherford',
         image: TeamRutherford,
-        position: 'CEO',
-        linkedIn: 'https://www.linkedin.com/in/rutherford-atayobo',
+        position: 'Chief Operations Officer',
+        linkedIn: 'https://www.linkedin.com/in/rutherford-atayobo-6639041b9',
         faceBook: 'facebook',
         twitter: 'twitter',
+        email: 'mailto:rutherford@sin-city.io',
+        info: `
+            Innovative entrepreneur bridging a progressive career spanning tech cohort management, Blockchain 
+            ecosystem development, QHSE, business planning, revenue development and change management. Offers 
+            years of leadership in multiple industries along with entrepreneurial, a forward-thinking mindset and 
+            demonstrated track record of accomplishment in streamlining operations for visible growth in projects. 
+            Known for strong leadership and communication skills with the ability to build and maintain profitable 
+            relationships whilst exceeding sales and revenue goals.
+        `,
     },
     {
-        name: 'Tunde Mudashir',
-        image: TeamTunde,
-        position: 'Chief Technology Officer',
-        linkedIn: 'https://www.linkedin.com/in/mudashir-tunde-899688168',
+        name: 'Constantine',
+        image: TeamConstantine,
+        position: 'Chief Technical Officer',
+        linkedIn: 'https://www.linkedin.com/mwlite/in/costi-cos',
         faceBook: 'facebook',
         twitter: 'twitter',
+        email: 'mailto:constantine@sin-city.io',
+        info: `
+            Constantine fuses his experience in artificial intelligence, machine learning, internet of things and 
+            augmented reality with Blockchain technology and therefore, brings this rare combination to Sinverse. 
+            Constantine brings with him close to two decades experience in technology, and five years as a 
+            Blockchain developer. He leads a multidisciplinary team of Blockchain developers, web developers, 
+            UI/UX creators, DBA and digital marketers for Sinverse.
+        `,
     },
     {
-        name: 'Etenikang David',
-        image: TeamEtenikang,
-        position: 'Compliance Executive 1',
-        linkedIn: 'https://www.linkedin.com/in/david-ushilem-etenikang-87a347116',
+        name: 'Catalin',
+        image: TeamCatalin,
+        position: 'Community & Marketing Manager',
+        linkedIn: 'https://www.linkedin.com/in/catalin-frunza-572a507b/',
         faceBook: 'facebook',
         twitter: 'twitter',
-    },
-    {
-        name: 'Obinna Inya A.',
-        image: TeamObinna,
-        position: 'Business Development Executive 1',
-        linkedIn: 'https://www.linkedin.com/in/obinna-agha-00045b10b',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Oyakhire Emmanuel',
-        image: TeamOyakhire,
-        position: 'Business Development Executive 2',
-        linkedIn: 'https://www.linkedin.com/in/emmanuel-oyakhire-bb5ba7104',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Obot Ubong Benjamin',
-        image: TeamBen,
-        position: 'Art and UX Specialist',
-        linkedIn: 'https://www.linkedin.com/in/benjamin-obot-597631221/',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Adesanya Olarewaju',
-        image: TeamAdeshina,
-        position: 'Compliance Executive 2',
-        linkedIn: 'https://www.linkedin.com/in/olarewaju-adesanya-aa273a166/',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Eliko Blessing',
-        image: TeamEliko,
-        position: 'Media Relations',
-        linkedIn: 'https://linkedin.com/in/elikor-chisom-blessing-37424b1bb',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Muhammad Nazif',
-        image: TeamMohammad,
-        position: 'Content Strategy Lead',
-        linkedIn: 'https://www.linkedin.com/in/nazifma',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Dapo Paul Ogunlana',
-        image: TeamDapo,
-        position: 'Snr. UI/UX & Frontend Developer',
-        linkedIn: 'https://www.linkedin.com/in/dapo-paul-ogunlana-517618106',
-        faceBook: 'facebook',
-        twitter: 'twitter',
+        email: 'mailto:catalin@sin-city.io',
+        info: `
+            Catalin has built an enviable reputation for himself over the years managing communities for very complex 
+            decentralized finance projects. He is a long-term crypto evangelist, investor and enthusiast. Catalin 
+            has over ten years of specialist marketing experience for blue chip companies. He compliments the team 
+            effort in providing modern marketing solutions for project growth by strategically engaging the 
+            grass-root community.
+        `,
     },
 ];
 
 
 export const advisorList = [
     {
-        name: 'Maruoane Fikri',
-        image: AdviserMar,
-        position: 'CEO Sinverse',
+        name: 'Jamie Thomson',
+        image: AdvisorJamie,
+        position: 'CEO, Vulcan Forged',
         linkedIn: 'https://nl.linkedin.com/in/marouane-fikri-169a9619a',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-    },
-    {
-        name: 'Constantine Ene',
-        image: AdviserCosti,
-        position: 'CEO Vanilla Network Metaverse',
-        linkedIn: 'https://www.linkedin.com/in/costi-cos',
-        faceBook: 'facebook',
-        twitter: 'twitter',
+        buttonImage: VulcanButton,
     },
 ];

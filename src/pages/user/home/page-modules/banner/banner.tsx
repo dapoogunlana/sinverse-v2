@@ -18,22 +18,22 @@ function Hero2() {
   return (
     <div className='hero-case'>
       <div className='hero'>
-        <div className='hero-img-case'></div>
+        <div className='hero-img-case' data-aos='fade-right'></div>
         <div className='hero-content-case'>
           <div className='w100'>
-            <h4>Wecome to</h4>
-            <div className='hollow-line'></div>
+            <h4 data-aos='fade-right' data-aos-delay='500'>Wecome to</h4>
+            <div className='hollow-line' data-aos='zoom-in' data-aos-delay='400'></div>
           </div>
           <div className='content-features'>
             <div className='sinverse-topic imh'>
-              <img src={SINVERSE} alt="" />
+              <img src={SINVERSE} alt="" data-aos='skew' data-aos-delay='700' />
             </div>
             <div className='w100-flat'>
               <div className='mobile-image'>
-                <img src={HeroImgMobile} alt="" />
+                <img src={HeroImgMobile} data-aos='zoom-out' alt="" />
               </div>
             </div>
-            <div className='spread-info-top w100-flat'>
+            <div className='spread-info-top w100-flat' data-aos='zoom-in' data-aos-delay='1200'>
               <div className='hero-download' onClick={downloadWhitepaper}>
                 <img src={HeroDownloadWhitepaper} alt="" />
                 <p className='reduced-soft'>Download Whitepaper</p>

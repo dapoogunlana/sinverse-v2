@@ -137,42 +137,42 @@ function UserFooter(props: any) {
             <div className="footer-sect">
               <div className="w-96 sub-sect row">
                 <div className="col-12 footer-topic-height">
-                  <img src={LogoWhite} width={70} alt="" />
+                  <Link to={`/`}><img src={LogoWhite} width={70} alt="" /></Link>
                 </div>
                 <div className="col-sm-6">
                   <p className="reduced-soft mb-1">
-                    <Link to={routeConstants.about}>Staking</Link>
+                    <Link to={`/${routeConstants.staking}`}>Staking</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.careers}>Exchange</Link>
+                    <Link to={`/${routeConstants.exchange}`}>Exchange</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.contact}>Documents</Link>
+                    <Link to={`/${routeConstants.documents}`}>Documents</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.contact}>Sin Token</Link>
+                    <Link to={`/${routeConstants.token}`}>Sin Token</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.contact}>
+                    <Link to={`/${routeConstants.download}`}>
                       <SinButton size={'small'} >Download</SinButton>
                     </Link>
                   </p>
                 </div>
                 <div className="col-sm-6">
                   <p className="reduced-soft">
-                    <Link to={routeConstants.about}>About</Link>
+                    <Link to={`/${routeConstants.about}`}>About</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.userLogin}>Game Info</Link>
+                    <Link to={`/${routeConstants.gameInfo}`}>Game Info</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.userLogin}>News</Link>
+                    <Link to={`/${routeConstants.industryNews}`}>News</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.userLogin}>District Reveals</Link>
+                    <Link to={`/${routeConstants.districtReveal}`}>District Reveals</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={routeConstants.userLogin}>What You Can Do</Link>
+                    <Link to={`/${routeConstants.faq}`}>What You Can Do</Link>
                   </p>
                 </div>
               </div>
@@ -229,8 +229,9 @@ function UserFooter(props: any) {
                   <div className="spread-info mt-3 media-icons footer-topic-height">
                       <a href={socialLinks.telegram} target="_blank" rel="noreferrer"><i className="fab fa-telegram-plane increased-x"></i></a>
                       <a href={socialLinks.twitter} target="_blank" rel="noreferrer" className="mx-2"><i className="fab fa-twitter increased-x"></i></a>
-                      <a href={socialLinks.twitter} target="_blank" rel="noreferrer" className="mr-2"><i className="fab fa-twitter increased-x"></i></a>
-                      <a href={socialLinks.linkedin} target="_blank" rel="noreferrer"><i className="fab fa-linkedin increased-x"></i></a>
+                      <a href={socialLinks.instagram} target="_blank" rel="noreferrer"><i className="fab fa-instagram increased-x"></i></a>
+                      <a href={socialLinks.medium} target="_blank" rel="noreferrer" className="mx-2"><i className="fab fa-medium increased-x"></i></a>
+                      <a href={socialLinks.discord} target="_blank" rel="noreferrer"><i className="fab fa-discord increased-x"></i></a>
                   </div>
                   <div className="sub-icon-text">
                     <p className="py-3 center-mobile">

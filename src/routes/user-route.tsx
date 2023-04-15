@@ -28,6 +28,13 @@ const ManillaCardPage = lazy(() => import("../pages/user/manilla-card/manilla-ca
 const ManillaTokenPage = lazy(() => import("../pages/user/manilla-token/manilla-token"));
 const ImageResources = lazy(() => import("../pages/user/image-resources/image-resources"));
 
+const ExchangePage = lazy(() => import("../pages/user/exchange/exchange"));
+const GameInfoPage = lazy(() => import("../pages/user/game-info/game-info"));
+const StakingPage = lazy(() => import("../pages/user/staking/staking"));
+const DistrictRevealPage = lazy(() => import("../pages/user/district-reveal/district-reveal"));
+const DocumentPage = lazy(() => import("../pages/user/documents/documents"));
+const DownloadPage = lazy(() => import("../pages/user/downloads/downloads"));
+
 function UserRoute() {
   return (
     <Suspense fallback={<Loader/>}>
@@ -37,8 +44,6 @@ function UserRoute() {
           <Route path={routeConstants.register} element={<RegisterPage/>}></Route>
           <Route path={routeConstants.userLogin} element={<LoginPage/>}></Route>
           <Route path={routeConstants.about} element={<AboutPage/>}></Route>
-          <Route path={routeConstants.industryNews} element={<NewsPage/>}></Route>
-          <Route path={routeConstants.industryNews + '/:id'} element={<NewsDetailPage/>}></Route>
           <Route path={routeConstants.faq} element={<FaqPage/>}></Route>
           <Route path={routeConstants.help} element={<HelpPage/>}></Route>
           <Route path={routeConstants.help + '/:id'} element={<HelpDetailPage/>}></Route>
@@ -55,6 +60,15 @@ function UserRoute() {
           <Route path={routeConstants.manillaCard} element={<ManillaCardPage/>}></Route>
           <Route path={routeConstants.manillaToken} element={<ManillaTokenPage/>}></Route>
           <Route path={routeConstants.imageResources} element={<ImageResources/>}></Route>
+
+          <Route path={routeConstants.exchange} element={<ExchangePage/>}></Route>
+          <Route path={routeConstants.gameInfo} element={<GameInfoPage/>}></Route>
+          <Route path={routeConstants.staking} element={<StakingPage/>}></Route>
+          <Route path={routeConstants.industryNews} element={<NewsPage/>}></Route>
+          <Route path={routeConstants.industryNews + '/:id'} element={<NewsDetailPage/>}></Route>
+          <Route path={routeConstants.districtReveal} element={<DistrictRevealPage/>}></Route>
+          <Route path={routeConstants.documents} element={<DocumentPage/>}></Route>
+          <Route path={routeConstants.download} element={<DownloadPage/>}></Route>
           <Route path={routeConstants.all} element={<Navigate to={routeConstants.home2}/>}></Route>
         </Route>
       </Routes>
