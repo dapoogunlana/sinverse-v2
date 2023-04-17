@@ -51,7 +51,8 @@
                 left: 0;
                 border-radius: 15px;
                 overflow: hidden;
-                border: 3px dashed $white-faint3;
+                border: 1px solid $white-faint3;
+                box-shadow: 7px 7px 4px 0px rgba(255, 255, 255, 0.15);
             }
         }
     }

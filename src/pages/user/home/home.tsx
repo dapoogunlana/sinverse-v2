@@ -24,7 +24,7 @@ function About(props: any) {
       <KuCoinSpace/>
       <Features/>
       <LandTypes/>
-      <Roadmap/>
+      {/* <Roadmap/> */}
       <LatestNews/>
       <Partners/>
     </div>
