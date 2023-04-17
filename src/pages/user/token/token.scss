@@ -124,10 +124,12 @@
             margin: auto;
             img{
                 border-radius: 3px;
-                border: 1px solid #AD6B8F;
+                // border: 1px solid #AD6B8F;
                 transition: 0.3s ease;
+                width: 100%;
                 &:hover{
-                    border: 2px solid #d64595;
+                    scale: 1.03;
+                    // border: 2px solid #d64595;
                 }
             }
         }

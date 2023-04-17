@@ -4,7 +4,7 @@ import './token.scss';
 import { Tokenomics } from '../../../assets/files';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
-import { SinToken, HeroDownloadWhitepaper, CardStretchBg, TokenWhereToBuy } from '../../../assets/images/new';
+import { SinToken, HeroDownloadWhitepaper, CardStretchBg, TokenWhereToBuy, CountIcon1, CountIcon2, CountIcon3, TokenomicsImage, } from '../../../assets/images/new';
 
 function Token(props: any) {
 
@@ -116,8 +116,10 @@ function Token(props: any) {
           <SeparationLine stickBottom></SeparationLine>
           <h3 className='text-center py-4'>Sinverse Tokenomics</h3>
           <div className='download py-4 text-center' data-aos='zoom-out'>
-            <img src={HeroDownloadWhitepaper} className='clickable hover-zoom' alt="" onClick={openTokenomics} />
-            <p onClick={openTokenomics} className='clickable'>Download Tokenomics</p>
+            <div className='w70 imh'>
+              <img src={TokenomicsImage} className='clickable hover-zoom' alt="" onClick={openTokenomics} />
+            </div>
+            <p onClick={openTokenomics} className='clickable pt-2'>Download Tokenomics</p>
           </div>
         </div>
       </div>
@@ -128,9 +130,12 @@ function Token(props: any) {
           <h4 className='text-center pb-3'>Loyalty Reward</h4>
             <div className='row'>
               <div className='col-md-6 my-3'>
-                <div className='w90 center-mobile text-holder' data-aos="fade-right">
+                <div className='w90 text-holder' data-aos="fade-right">
                   <div className='case-bg'><img src={CardStretchBg} alt="" /></div>
-                  <p className='mb-0'>
+                  <div className='max70 imh'>
+                    <img src={CountIcon1} alt="" />
+                  </div>
+                  <p className='mb-2'>
                     Players of Sinverse games can earn SIN tokens in a variety of ways. The most straightforward way is by 
                     participating in the games themselves. Each game has a unique set of rules and objectives, but players can 
                     earn SIN tokens as they progress through the levels, complete challenges, and achieve certain milestones. 
@@ -142,9 +147,12 @@ function Token(props: any) {
               <div className='col-md-6'></div>
               <div className='col-md-6'></div>
               <div className='col-md-6 my-3'>
-                <div className='w90 center-mobile text-holder' data-aos="fade-left">
+                <div className='w90 text-holder' data-aos="fade-left">
                   <div className='case-bg'><img src={CardStretchBg} alt="" /></div>
-                  <p className='mb-0'>
+                  <div className='max70 imh'>
+                    <img src={CountIcon2} alt="" />
+                  </div>
+                  <p className='mb-2'>
                     Additionally, Sinverse offers a referral program that rewards players for inviting friends to join the 
                     platform. Players can share their referral links with friends, and when those friends sign up and start 
                     playing games on the platform, the original player will earn a percentage of the SIN tokens that their 
@@ -153,9 +161,12 @@ function Token(props: any) {
                 </div>
               </div>
               <div className='col-md-6 my-3'>
-                <div className='w90 center-mobile text-holder' data-aos="fade-right">
+                <div className='w90 text-holder' data-aos="fade-right">
                   <div className='case-bg'><img src={CardStretchBg} alt="" /></div>
-                  <p className='mb-0'>
+                  <div className='max70 imh'>
+                    <img src={CountIcon3} alt="" />
+                  </div>
+                  <p className='mb-2'>
                     Finally, Sinverse may offer occasional airdrops, where players can receive free SIN tokens simply by 
                     holding a certain amount of tokens in their wallets. These airdrops may be announced on the platform's 
                     website or social media channels, so players should keep an eye out for any updates. Overall, there are 

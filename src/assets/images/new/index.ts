@@ -12,6 +12,7 @@ import GameplayImgSquidGames from './gameplay-img-squid_games.jpg';
 import GameplayOverlay from './game-play-overlay.png';
 import HeroDownloadGame from './hero-download-game.jpg';
 import HeroDownloadWhitepaper from './hero-download-whitepaper.jpg';
+import TokenomicsImage from './Sinverse-web-tokenomics-2.png';
 import HeroImg from './hero-img.png';
 import HeroImgMobile from './hero-img-mobile.png';
 import LandsDistrict from './lands-district.jpg';
@@ -29,6 +30,9 @@ import SleakRoundedCube from './icons/sleak-rounded-cube.svg';
 import SnakeLine from './icons/snake-line.svg';
 import VulcanButton from './icons/vulcan-button.png';
 import CalenderIconWhite from './icons/calendar-icon-white.svg';
+import CountIcon1 from './icons/count_icon-1.svg';
+import CountIcon2 from './icons/count_icon-2.svg';
+import CountIcon3 from './icons/count_icon-3.svg';
 import BgSpiral from './bg-spiral.png';
 import PartnersArcadenetwork from './partners/partners-arcadenetwork.png';
 import PartnersAu21Capital from './partners/partners-au21-capital.png';
@@ -89,6 +93,7 @@ export {
     GameplayOverlay,
     HeroDownloadGame,
     HeroDownloadWhitepaper,
+    TokenomicsImage,
     HeroImg,
     HeroImgMobile,
     LandsDistrict,
@@ -106,6 +111,9 @@ export {
     SnakeLine,
     VulcanButton,
     CalenderIconWhite,
+    CountIcon1,
+    CountIcon2,
+    CountIcon3,
     BgSpiral,
     PartnersArcadenetwork,
     PartnersAu21Capital,
