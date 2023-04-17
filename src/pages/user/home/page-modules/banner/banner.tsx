@@ -21,7 +21,7 @@ function Hero2() {
         <div className='hero-img-case' data-aos='fade-right'></div>
         <div className='hero-content-case'>
           <div className='w100'>
-            <h4 data-aos='fade-right' data-aos-delay='500'>Wecome to</h4>
+            <h4 data-aos='fade-right' data-aos-delay='500'>Welcome to</h4>
             <div className='hollow-line' data-aos='zoom-in' data-aos-delay='400'></div>
           </div>
           <div className='content-features'>
@@ -36,11 +36,11 @@ function Hero2() {
             <div className='spread-info-top w100-flat' data-aos='zoom-in' data-aos-delay='1200'>
               <div className='hero-download' onClick={downloadWhitepaper}>
                 <img src={HeroDownloadWhitepaper} alt="" />
-                <p className='reduced-soft'>Download Whitepaper</p>
+                <p className='reduced-soft pt-2'>Download Whitepaper</p>
               </div>
               <div className='hero-download' onClick={downloadGame}>
                 <img src={HeroDownloadGame} alt="" />
-                <p className='reduced-soft'>Download Game</p>
+                <p className='reduced-soft pt-2'>Download Game</p>
               </div>
             </div>
           </div>

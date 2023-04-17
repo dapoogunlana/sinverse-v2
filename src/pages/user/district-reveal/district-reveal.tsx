@@ -25,8 +25,16 @@ function DistrictReveal(props: any) {
       <div className='district-gradient'>
         <SeparationLine stickBottom></SeparationLine>
         <div className='w96 max1200 py-5'>
-        <div className='header-spacer'></div>
+          <div className='header-spacer'></div>
           <TopicHolder>District Reveal</TopicHolder>
+          <div className='intro-writeup' data-aos='zoom-out'data-aos-delay='500'>
+            <p className='mb-0'>
+              Each district within the SinVerse has its unique set of customs, principles, influential figures, and a prominent 
+              economic focus. The corresponding webpage on the SinVerse site provides insight into the distinct characteristics of 
+              each district. If you're contemplating which area of the metaverse would be the ideal fit for your ambition to 
+              become the ultimate Kingpin, this is where you can gain knowledge to make a well-informed and advantageous decision.
+            </p>
+          </div>
           <div className='w96 max1100 '>
             <div className='row py-5'>
               {

@@ -147,19 +147,20 @@ function GameInfo(props: any) {
             <div className='col-lg-6 col-md-12' data-aos='fade-up' data-aos-delay='300'>
               <SinCard className='info-card' dark>
                 <SinCard className='game-info-img'>
-                  <img src={GameInfoFaction} alt="" />
+                  <img src={GameInfoKingpin} alt="" />
                 </SinCard>
 
                 <div className='relative py-3'>
                   <SeparationLine></SeparationLine>
                 </div>
 
-                <h6 className='increased'>JOIN A FACTION</h6>
+                <h6 className='increased'>BECOME THE KINGPIN</h6>
                 <p className='reduced'>
-                  Now that you have successfully owned a piece of real estate in the rated-R metaverse, you will need to protect 
-                  yourself and assets by joining a faction as you now live in a “hunt or be hunted world”. There is no assuming 
-                  a neutral position in Sinverse otherwise you will be easily dominated and vanquished. There are multiple 
-                  gangs to join across the City but the smart move would be to join a faction that controls your neighborhood.
+                  Now that you have all the tools and connections that is necessary for your survival in Sinverse, what next? 
+                  Rise to the occasion and move through the ranks to become the ultimate kingpin. There is no bigger glory in 
+                  the City than becoming the commander of the underworld. There are perks that comes with attaining this lofty 
+                  position but to get to this point, you probably are a heartless and ruthless warrior. Be vigilant and ensure 
+                  you are not dethroned!
                 </p>
               </SinCard>
             </div>

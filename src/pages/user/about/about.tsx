@@ -43,8 +43,8 @@ function About(props: any) {
             <p className='mb-0'>
               ‘Sinverse’ is a Metaverse multi-player game built on Blockchain Technology. The background of the game is based on the most controversial Cities of the world, where digital real estate is available to be purchased. Users can buy this land to develop and build their empire. The aim of the game is to become the ultimate Kingpin. This will be a highly social orientated platform, where you can build clubs for your friends to hangout, venues for online events or even compete in underworld activities to win in-game rewards.
             </p>
-            <div className='w80 max600 imh mb-1'>
-              <img src={SnakeLine} alt="" />
+            <div className='w80 max600 imh mb-1 py-3'>
+              <SeparationLine/>
             </div>
             <p className='mb-0'>
               Vulcan Forged are advisors on game development, using state of the art virtual reality technology. In addition to this, the platform will be cross-chain agonistic, allowing for high speed & low costs transactions on the Blockchain.This Metaverse arena is highly touted to be the next big ‘thing’ in the cryptoverse. Leveraging a strong community and key opinion leaders who are avid gamers, it’s the perfect recipe for success.

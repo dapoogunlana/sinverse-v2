@@ -183,14 +183,14 @@ function UserFooter(props: any) {
                   <p className="mb-0 font-weight-bold head-p">Available Exchanges</p>
                 </div>
                 <div className="col-sm-6">
-                  <div className="spread-info-front-top mb-3">
-                    <div className="">
-                      <img src={LogoRed} width={60} alt="" />
+                  <div className="mb-3">
+                    <div className="w50 max70 imh">
+                      <img src={LogoRed} alt="" />
                     </div>
-                    <div className="">
+                    {/* <div className="">
                       <h1 className="mb-0">71<span className="reduced-im">%</span></h1>
                       <p>Sold Out</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-sm-6">
