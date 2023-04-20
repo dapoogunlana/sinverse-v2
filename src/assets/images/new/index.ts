@@ -55,7 +55,7 @@ import ExchangePancakeswap from './exchange/pancake-swap.jpg';
 import ExchangeMXC from './exchange/mxc.jpg';
 import ExchangeGateIo from './exchange/gate-io.jpg';
 
-import DownloadBulldog from './download-bulldog.png';
+import DownloadIntro from './download-bulldog.png';
 import DownloadSample1 from './download-sample-1.jpg';
 import DownloadSample2 from './download-sample-2.jpg';
 import DownloadSample3 from './download-sample-3.jpg';
@@ -78,6 +78,12 @@ import AdvisorJamie from './team-members/advisor-jamie.jpg';
 import CardStretchBg from './card-stretch-bg.png';
 import SinToken from './sin-token.png';
 import TokenWhereToBuy from './token-where-to-buy.png';
+import GameInfoBanner from './game-info-banner.png';
+import CorporateKnifeMan from './corporate-knife-man.png';
+import MaskedAssasin from './masked-assasin.png';
+import ZoroSwordMan from './zoro-sword-man.png';
+import LogoHighRes from './logo-high-res.png';
+import LogoSpinner from './logo-spinner.svg';
 
 export {
     LogoRed,
@@ -136,7 +142,7 @@ export {
     ExchangeMXC,
     ExchangeGateIo,
 
-    DownloadBulldog,
+    DownloadIntro,
     DownloadSample1,
     DownloadSample2,
     DownloadSample3,
@@ -159,4 +165,10 @@ export {
     CardStretchBg,
     SinToken,
     TokenWhereToBuy,
+    GameInfoBanner,
+    CorporateKnifeMan,
+    MaskedAssasin,
+    ZoroSwordMan,
+    LogoHighRes,
+    LogoSpinner,
 }

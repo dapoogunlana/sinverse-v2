@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { downloadList } from './downloads-data';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
-import { DownloadBulldog } from '../../../assets/images/new';
+import { DownloadIntro } from '../../../assets/images/new';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
 import SinCard from '../../../components/base-components/sin-card/sin-card';
 import './downloads.scss';
@@ -38,10 +38,10 @@ function Downloads(props: any) {
             </div>
             <div className='im-case'>
               <div className='structure'>
-                <img src={DownloadBulldog} alt="" />
+                <img src={DownloadIntro} alt="" />
               </div>
               <div className='dispay'>
-                <img src={DownloadBulldog} alt="" />
+                <img src={DownloadIntro} alt="" />
               </div>
             </div>
           </div>
