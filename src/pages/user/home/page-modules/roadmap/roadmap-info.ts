@@ -1,58 +1,75 @@
 
 
 import {
-    LandsPrivate,
-    LandsDistrict,
-    LandsPublic,
-    LandsRoads,
+    RoadmapImage,
 } from '../../../../../assets/images/new';
 
 export const roadmapInfo = [
     {
-        name: 'Stage 1',
-        image: LandsPrivate,
+        name: 'Enhanced Security Measures and High-Performance Server',
+        image: RoadmapImage,
         info: `
-            Private lands in SINverse are owned and managed by individual players or entities. These lands can be used for various purposes, including building personal structures or conducting business activities. The importance of private lands lies in the fact that they allow players to establish their own personal and economic identities within the game world. Private lands also provide a means of creating specialized spaces for specific activities, such as housing, farming, or crafting.
+            NPC stability improvement, exploit anti-cheating measures to ensure fair and secure gaming environment for all players.
         `,
         active: false,
     },
     {
-        name: 'Stage 2',
-        image: LandsDistrict,
+        name: 'Metamask Integration',
+        image: RoadmapImage,
         info: `
-            District lands in SINverse are owned and managed by groups of players who have formed districts. These lands can be used for various purposes, including communal activities, business operations, or cultural events. The importance of district lands lies in the fact that they provide a means for players to come together and collaborate on shared goals, while also promoting the diversity of the game world through the creation of unique districts with distinct cultural identities.
+            Introduction of the public marketplace that allows buying and selling of items using metamask. Players can 
+            purchase bags of digital sin coins and exchange them with other players
         `,
         active: false,
     },
     {
-        name: 'Stage 3',
-        image: LandsPublic,
+        name: 'In-Game Businesses',
+        image: RoadmapImage,
         info: `
-            Public lands in SINverse are owned and managed by the community as a whole, rather than any individual or corporation. These lands can be used by anyone for various purposes, including building structures or organizing events. The importance of public lands lies in the fact that they promote inclusivity and equal opportunity for all players to engage with the game environment. Additionally, public lands can serve as communal gathering places for social interactions, commerce, and other activities. They can also be used as a means of preserving natural resources and fostering environmental awareness within the game.
+            The launch of weed farms and coffee shops to allow players to own and operate their businesses in designated districts.
         `,
         active: false,
     },
     {
-        name: 'Stage 4',
-        image: LandsRoads,
+        name: 'Digital Sin Coins to Real Sin Tokens',
+        image: RoadmapImage,
         info: `
-            Government lands in SINverse are owned and managed by the game's central authority. These lands can be used for various purposes, including building official structures, hosting events, or enforcing game rules. The importance of government lands lies in the fact that they provide a means of establishing a central governing body within the game world, which can promote order, stability, and fairness for all players.
+            Launch or basic exchange mechanisms allowing players to exchange their digital sin coins for real sin tokens.
         `,
         active: false,
     },
     {
-        name: 'Stage 5',
-        image: LandsRoads,
+        name: 'Land Marketplace Integration and Building Tools',
+        image: RoadmapImage,
         info: `
-            Government lands in SINverse are owned and managed by the game's central authority. These lands can be used for various purposes, including building official structures, hosting events, or enforcing game rules. The importance of government lands lies in the fact that they provide a means of establishing a central governing body within the game world, which can promote order, stability, and fairness for all players.
+            The launch of land integration in the marketplace allowing players to buy and sell lands in Sinverse. Building 
+            tools for land owners: The launch of building tools that allow players to add their  personal touch to their 
+            virtual property
         `,
         active: false,
     },
     {
-        name: 'Stage 6',
-        image: LandsRoads,
+        name: 'Daily Activities and Quests',
+        image: RoadmapImage,
         info: `
-            Government lands in SINverse are owned and managed by the game's central authority. These lands can be used for various purposes, including building official structures, hosting events, or enforcing game rules. The importance of government lands lies in the fact that they provide a means of establishing a central governing body within the game world, which can promote order, stability, and fairness for all players.
+            The introduction of daily activities and quests, including team tournaments, daily qualifiers, grinding quests, 
+            and NPC drops with valuable rewards
+        `,
+        active: false,
+    },
+    {
+        name: 'Avatar Creation Tool',
+        image: RoadmapImage,
+        info: `
+            Introduction of a customizable avatar creation tool giving players more options to personalize their characters.
+        `,
+        active: false,
+    },
+    {
+        name: 'Mobile Version Release',
+        image: RoadmapImage,
+        info: `
+            Release to the Android mobile version, bringing in even more players and providing the ability to play on the go.
         `,
         active: false,
     },

@@ -84,6 +84,7 @@ import MaskedAssasin from './masked-assasin.png';
 import ZoroSwordMan from './zoro-sword-man.png';
 import LogoHighRes from './logo-high-res.png';
 import LogoSpinner from './logo-spinner.svg';
+import RoadmapImage from './roadmap_image.jpg';
 
 export {
     LogoRed,
@@ -171,4 +172,5 @@ export {
     ZoroSwordMan,
     LogoHighRes,
     LogoSpinner,
+    RoadmapImage,
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import SeparationLine from '../../../../../components/base-components/separation-line/separation-line';
 import TopicHolder from '../../../../../components/base-components/topic-holder/topic-holder';
+import CardSwiper from '../../../../../components/block-components/card-carousel/card-carousel';
+import { Carousel } from '../../../../../components/block-components/carousel';
 import { roadmapInfo } from './roadmap-info';
 import './roadmap.scss';
 
@@ -28,31 +30,29 @@ function Roadmap() {
     
   }
 
+  const imageSlide = roadmapInfo.map((item, index) => {
+    return <div className='road-map-slide' key={index}>
+    <SeparationLine stickBottom/>
+      <h6 className='text-center mb-0'>{item.name}</h6>
+      <div className='image-container'>
+        <SeparationLine></SeparationLine>
+        <img src={item.image} alt="" />
+        <SeparationLine></SeparationLine>
+      </div>
+      <div className=''>
+        <p className=''>
+          {item.info}
+        </p>
+      </div>
+    </div>
+  })
+
   return (
     <div className='roadmap'>
       <div className='gradient-bg'></div>
       <h2 className='text-center pt-3 relative'>Road Map</h2>
-      <div className='type-holder'>
-        <div className='type-case' id="roadmap-case">
-          <div className='types'>
-            {
-              roadmapInfo.map((type, index) => (
-                <div key={index} className={'type' + (type.name === activeInfo.name ? ' active-type': '')} onClick={() => activateType(index)}>
-                  <img src={type.image} alt="" />
-                  <p className='reduced-soft text-center'>{type.name}</p>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-        <div className='actions'>
-          <div className='right' onClick={() => moveHorizontal()}>
-            <i className="fa-solid fa-caret-left"></i>
-          </div>
-          <div className='left' onClick={() => moveHorizontal(true)}>
-            <i className="fa-solid fa-caret-right"></i>
-          </div>
-        </div>
+      <div className='road-map-slide-holder py-4'>
+        <CardSwiper slides={imageSlide}/>
       </div>
       <SeparationLine stickBottom></SeparationLine>
     </div>
