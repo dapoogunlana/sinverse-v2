@@ -1,9 +1,9 @@
 
 import LogoRed from './logo-red.png';
-import LogoWhite from './logo-white.png';
+import LogoWhite from './logo-white.svg';
 import HamburgerButton from './icons/Hamburger-Button.svg';
-import FeatureImgEcosystem from './feature-img-ecosystem.jpg';
-import FeatureImgMetaverse from './feature-img-metaverse.jpg';
+import FeatureImgDigitalAssets from './feature-img-digital_assets.jpg';
+import FeaturePlayEarn from './feature-img-play_n_earn.jpg';
 import FeatureImgOmniverse from './feature-img-omniverse.jpg';
 import GameplayImgGame from './gameplay-img-game.jpg';
 import GameplayImgPickDrop from './gameplay-img-pick_drop.jpg';
@@ -34,21 +34,18 @@ import CountIcon1 from './icons/count_icon-1.svg';
 import CountIcon2 from './icons/count_icon-2.svg';
 import CountIcon3 from './icons/count_icon-3.svg';
 import BgSpiral from './bg-spiral.png';
-import PartnersArcadenetwork from './partners/partners-arcadenetwork.png';
 import PartnersAu21Capital from './partners/partners-au21-capital.png';
 import PartnersBullPerks from './partners/partners-bull-perks.png';
 import PartnersCcixGlobal from './partners/partners-ccix-global.png';
-import PartnersEquinux from './partners/partners-equinux.png';
 import PartnersGrizzlyCapital from './partners/partners-grizzly-capital.png';
-import PartnersGrowStudio from './partners/partners-grow-studio.png';
 import PartnersMangusCapital from './partners/partners-mangus-capital.png';
 import PartnersMavenCapital from './partners/partners-maven-capital.png';
 import PartnersMoonwhale from './partners/partners-moonwhale.png';
-import PartnersPolygonNetwork from './partners/partners-polygon-network.png';
 import PartnersRedKite from './partners/partners-red-kite.png';
-import PartnersTdefi from './partners/partners-tdefi.png';
-import PartnersTwinApexCapital from './partners/partners-twin-apex-capital.png';
-import PartnersVulcanForged from './partners/partners-vulcan-forged.png';
+import PartnersCryptoBanter from './partners/partners-crypto-banter.png';
+import PartnersDwfLabs from './partners/partners-dwf-labs.png';
+import PartnersGateLabs from './partners/partners-gate-labs.png';
+import PartnersKucoin from './partners/partners-kucoin.png';
 import RoadmapImg1 from './roadmap/roadmap-img-1.jpg';
 import ExchangeKuCoin from './exchange/kucoin.jpg';
 import ExchangePancakeswap from './exchange/pancake-swap.jpg';
@@ -85,13 +82,14 @@ import ZoroSwordMan from './zoro-sword-man.png';
 import LogoHighRes from './logo-high-res.png';
 import LogoSpinner from './logo-spinner.svg';
 import RoadmapImage from './roadmap_image.jpg';
+import constructionSignPost from './construction-sign-post.png';
 
 export {
     LogoRed,
     LogoWhite,
     HamburgerButton,
-    FeatureImgEcosystem,
-    FeatureImgMetaverse,
+    FeatureImgDigitalAssets,
+    FeaturePlayEarn,
     FeatureImgOmniverse,
     GameplayImgGame,
     GameplayImgPickDrop,
@@ -122,21 +120,18 @@ export {
     CountIcon2,
     CountIcon3,
     BgSpiral,
-    PartnersArcadenetwork,
     PartnersAu21Capital,
     PartnersBullPerks,
     PartnersCcixGlobal,
-    PartnersEquinux,
     PartnersGrizzlyCapital,
-    PartnersGrowStudio,
     PartnersMangusCapital,
     PartnersMavenCapital,
     PartnersMoonwhale,
-    PartnersPolygonNetwork,
     PartnersRedKite,
-    PartnersTdefi,
-    PartnersTwinApexCapital,
-    PartnersVulcanForged,
+    PartnersCryptoBanter,
+    PartnersDwfLabs,
+    PartnersGateLabs,
+    PartnersKucoin,
     RoadmapImg1,
     ExchangeKuCoin,
     ExchangePancakeswap,
@@ -173,4 +168,5 @@ export {
     LogoHighRes,
     LogoSpinner,
     RoadmapImage,
+    constructionSignPost,
 }
