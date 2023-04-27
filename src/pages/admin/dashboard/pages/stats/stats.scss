@@ -6,21 +6,15 @@
   display: grid;
   grid-template-columns: 50% 50%;
   border: 1px solid $primary-blue-hover;
-  border-radius: 6px;
+  border-radius: 0 0 10px 10px;
   text-align: center;
   margin: auto;
   overflow: hidden;
   p{
     margin: 6px 0;
   }
-  .websites{
-    border-radius: 10px 0 0 10px;
-  }
-  .prototypes{
-    border-radius: 0 10px 10px 0;
-  }
   .active{
-    background-color: $primary-card;
+    background-color: $bar-pourple;
     transition: 0.3s ease;
     box-shadow: 0 3px 10px 0 $black-faint3;
     pointer-events: none;
@@ -30,7 +24,7 @@
     }
   }
   .dormant{
-    color: $primary-card;
+    color: $bar-pourple;
     transition: 0.3s ease;
     cursor: pointer;
   }

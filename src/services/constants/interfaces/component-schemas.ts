@@ -6,7 +6,7 @@ export interface IsinButton {
     children: any;
     style?: object;
     className?: string;
-    size?: 'slim' | 'small' | 'mid' | 'big';
+    size?: 'slim' | 'small' | 'slim-mid' | 'mid' | 'big';
     tint?: 'red' | 'blue';
     fill?: boolean
     disabled?: boolean

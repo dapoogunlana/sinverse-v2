@@ -1,0 +1,24 @@
+@import '../../../../../assets/styles/variables.scss';
+
+
+.market-place{
+    background-image: linear-gradient(#080015, #3D1141, #080015);
+    color: $white;
+    .link{
+        font-weight: 700;
+        color: #d089ff;
+    }
+}
+.under-construction-popup{
+    max-width: 450px !important;
+    .modal-content{
+        color: $white;
+        width: 100%;
+    }
+    .team-card{
+        width: 100%;
+        .sin-card{
+            padding: 0.8em;
+        }
+    }
+}

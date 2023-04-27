@@ -6,8 +6,8 @@
         display: block;
     }
     .bar-link{
-        border-radius: 5px;
-        border: 1.5px dashed $white-faint2;
+        border-radius: 0 0 10px 10px;
+        border: 1.5px solid $white-faint4;
         padding: 10px;
         width: 100%;
         background-color: $white-faint4;
@@ -16,7 +16,7 @@
         margin-top: 1em;
         text-align: center;
         &:hover{
-            border: 1.5px dashed $white-faint1;
+            border: 1.5px solid $white-faint3;
             background-color: $white-faint3;
             color: $white;
         }
@@ -24,7 +24,7 @@
     .selected{
         background-color: $white;
         border: 1.5px solid $white;
-        color: $primary-blue-hover;
+        color: $bar-pourple;
         font-weight: 500;
         pointer-events: none;
     }

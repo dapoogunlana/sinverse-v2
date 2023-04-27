@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Logo, RegImg, WhiteAngleBackdrop } from '../../../assets/images';
+import { LogoHighRes } from '../../../assets/images/new';
 import AdminLoginForm from '../../../components/block-components/admin-login-form/login-form';
 
 import AdminFooter from '../../../layout/admin/footer/admin-footer';
@@ -19,11 +20,11 @@ function AdminLogin() {
         <div className='slant-holder'>
           <img src={WhiteAngleBackdrop} alt="" />
         </div>
-        <div className='header-spacer'></div>
+        {/* <div className='header-spacer'></div> */}
         <div className=''>
-          <div className='w60 max200 imh'>
+          <div className='w60 max125 imh pt-4'>
             <Link to={routeConstants.home}>
-              <img src={Logo} alt="" />
+              <img src={LogoHighRes} alt="" />
             </Link>
           </div>
         </div>

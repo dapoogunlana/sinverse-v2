@@ -40,4 +40,33 @@ export const landTypesInfo = [
         `,
         active: false,
     },
+    {
+        name: 'Districts & Land ownership',
+        image: LandsRoads,
+        info: `
+        SinVerse has 15,000 plots of land spread over 17 districts, each with unique resources to improve your character's stats 
+        and earn SIN tokens. Landowners benefit from farming in-game items and have the ability to build their own kingpin 
+        headquarters with the building tools provided. 
+        <br/><br/>
+        Security zones determine the risk level: high-security zones offer minimal rewards but complete safety, low-security 
+        zones have moderate risks and higher rewards, and zero-security zones have no rules, laws, or safety, but high rewards 
+        for those brave enough to venture in.
+        `,
+        active: false,
+    },
+    {
+        name: 'Business Licences',
+        image: LandsRoads,
+        info: `
+        Owning and operating a business inside the metaverse should be the ultimate end goal for any future kingpin!
+        <br/><br/>
+        If you’re a landowner within the SinVerse, owning either a premium or exclusive business license in the form of NFTs, 
+        which will allow you to create a real passive income-generating business, ranging from a virtual pet shop to a casino. 
+        <br/><br/>
+        Through meta agreement mechanisms, you can also lease your land and business to fellow game enthusiasts and let them do 
+        the heavy lifting, whilst benefiting from profit sharing agreements.
+        
+        `,
+        active: false,
+    },
 ];

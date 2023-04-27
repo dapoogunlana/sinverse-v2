@@ -28,6 +28,7 @@
      token: 'token',
      documents: 'documents',
      download: 'download',
+     downloadInstructions: 'download-instructions',
      gameInfo: 'game-info',
      staking: 'staking',
      districtReveal: 'district-reveal',

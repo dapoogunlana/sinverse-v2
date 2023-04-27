@@ -9,6 +9,7 @@ import Features from './page-modules/features/features';
 import LandTypes from './page-modules/land-types/land-types';
 import Roadmap from './page-modules/roadmap/roadmap';
 import Partners from './page-modules/partners/partners';
+import MarketPlace from './page-modules/marketplace/marketplace';
 
 function About(props: any) {
 
@@ -24,6 +25,7 @@ function About(props: any) {
       <KuCoinSpace/>
       <Features/>
       <LandTypes/>
+      {/* <MarketPlace/> */}
       <Roadmap/>
       <LatestNews/>
       <Partners/>

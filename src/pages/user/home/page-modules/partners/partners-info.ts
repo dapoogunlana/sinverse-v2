@@ -1,33 +1,20 @@
 import {
-    PartnersVulcanForged,
-    PartnersTdefi,
     PartnersMavenCapital,
     PartnersMangusCapital,
     PartnersGrizzlyCapital,
     PartnersCcixGlobal,
     PartnersMoonwhale,
     PartnersAu21Capital,
-    PartnersTwinApexCapital,
-    PartnersGrowStudio,
-    PartnersEquinux,
-    PartnersArcadenetwork,
-    PartnersPolygonNetwork,
+    PartnersCryptoBanter,
+    PartnersDwfLabs,
+    PartnersGateLabs,
+    PartnersKucoin,
     PartnersBullPerks,
     PartnersRedKite,
 } from "../../../../../assets/images/new";
 
 
 export const partnerList = [
-    {
-        name: 'Vulcan Forged',
-        image: PartnersVulcanForged,
-        link: '',
-    },
-    {
-        name: 'Tdefi',
-        image: PartnersTdefi,
-        link: '',
-    },
     {
         name: 'Maven Capital',
         image: PartnersMavenCapital,
@@ -59,28 +46,23 @@ export const partnerList = [
         link: '',
     },
     {
-        name: 'Twin Apex Capital',
-        image: PartnersTwinApexCapital,
+        name: 'CryptoBanter',
+        image: PartnersCryptoBanter,
         link: '',
     },
     {
-        name: 'Grow Studio',
-        image: PartnersGrowStudio,
+        name: 'DWF Labs',
+        image: PartnersDwfLabs,
         link: '',
     },
     {
-        name: 'Equinux',
-        image: PartnersEquinux,
+        name: 'Gate Labs',
+        image: PartnersGateLabs,
         link: '',
     },
     {
-        name: 'Arcade Network',
-        image: PartnersArcadenetwork,
-        link: '',
-    },
-    {
-        name: 'Polygon Network',
-        image: PartnersPolygonNetwork,
+        name: 'KuCoin',
+        image: PartnersKucoin,
         link: '',
     },
     {

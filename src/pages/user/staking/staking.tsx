@@ -132,6 +132,13 @@ function Staking(props: any) {
                     token's value and price stability. Overall, Sinverse staking is an important tool for users looking to earn 
                     rewards and participate in the governance of the Sinverse DAO.
                   </p>
+                  <p className='font-weight-bold mb-1'>Sustainable Staking Rewards</p>
+                  <p className='reduced mb-4'>
+                    Staking rewards in SinVerse are governed by a DAO and are earned by landowners who actively promote the 
+                    game. These rewards are generated through initial in-game asset sales on the NFT Marketplace, future 
+                    royalties, and faction taxes, creating a self-recycling profit-share opportunity for those who contribute 
+                    to the ecosystem's growth.
+                  </p>
                   <div className="icon-sect pt-4 pb-3">
                     <div className="spread-info mt-3 media-icons footer-topic-height">
                         <a href={socialLinks.telegram} target="_blank" rel="noreferrer"><i className="fab fa-telegram-plane increased-x"></i></a>

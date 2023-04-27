@@ -29,7 +29,7 @@ function LandTypes() {
 
   return (
     <div className='land-types'>
-      <h2 className='text-center pt-3'>Land Types</h2>
+      <h2 className='text-center pt-3'>Land and Business Licences</h2>
       <div className='type-holder'>
         <div className='type-case' id="type-case">
           <div className='types'>
@@ -57,7 +57,7 @@ function LandTypes() {
       </div>
       <div className='active-info'>
         <h6>{activeInfo.name}</h6>
-          <p className=''>{activeInfo.info}</p>
+          <p className='' dangerouslySetInnerHTML={{__html: activeInfo.info}}></p>
       </div>
       <SeparationLine stickBottom></SeparationLine>
     </div>

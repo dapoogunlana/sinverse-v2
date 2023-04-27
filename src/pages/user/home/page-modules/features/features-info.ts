@@ -1,46 +1,40 @@
 
 
-import { FeatureImgMetaverse, FeatureImgEcosystem, FeatureImgOmniverse } from '../../../../../assets/images/new';
+import { FeaturePlayEarn, FeatureImgDigitalAssets, FeatureImgOmniverse } from '../../../../../assets/images/new';
 
 export const features = [
     {
-        name: 'Metaverse',
-        image: FeatureImgMetaverse,
+        name: 'Play and Earn',
+        image: FeaturePlayEarn,
         info: `
-            Sinverse originally begins as an undeveloped digital real estate with 15,000 parcels of land. As Sinverse 
-            development kicks-off following the blueprint of the virtual city, the built Urban environment begins to 
-            spring up. Anyone can purchase and own one or more parcel(s) of land in the city and develop them using SDK 
-            kits provided in the development arena. We have partnered with Vulcan Verse to help develop the game, using 
-            state of the art virtual reality technology; including the creation of a VR casino. In addition to this, the 
-            platform will be built on Matic Network, an existing Vanilla Network partner, allowing for high speed & low 
-            cost transactions.
+            SinVerse is a player-driven economy where individuals and factions compete for SIN GOLD coins, the in-game currency, 
+            through activities like organized crime, smuggling, and other illicit ventures. These coins can be exchanged for SIN 
+            Tokens at variable rates, blockchain-based tokens that are usable for a range of in-game transactions, including the 
+            acquisition of NFT-based business licenses and unique in-game items such as clothing, weapons, and transportation. 
+            This innovative "play-to-earn" ecosystem offers players the opportunity to earn real-world value from their in-game 
+            activities.
         `,
     },
     {
-        name: 'Gaming Ecosystem',
-        image: FeatureImgEcosystem,
+        name: 'Digital Real Estate & In-game assets',
+        image: FeatureImgDigitalAssets,
         info: `
-            The Sinverse native game is a 3D action thriller game, which albeit fictional, is set and modeled after some 
-            of the most controversial crime cities across the world. The play-to-earn game will be laced with violence and 
-            gore bidding to become the ultimate Kingpin whilst building your empire. This will be built with realistic 
-            imagery along with voice & text chat features with intent to pull players into an augmented reality space. The 
-            game will be developed by the legendary Vulcan Verse development team with support from other game development 
-            partners. Ultimate aim of gamers will be to conquer & control Sinverse and be designated as the ultimate Kingpin, 
-            until the next conquerors emerge.
+            SinVerse offers digital land ownership in its 17 unique districts, with each district having its own characteristics. 
+            Through blockchain technology, players can set up businesses, stimulate the economy, and create a customizable and 
+            entrepreneurial environment. A general business license is automatically granted to all SinVerse landowners, allowing 
+            them to develop businesses on their property. To activate a business license, players must own land in the specific 
+            district assigned to that license.
         `,
     },
     {
         name: 'Omniverse',
         image: FeatureImgOmniverse,
         info: `
-            Sinverse architecture is designed to provide a base platform for other limited partners to host their projects 
-            inside the vast Metaverse arena. Therefore, this effectively makes Sinverse an Omniverse offering the rights to 
-            host partnering projects inside the virtual world. This goes beyond onboarding high impact and scalable projects 
-            but also includes providing land in a suitable destination to host these projects. Vanilla Network, Act it Out, 
-            Drife and Sugar Bounce are some of the early projects that have passed a rigorous qualification process to be 
-            onboarded into the Sinverse. The synergy of these projects and their capability with a Rated-R Metaverse creates 
-            cross marketing opportunities, technology exchange and cross border relationships of various communities. 
-            Resulting in a huge ecosystem of development partners and an increased number of users inside the Sinverse.
+            SinVerse is a cutting-edge virtual world that enables limited partners to host their projects within a vast Metaverse 
+            arena, effectively creating an Omniverse. Beyond onboarding high-impact and scalable projects, SinVerse also offers 
+            suitable land locations for hosting them. Our partners, including Cashaa Bank, DWF Labs, KuCoin, and Sugar Bounce. 
+            The synergy between these projects and their capabilities in a Rated-R Metaverse creates incredible opportunities for 
+            cross-marketing, technology exchange, and community building.
         `,
     },
 ];

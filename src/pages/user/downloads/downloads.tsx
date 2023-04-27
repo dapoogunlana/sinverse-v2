@@ -6,6 +6,8 @@ import SeparationLine from '../../../components/base-components/separation-line/
 import SinCard from '../../../components/base-components/sin-card/sin-card';
 import './downloads.scss';
 import SinButton from '../../../components/base-components/sin-button/sin-button';
+import { Link } from 'react-router-dom';
+import { routeConstants } from '../../../services/constants/route-constants';
 
 function Downloads(props: any) {
 
@@ -35,6 +37,11 @@ function Downloads(props: any) {
                 The patches and updates are official upgrades created by game developers that eliminate bugs and introduce new 
                 gameplay features. For best experience, ensure you download the current version.
               </p>
+              <Link to={`/${routeConstants.downloadInstructions}`}>
+                <SinButton tint='blue' className='mt-3'>
+                  Requirments and Instructions
+                </SinButton>
+              </Link>
             </div>
             <div className='im-case'>
               <div className='structure'>

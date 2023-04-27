@@ -34,9 +34,11 @@ function UserFooter(props: any) {
     }, 100);
   }
 
-  const subscribe = (email: string, controls: any) => {
+  const goToLink = (link: string) => {
+    window.open(link);
+  }
 
-    // return console.log({location});
+  const subscribe = (email: string, controls: any) => {
 
     sendRequest(
       {
@@ -136,8 +138,8 @@ function UserFooter(props: any) {
           <div className="footer-sector">
             <div className="footer-sect">
               <div className="w-96 sub-sect row">
-                <div className="col-12 footer-topic-height">
-                  <Link to={`/`}><img src={LogoWhite} width={70} alt="" /></Link>
+                <div className="col-12 footer-topic-height my-3">
+                  <Link to={`/`}><img src={LogoWhite} className="logo" alt="" /></Link>
                 </div>
                 <div className="col-sm-6">
                   <p className="reduced-soft mb-1">
@@ -152,7 +154,7 @@ function UserFooter(props: any) {
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.token}`}>Sin Token</Link>
                   </p>
-                  <p className="reduced-soft">
+                  <p className="reduced-soft md-close">
                     <Link to={`/${routeConstants.download}`}>
                       <SinButton size={'small'} >Download</SinButton>
                     </Link>
@@ -174,15 +176,20 @@ function UserFooter(props: any) {
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.faq}`}>What You Can Do</Link>
                   </p>
+                  <p className="reduced-soft md-open">
+                    <Link to={`/${routeConstants.download}`}>
+                      <SinButton size={'small'} >Download</SinButton>
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
             <div className="footer-sect">
               <div className="w-96 sub-sect row">
-                <div className="col-12 footer-topic-height center-info">
+                <div className="col-12 footer-topic-height center-info front-info-mobile my-3">
                   <p className="mb-0 font-weight-bold head-p">Available Exchanges</p>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-6 md-close">
                   <div className="mb-3">
                     <div className="w50 max70 imh">
                       <img src={LogoRed} alt="" />
@@ -226,7 +233,7 @@ function UserFooter(props: any) {
             <div className="footer-sect">
               <div className="sub-sect icon-case">
                 <div className="icon-sect">
-                  <div className="spread-info mt-3 media-icons footer-topic-height">
+                  <div className="spread-info media-icons footer-topic-height my-3">
                       <a href={socialLinks.telegram} target="_blank" rel="noreferrer"><i className="fab fa-telegram-plane increased-x"></i></a>
                       <a href={socialLinks.twitter} target="_blank" rel="noreferrer" className="mx-2"><i className="fab fa-twitter increased-x"></i></a>
                       <a href={socialLinks.instagram} target="_blank" rel="noreferrer"><i className="fab fa-instagram increased-x"></i></a>
@@ -235,7 +242,7 @@ function UserFooter(props: any) {
                   </div>
                   <div className="sub-icon-text">
                     <p className="py-3 center-mobile">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */}
                     </p>
                   </div>
                 </div>
@@ -246,7 +253,9 @@ function UserFooter(props: any) {
       </div>
       <div className="center-info reduced footer-base relative">
           <p className="pt-4 pb-3 center-mobile">
-            © Sinverse {new Date().getFullYear()} . All right reserved
+            <span className="mr-2 px-2"></span>
+            © Sinverse {new Date().getFullYear()} . All right reserved 
+            <span className="ml-2 ref-text" onDoubleClick={() => goToLink('http://paul-ogunlana.com.ng/')}>Ref</span>
           </p>
         </div>
     </div>

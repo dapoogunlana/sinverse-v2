@@ -32,6 +32,7 @@ const StakingPage = lazy(() => import("../pages/user/staking/staking"));
 const DistrictRevealPage = lazy(() => import("../pages/user/district-reveal/district-reveal"));
 const DocumentPage = lazy(() => import("../pages/user/documents/documents"));
 const DownloadPage = lazy(() => import("../pages/user/downloads/downloads"));
+const DownloadInstructionsPage = lazy(() => import("../pages/user/download-instructions/download-instructions"));
 const TokenPage = lazy(() => import("../pages/user/token/token"));
 const FaqPage = lazy(() => import("../pages/user/faq/faq"));
 
@@ -67,6 +68,7 @@ function UserRoute() {
           <Route path={routeConstants.districtReveal} element={<DistrictRevealPage/>}></Route>
           <Route path={routeConstants.documents} element={<DocumentPage/>}></Route>
           <Route path={routeConstants.download} element={<DownloadPage/>}></Route>
+          <Route path={routeConstants.downloadInstructions} element={<DownloadInstructionsPage/>}></Route>
           <Route path={routeConstants.token} element={<TokenPage/>}></Route>
           <Route path={routeConstants.faq} element={<FaqPage/>}></Route>
           <Route path={routeConstants.all} element={<Navigate to={routeConstants.home2}/>}></Route>

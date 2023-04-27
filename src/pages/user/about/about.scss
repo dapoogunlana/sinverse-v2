@@ -141,6 +141,18 @@
                 color: $white-faint2;
                 font-style: italic;
             }
+            .scrollable{
+                max-height: 40vh;
+                overflow: auto;
+                @include mediaM(750px) {
+                    max-height: 37vh;
+                }
+                a{
+                    font-size: 1em;
+                    font-weight: 500;
+                    color: rgb(122, 217, 255);
+                }
+            }
             .links{
                 width: 100%;
                 text-align: center;

@@ -8,13 +8,13 @@
     color: $white;
     .partner-list-grid{
         width: 90%;
-        max-width: 1200px;
+        max-width: 1100px;
         margin: auto;
         padding: 1em 0;
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        @include mediaM(950px) {
-            grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 25% 25% 25% 25%;
+        @include mediaM(750px) {
+            grid-template-columns: 50% 50%;
         }
         @include mediaM(550px) {
             display: none;
@@ -22,7 +22,7 @@
     }
     .partner-case{
         width: 90%;
-        max-width: 230px;
+        max-width: 260px;
         margin: 0.7em auto;
         img{
             width: 100%;

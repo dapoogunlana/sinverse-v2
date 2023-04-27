@@ -8,7 +8,7 @@ function SubSpace() {
         <div className='row'>
           <div className='col-lg-5 col-md-6 py-4 center-info'>
                 <div className='w96 py-3'>
-                  <p className='text'>
+                  {/* <p className='text'>
                     Sinverse is the first R-Rated Mafia Metaverse built on the blockchain. It’s an underworld MMPORG action 
                     thriller game that combines the exhilarating action of Grand Theft Auto and Eve Online but goes much 
                     further to enable gamers to have complete ownership and control of their in-game assets ranging from real 
@@ -20,6 +20,16 @@ function SubSpace() {
                     build a working player run economy (PRE). If you are an avid gamer and your opium is career gaming,  then 
                     Sinverse is what you have been looking for. Enjoy the thrill of War & dominance as you battle your way to 
                     the top!
+                  </p> */}
+                  <p className='font-weight-bold increased-x'>Become Rich. Become Infamous. Become a Kingpin.</p>
+                  <p className='text'>
+                    Welcome to SinVerse, the ultimate multiplayer game for fans of Mafia games who want an even more immersive 
+                    and interactive experience. In SinVerse, you'll join a thriving player-run economy where every decision you 
+                    make can make or break your criminal empire. Rise to the top and become the ultimate kingpin, building a 
+                    criminal empire that's the envy of your rivals. But beware - in SinVerse, danger lurks around every corner, 
+                    and you'll need to be smart, ruthless, and cunning to survive. 
+                    <br /><br />
+                    Do you have what it takes to rule the underworld? Join us now and find out.
                   </p>
                 </div>
           </div>

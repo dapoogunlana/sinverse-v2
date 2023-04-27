@@ -716,6 +716,10 @@
 .maxh-40 {
   max-height: 40vh;
 }
+.maxh-40a {
+  max-height: 40vh;
+  overflow: auto;
+}
 .maxh-45 {
   max-height: 45vh;
 }
@@ -1644,27 +1648,27 @@
 }
 
 .hollow-button {
-  @include hollow-button($primary-blue, $primary-blue, 15px, 5px, 1em);
+  @include hollow-button($white, $primary-purple, 15px, 5px, 1em);
   border-radius: 15px;
 }
 .hollow-button-b {
-  @include hollow-button($primary-blue, $primary-blue, 25px, 5px, 1em);
+  @include hollow-button($white, $primary-purple, 25px, 5px, 1em);
   border-radius: 15px;
 }
 .hollow-button-c {
-  @include hollow-button($primary-blue, $primary-blue, 45px, 5px, 1em);
+  @include hollow-button($white, $primary-purple, 45px, 5px, 1em);
   border-radius: 15px;
 }
 .hollow-button-2 {
-  @include hollow-button($primary-blue, $primary-blue, 15px, 10px, 1em);
+  @include hollow-button($white, $primary-purple, 15px, 10px, 1em);
   border-radius: 15px;
 }
 .hollow-button-2b {
-  @include hollow-button($primary-blue, $primary-blue, 25px, 10px, 1em);
+  @include hollow-button($white, $primary-purple, 25px, 10px, 1em);
   border-radius: 15px;
 }
 .hollow-button-2cb {
-  @include hollow-button($primary-blue, $primary-blue, 45px, 10px, 1em);
+  @include hollow-button($white, $primary-purple, 45px, 10px, 1em);
   border-radius: 15px;
   transition: 0.3s ease;
   color: $black;
@@ -1672,25 +1676,25 @@
 }
 
 .solid-button {
-  @include solid-button($primary-blue, $primary-blue-hover, 15px, 5px, 1em);
+  @include solid-button($primary-purple, $primary-purple-active, 15px, 5px, 1em);
 }
 .solid-button-b {
-  @include solid-button($primary-blue, $primary-blue-hover, 25px, 5px, 1em);
+  @include solid-button($primary-purple, $primary-purple-active, 25px, 5px, 1em);
 }
 .solid-button-c {
-  @include solid-button($primary-blue, $primary-blue-hover, 45px, 5px, 1em);
+  @include solid-button($primary-purple, $primary-purple-active, 45px, 5px, 1em);
 }
 
 .solid-button-2 {
-  @include solid-button($primary-blue, $primary-blue-hover, 15px, 10px, 1em);
+  @include solid-button($primary-purple, $primary-purple-active, 15px, 10px, 1em);
   border-radius: 9px;
 }
 .solid-button-2b {
-  @include solid-button($primary-blue, $primary-blue-hover, 25px, 10px, 1em);
+  @include solid-button($primary-purple, $primary-purple-active, 25px, 10px, 1em);
   border-radius: 9px;
 }
 .solid-button-2c {
-  @include solid-button($primary-blue, $primary-blue-hover, 45px, 10px, 1em);
+  @include solid-button($primary-purple, $primary-purple-active, 45px, 10px, 1em);
   border-radius: 9px;
 }
 
@@ -2147,6 +2151,9 @@
       color: $primary-blue-hover;
     }
   }
+}
+.ref-text{
+  opacity: 0.05 !important;
 }
 .form-card {
   label {

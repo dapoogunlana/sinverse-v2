@@ -1,0 +1,30 @@
+@import "../../../assets/styles/variables.scss";
+
+.download-instructions{
+    color: $white;
+    background-image: url(../../../assets/images/new/roadmap-bg-plain.jpg);
+    .other-sect{
+        position: relative;
+        background-image: linear-gradient(45deg, #0A0011, rgba(24, 7, 75, 0.9), #0A0011, rgba(24, 7, 75, 0.9), #0A0011, rgba(24, 7, 75, 0.9), #0A0011, rgba(24, 7, 75, 0.9), #0A0011, rgba(24, 7, 75, 0.9));
+        overflow: hidden;
+    }
+    .radial-cover{
+        position: absolute;
+        left: 0;
+        top: -20%;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(#240089, rgba(0, 0, 0, 0) 80%);
+    }
+    .list-sect{
+        border-radius: 17px;
+        padding: 0.8em;
+        border: 1px dashed #17c9ff;
+        background-color: rgba(74, 125, 255, 0.3);
+    }
+    .space-top-web{
+        @include mediaW(768px){
+            margin-top: 7em;
+        }
+    }
+}

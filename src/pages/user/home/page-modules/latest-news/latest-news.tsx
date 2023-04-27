@@ -20,12 +20,12 @@ function LatestNews(props: any) {
     navigate(`/${routeConstants.industryNews}/${news.id}?${convertStringForUrl(news.title)}`);
   }
   
-  const previewCount = () => {
+  const previewCount = (slideLength: number) => {
     const width = window.innerWidth;
     if(width > 991) {
-      return 3;
+      return 3 <= slideLength ? 3 : slideLength;
     } else if(width > 767) {
-      return 2;
+      return 2 <= slideLength ? 2 : slideLength;
     } else {
       return 1;
     }
@@ -94,23 +94,22 @@ function LatestNews(props: any) {
   },[currentNewsList]);
   
   return (
+    imageSlide.length > 0 ?
     <div className='latest-news pt-5'>
       <div className='w96 max1200 py-4'>
         <h3 className='text-center'>Latest News</h3>
-        {
-          imageSlide.length > 0 &&
           <Carousel
             loop
             autoPlay
             delay={6000}
             freeMode
-            slidesPerView={previewCount()}
+            slidesPerView={previewCount(imageSlide.length)}
             spaceBetween={0}
             data={imageSlide}
           />
-        }
       </div>
-    </div>
+    </div> :
+    <></>
   );
 }
 

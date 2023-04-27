@@ -20,20 +20,19 @@
         .type-case{
             overflow: auto;
             width: 100%;
-            max-width: 1100px;
+            max-width: 1300px;
             .types{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                // width: 750px;
-                width: 100%;
+                width: 1500px;
                 margin: auto;
                 @include mediaM (790px){
                     justify-content: center;
-                    width: 750px;
+                    width: 1125px;
                 }
                 @include mediaM (650px){
-                    width: 580px;
+                    width: 1000px;
                 }
                 .type{
                     width: 220px;
@@ -50,18 +49,22 @@
                         padding: 8px;
                     }
                     @include mediaM (490px){
-                        width: 110px;
+                        width: 150px;
                         margin: 0.8em;
                     }
                     img{
                         width: 100%;
                         cursor: pointer;
                         border: 1.6px solid $white-faint1;
-                        border-radius: 2px;
+                        border-radius: 5px;
                     }
                     p{
                         margin-bottom: 0;
                         padding-top: 0.5em;
+                        min-height: 58px;
+                        @include mediaM (490px){
+                            min-height: 46.5px;
+                        }
                     }
                     &:hover{
                         transform: rotate(5deg) scale(1.05);
@@ -72,6 +75,9 @@
                     box-shadow: 5px 9px 15px 0 rgba(0, 0, 0, 0.25);
                     pointer-events: none;
                     transform: scale(1.1);
+                    &:hover{
+                        transform: rotate(0) scale(1.1);
+                    }
                 }
             }
         }
@@ -95,9 +101,15 @@
                     color: $white;
                 }
             }
-            @include mediaW(790px) {
-                display: none;
-            }
+            @include mediaW(950px) {
+                left: -0.4%;
+                width: 100%;
+                div{
+                    i{
+                        font-size: 2.3em;
+                    }
+                }
+                }
         }
     }
     .active-image{

@@ -29,7 +29,7 @@
     }
   }
   .logo {
-    width: 90px;
+    width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@
     }
   }
   .logo-mini {
-    width: 60px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -548,15 +548,26 @@
     }
   }
   .footer-topic-height{
-    height: 87px;
+    height: 48px;
+    .logo{
+      width: 130px;
+    }
     @include mediaM(550px) {
       height: auto;
       padding-top: 1.4em;
       padding-bottom: 0.4em;
+      .logo{
+        width: 100px;
+      }
     }
   }
   .head-p{
     width: 80%;
+  }
+  .front-info-mobile{
+    @include mediaM(550px) {
+      justify-content: flex-start;
+    }
   }
   .exchange-sect{
     display: flex;
@@ -569,7 +580,7 @@
       opacity: 0.9;
       cursor: pointer;
       &:hover {
-        opacity: 0.6;
+        color: $white-faint1;
         text-decoration: none;
       }
     }
