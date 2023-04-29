@@ -1,4 +1,4 @@
-import { ExchangeGateIo, ExchangeKuCoin, ExchangeMXC, ExchangePancakeswap, LogoWhite } from "../../../assets/images/new";
+import { LogoWhiteRound as LogoWhite } from "../../../assets/images/new";
 
 
 export const stakingList1 = [

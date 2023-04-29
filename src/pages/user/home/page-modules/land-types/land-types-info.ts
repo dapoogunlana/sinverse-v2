@@ -5,6 +5,8 @@ import {
     LandsDistrict,
     LandsPublic,
     LandsRoads,
+    LandsDistrictOwnership,
+    LandsLicences,
 } from '../../../../../assets/images/new';
 
 export const landTypesInfo = [
@@ -16,14 +18,14 @@ export const landTypesInfo = [
         `,
         active: false,
     },
-    {
-        name: 'District Lands',
-        image: LandsDistrict,
-        info: `
-            District lands in SINverse are owned and managed by groups of players who have formed districts. These lands can be used for various purposes, including communal activities, business operations, or cultural events. The importance of district lands lies in the fact that they provide a means for players to come together and collaborate on shared goals, while also promoting the diversity of the game world through the creation of unique districts with distinct cultural identities.
-        `,
-        active: false,
-    },
+    // {
+    //     name: 'District Lands',
+    //     image: LandsDistrict,
+    //     info: `
+    //         District lands in SINverse are owned and managed by groups of players who have formed districts. These lands can be used for various purposes, including communal activities, business operations, or cultural events. The importance of district lands lies in the fact that they provide a means for players to come together and collaborate on shared goals, while also promoting the diversity of the game world through the creation of unique districts with distinct cultural identities.
+    //     `,
+    //     active: false,
+    // },
     {
         name: 'Public Lands',
         image: LandsPublic,
@@ -42,30 +44,17 @@ export const landTypesInfo = [
     },
     {
         name: 'Districts & Land ownership',
-        image: LandsRoads,
+        image: LandsDistrictOwnership,
         info: `
-        SinVerse has 15,000 plots of land spread over 17 districts, each with unique resources to improve your character's stats 
-        and earn SIN tokens. Landowners benefit from farming in-game items and have the ability to build their own kingpin 
-        headquarters with the building tools provided. 
-        <br/><br/>
-        Security zones determine the risk level: high-security zones offer minimal rewards but complete safety, low-security 
-        zones have moderate risks and higher rewards, and zero-security zones have no rules, laws, or safety, but high rewards 
-        for those brave enough to venture in.
+            Welcome to SinVerse, a metaverse with 17 unique districts and 15 plots of land, each offering a distinct environment for your virtual world. As a player, you can acquire land through gameplay or direct purchases on the marketplace. Each plot has its own characteristics, allowing you to farm in-game items, construct buildings and build businesses. You can choose from high-security zones for complete safety to zero-security zones with high rewards but no rules or safety. SinVerse's land ownership provides a range of benefits, from earning rewards to creating passive income-generating businesses.
         `,
         active: false,
     },
     {
         name: 'Business Licences',
-        image: LandsRoads,
+        image: LandsLicences,
         info: `
-        Owning and operating a business inside the metaverse should be the ultimate end goal for any future kingpin!
-        <br/><br/>
-        If you’re a landowner within the SinVerse, owning either a premium or exclusive business license in the form of NFTs, 
-        which will allow you to create a real passive income-generating business, ranging from a virtual pet shop to a casino. 
-        <br/><br/>
-        Through meta agreement mechanisms, you can also lease your land and business to fellow game enthusiasts and let them do 
-        the heavy lifting, whilst benefiting from profit sharing agreements.
-        
+            Operating a business in SinVerse is a vital aspect of the game, and as a landowner, you can obtain premium or exclusive business licenses in the form of NFTs to create businesses that generate real passive income. The possibilities are endless, from virtual pet shops to casinos. You can also lease your land and businesses to fellow gamers and benefit from profit-sharing agreements. Business licenses in SinVerse provide a unique opportunity to earn rewards and contribute to the ecosystem's growth.
         `,
         active: false,
     },

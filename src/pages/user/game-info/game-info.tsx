@@ -4,8 +4,10 @@ import {
   GameInfoBanner,
   DownloadIntro,
   CorporateKnifeMan,
-  MaskedAssasin,
-  ZoroSwordMan,
+  GameInfoPlayerEconomy,
+  GameInfoBusinessLincences,
+  GameInfoExpansion,
+  GameInfoSocial,
   LogoHighRes,
   LogoSpinner,
 } from '../../../assets/images/new';
@@ -45,7 +47,7 @@ function GameInfo(props: any) {
           <div className='row'>
             <div className='col-md-6 center-info' data-aos='zoom-in' data-aos-delay='500'>
               <div className='w96 max500 imh py-3'>
-                <img src={DownloadIntro} alt="" />
+                <img src={GameInfoPlayerEconomy} alt="" />
               </div>
             </div>
             <div className='col-md-6 center-info' data-aos='fade-left'>
@@ -69,8 +71,8 @@ function GameInfo(props: any) {
         <div className='w96 max1200 py-4'>
           <div className='row'>
             <div className='col-md-6 center-info md-open' data-aos='zoom-in' data-aos-delay='500'>
-              <div className='w50 max300 imh py-3'>
-                <img src={CorporateKnifeMan} alt="" />
+              <div className='w90 max500 imh py-3'>
+                <img src={GameInfoBusinessLincences} alt="" />
               </div>
             </div>
             <div className='col-md-6 center-info' data-aos='fade-left'>
@@ -88,8 +90,8 @@ function GameInfo(props: any) {
               </div>
             </div>
             <div className='col-md-6 center-info md-close' data-aos='zoom-in' data-aos-delay='500'>
-              <div className='w50 max300 imh py-3'>
-                <img src={CorporateKnifeMan} alt="" />
+              <div className='w90 max500 imh py-3'>
+                <img src={GameInfoBusinessLincences} alt="" />
               </div>
             </div>
           </div>
@@ -100,8 +102,8 @@ function GameInfo(props: any) {
         <div className='w96 max1200 py-4'>
           <div className='row'>
             <div className='col-md-6 center-info' data-aos='zoom-in' data-aos-delay='500'>
-              <div className='w70 max350 imh py-3'>
-                <img src={MaskedAssasin} alt="" />
+              <div className='w80 max450 imh py-3'>
+                <img src={GameInfoExpansion} alt="" />
               </div>
             </div>
             <div className='col-md-6 center-info' data-aos='fade-left'>
@@ -124,8 +126,8 @@ function GameInfo(props: any) {
         <div className='w96 max1200 py-4'>
           <div className='row'>
             <div className='col-md-6 center-info md-open' data-aos='zoom-in' data-aos-delay='500'>
-              <div className='w60 max350 imh py-3'>
-                <img src={ZoroSwordMan} alt="" />
+              <div className='w90 max500 imh py-3'>
+                <img src={GameInfoSocial} alt="" />
               </div>
             </div>
             <div className='col-md-6 center-info' data-aos='fade-left'>
@@ -141,8 +143,8 @@ function GameInfo(props: any) {
               </div>
             </div>
             <div className='col-md-6 center-info md-close' data-aos='zoom-in' data-aos-delay='500'>
-              <div className='w60 max350 imh py-3'>
-                <img src={ZoroSwordMan} alt="" />
+              <div className='w90 max500 imh py-3'>
+                <img src={GameInfoSocial} alt="" />
               </div>
             </div>
           </div>

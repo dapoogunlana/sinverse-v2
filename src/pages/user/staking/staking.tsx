@@ -134,10 +134,12 @@ function Staking(props: any) {
                   </p>
                   <p className='font-weight-bold mb-1'>Sustainable Staking Rewards</p>
                   <p className='reduced mb-4'>
-                    Staking rewards in SinVerse are governed by a DAO and are earned by landowners who actively promote the 
-                    game. These rewards are generated through initial in-game asset sales on the NFT Marketplace, future 
-                    royalties, and faction taxes, creating a self-recycling profit-share opportunity for those who contribute 
-                    to the ecosystem's growth.
+                    At SinVerse, we value our players' contributions, and staking rewards are one way we show our appreciation. 
+                    As a player, you can earn rewards by actively promoting the game, participating in in-game events like 
+                    tournaments and competitions, and holding SIN tokens. These rewards are governed by a DAO and are generated 
+                    through in-game asset sales, future royalties, and faction taxes, creating a self-recycling profit-share 
+                    opportunity. SinVerse's staking rewards ensure players are incentivized to contribute to the game's 
+                    development and growth, creating a sustainable and long-term ecosystem for all players to enjoy.
                   </p>
                   <div className="icon-sect pt-4 pb-3">
                     <div className="spread-info mt-3 media-icons footer-topic-height">

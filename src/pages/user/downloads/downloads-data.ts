@@ -1,11 +1,20 @@
 import { WhitePaper, Doc1, Doc2 } from "../../../assets/files";
-import { DownloadSample1, DownloadSample2, DownloadSample3, DownloadSample4 } from "../../../assets/images/new";
+import {
+    DownloadVersion1_90,
+    DownloadVersion1_87,
+    DownloadVersion1_84,
+    DownloadVersion1_83,
+    DownloadVersion1_80,
+    DownloadVersion1_66,
+    DownloadVersion1_56,
+    DownloadVersion1_22,
+} from "../../../assets/images/new";
 
 
 export const downloadList = [
     {
         version: 'Build Version 1.90',
-        image: DownloadSample1,
+        image: DownloadVersion1_90,
         section: [
             {
                 points: [
@@ -40,7 +49,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.87',
-        image: DownloadSample2,
+        image: DownloadVersion1_87,
         section: [
             {
                 points: [
@@ -88,7 +97,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.84',
-        image: DownloadSample3,
+        image: DownloadVersion1_84,
         section: [
             {
                 points: [
@@ -123,7 +132,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.83',
-        image: DownloadSample4,
+        image: DownloadVersion1_83,
         section: [
             {
                 label: 'Chat/Voice Functionality',
@@ -174,7 +183,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.80',
-        image: DownloadSample1,
+        image: DownloadVersion1_80,
         section: [
             {
                 label: 'Master client is updated when the app goes in the background in order to enhance the playing experience',
@@ -193,7 +202,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.66',
-        image: DownloadSample2,
+        image: DownloadVersion1_66,
         section: [
             {
                 label: 'Squid game integrated. Players can find it on map.',
@@ -224,7 +233,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.56',
-        image: DownloadSample3,
+        image: DownloadVersion1_56,
         section: [
             {
                 label: 'More Stable experience in Pick and Drop driving (Mini Game).',
@@ -251,7 +260,7 @@ export const downloadList = [
     },
     {
         version: 'Build Version 1.22',
-        image: DownloadSample4,
+        image: DownloadVersion1_22,
         section: [
             {
                 label: 'Build Functionality added for plot owners:',

@@ -1,6 +1,7 @@
 
 import LogoRed from './logo-red.png';
 import LogoWhite from './logo-white.svg';
+import LogoWhiteRound from './logo-white.png';
 import HamburgerButton from './icons/Hamburger-Button.svg';
 import FeatureImgDigitalAssets from './feature-img-digital_assets.jpg';
 import FeaturePlayEarn from './feature-img-play_n_earn.jpg';
@@ -19,6 +20,8 @@ import LandsDistrict from './lands-district.jpg';
 import LandsPrivate from './lands-private.jpg';
 import LandsPublic from './lands-public.jpg';
 import LandsRoads from './lands-roads.jpg';
+import LandsDistrictOwnership from './lands-district-ownership.jpg';
+import LandsLicences from './lands-licences.jpg';
 import SINVERSE from './SINVERSE.svg';
 import HeroScrollDownArrow from './icons/hero-scroll-down-arrow.svg';
 import HeroScrollDownCircle from './icons/hero-scroll-down-circle.svg';
@@ -61,6 +64,10 @@ import GameInfoMetaverse from './game-info-metaverse.jpg';
 import GameInfoFaction from './game-info-faction.jpg';
 import GameInfoTools from './game-info-tools.jpg';
 import GameInfoKingpin from './game-info-kingpin.jpg';
+import GameInfoPlayerEconomy from './game-info-player-economy.png';
+import GameInfoBusinessLincences from './game-info-business-lincences.png';
+import GameInfoExpansion from './game-info-expansion.png';
+import GameInfoSocial from './game-info-social.png';
 import DistrictRevealRedlight from './district-reveal-redlight.jpg';
 import DistrictRevealChinaTown from './district-reveal-china-town.jpg';
 import DistrictRevealCartel from './district-reveal-cartel.jpg';
@@ -84,9 +91,19 @@ import LogoSpinner from './logo-spinner.svg';
 import RoadmapImage from './roadmap_image.jpg';
 import constructionSignPost from './construction-sign-post.png';
 
+import DownloadVersion1_90 from './download-versions/Build-version-1.90.jpg';
+import DownloadVersion1_87 from './download-versions/Build-version-1.87.jpg';
+import DownloadVersion1_84 from './download-versions/Build-version-1.84.jpg';
+import DownloadVersion1_83 from './download-versions/Build-version-1.83.jpg';
+import DownloadVersion1_80 from './download-versions/Build-version-1.80.jpg';
+import DownloadVersion1_66 from './download-versions/Build-version-1.66.jpg';
+import DownloadVersion1_56 from './download-versions/Build-version-1.56.jpg';
+import DownloadVersion1_22 from './download-versions/Build-version-1.22.jpg';
+
 export {
     LogoRed,
     LogoWhite,
+    LogoWhiteRound,
     HamburgerButton,
     FeatureImgDigitalAssets,
     FeaturePlayEarn,
@@ -105,6 +122,8 @@ export {
     LandsPrivate,
     LandsPublic,
     LandsRoads,
+    LandsDistrictOwnership,
+    LandsLicences,
     SINVERSE,
     HeroScrollDownArrow,
     HeroScrollDownCircle,
@@ -144,9 +163,13 @@ export {
     DownloadSample3,
     DownloadSample4,
     GameInfoMetaverse,
-    GameInfoFaction,
-    GameInfoTools,
-    GameInfoKingpin,
+    // GameInfoFaction,
+    // GameInfoTools,
+    // GameInfoKingpin,
+    GameInfoPlayerEconomy,
+    GameInfoBusinessLincences,
+    GameInfoExpansion,
+    GameInfoSocial,
     DistrictRevealRedlight,
     DistrictRevealChinaTown,
     DistrictRevealCartel,
@@ -169,4 +192,13 @@ export {
     LogoSpinner,
     RoadmapImage,
     constructionSignPost,
+
+    DownloadVersion1_90,
+    DownloadVersion1_87,
+    DownloadVersion1_84,
+    DownloadVersion1_83,
+    DownloadVersion1_80,
+    DownloadVersion1_66,
+    DownloadVersion1_56,
+    DownloadVersion1_22,
 }

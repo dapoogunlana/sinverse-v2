@@ -20,6 +20,7 @@ export default function CardSwiper(props: IcardSwiper) {
         modules={[EffectCards, Pagination, Navigation]}
         className="card-swiper"
         navigation={true}
+        autoplay={true}
       >
           {
               props.slides.map((item, index) => (
