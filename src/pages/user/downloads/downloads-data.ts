@@ -13,7 +13,7 @@ import {
 
 export const downloadList = [
     {
-        version: 'Build Version 1.90',
+        version: 'Build Version 1.98',
         image: DownloadVersion1_90,
         section: [
             {

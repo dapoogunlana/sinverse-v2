@@ -3,14 +3,16 @@ import { LogoWhiteRound as LogoWhite } from "../../../assets/images/new";
 
 export const stakingList1 = [
     {
-        name: 'OG STAKING',
-        apy: '50%',
-        stakingCap: '20,000,000 SIN',
+        name: 'LICENSE STAKING',
+        apy: '25%',
+        stakingCap: '10,000,000 SIN',
         lock: '6 Months',
-        endDate: '23rd January 2023',
+        endDate: '5th May 2023',
         guideLink: 'https://medium.com/@TheSinVerse/sinverse-og-staking-pools-60ca5fe272c',
         stakingLink: 'https://sinverse.com/ogstaking/',
         image: LogoWhite,
+        closed: true,
+        hideAction: true,
     },
     {
         name: 'LAND V3 STAKING',
@@ -21,6 +23,7 @@ export const stakingList1 = [
         guideLink: 'https://medium.com/@TheSinVerse/get-ahead-of-the-game-stake-your-sin-tokens-and-secure-a-whitelist-opportunity-for-valuable-land-18666573d966',
         stakingLink: 'https://sinverse.com/stakingv3',
         image: LogoWhite,
+        closed: true,
     },
     {
         name: 'LAST CHANCE SALOON',
@@ -31,6 +34,7 @@ export const stakingList1 = [
         guideLink: 'https://medium.com/@TheSinVerse/last-chance-saloon-your-last-chance-to-stake-sin-and-secure-a-whitelist-opportunity-for-the-v3-a155786a58c3',
         stakingLink: 'https://sinverse.com/stakingv4',
         image: LogoWhite,
+        closed: true,
     },
 ];
 export const stakingList2 = [

@@ -19,10 +19,10 @@ export const gamePlayInfo = [
         image: GameplayImgGame,
         video: GameplayVidGame,
         info: `
-            Embedded across many districts in SInverse is the ability of gamers to take advantage of the play to earn model 
+            Embedded across many districts in SinVerse is the ability of gamers to take advantage of the play and earn model 
             that forms just a small part of the metaverse game. Players who want to have fun have multiple exciting mini-games 
             to choose from. The experience is usually rewarding as they grind through and earn at the same time. Use your map 
-            to guide you to the nearest mini game in your district.
+            to guide you to the nearest mini-game in your district.
         `,
         active: false,
     },

@@ -1,15 +1,19 @@
 import React, {  } from 'react';
+import { useNavigate } from 'react-router';
 import { WhitePaper } from '../../../../../assets/files';
 import { HeroDownloadGame, HeroDownloadWhitepaper, SINVERSE, HeroImgMobile, HeroScrollDownCircle, HeroScrollDownArrow } from '../../../../../assets/images/new';
+import { routeConstants } from '../../../../../services/constants/route-constants';
 import './banner.scss';
 
 function Hero2() {
+
+  const navigate = useNavigate()
 
   const downloadWhitepaper = () => {
     window.open(WhitePaper);
   }
   const downloadGame = () => {
-    window.open(WhitePaper);
+    navigate(`/${routeConstants.download}`);
   }
   const goDown = () => {
     document.getElementById('arrow-holder')?.scrollIntoView({behavior: 'smooth'})

@@ -85,7 +85,7 @@ function GameInfo(props: any) {
                   every landowner in SinVerse receives a general license, allowing them to create a general business on their 
                   property, providing further opportunities for customization and entrepreneurship. In order for a business 
                   license to be activated, a user must also be a landowner within SinVerse in the designated district the 
-                  license is assigned to
+                  license is assigned to.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ function GameInfo(props: any) {
                   mafia wars, turf battles, and heists provide opportunities for competitive gameplay and rewards. NPC 
                   interactions, mini-games, and special events, including NFT drops and limited-time offers, offer additional 
                   avenues for players to win rare items and valuable rewards. The gameplay in SinVerse is constantly expanding, 
-                  with regular updates and new features to keep players engaged and entertained
+                  with regular updates and new features to keep players engaged and entertained.
                 </p>
               </div>
             </div>

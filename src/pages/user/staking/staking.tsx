@@ -58,16 +58,27 @@ function Staking(props: any) {
                           <span className='answer'>{pool.lock}</span>
                         </div>
                         <div className='spread-info staking-info pb-2'>
-                          <span className='tag'>End Date:</span>
+                          <span className='tag'>Start Date:</span>
                           <span className='answer'>{pool.endDate}</span>
                         </div>
-                        <div className='guide-link'>
-                          <a href={pool.guideLink} target={'_blank'}>
-                            <span className='link-text'>View Guide</span>
-                            <span className='under-line'></span>
-                          </a>
-                        </div>
-                        <SinButton tint='blue' size='slim' action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
+                        {
+                          pool.hideAction ?
+                          <div className='text-center py-4 mb-2 mt-3'>
+                            <p className='text-center reduced mb-2'>(Coming Soon)</p>
+                          </div> :
+                          <>
+                            <div className='guide-link'>
+                              <a href={pool.guideLink} target={'_blank'}>
+                                <span className='link-text'>View Guide</span>
+                                <span className='under-line'></span>
+                              </a>
+                            </div>
+                            {
+                              pool.closed ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p>.</p>
+                            }
+                            <SinButton tint='blue' size='slim' disabled={pool.closed} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
+                          </>
+                        }
                       </SinCard>
                     </div>
                   })}
@@ -99,7 +110,7 @@ function Staking(props: any) {
                           <span className='answer'>{pool.poolDays}</span>
                         </div>
                         <div className='spread-info staking-info pb-2'>
-                          <span className='tag'>End Date:</span>
+                          <span className='tag'>Start Date:</span>
                           <span className='answer'>{pool.endDate}</span>
                         </div>
                         <div className='spread-info staking-info pb-2'>

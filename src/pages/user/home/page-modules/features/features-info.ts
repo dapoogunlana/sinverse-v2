@@ -11,7 +11,7 @@ export const features = [
             through activities like organized crime, smuggling, and other illicit ventures. These coins can be exchanged for SIN 
             Tokens at variable rates, blockchain-based tokens that are usable for a range of in-game transactions, including the 
             acquisition of NFT-based business licenses and unique in-game items such as clothing, weapons, and transportation. 
-            This innovative "play-to-earn" ecosystem offers players the opportunity to earn real-world value from their in-game 
+            This innovative "play-and-earn" ecosystem offers players the opportunity to earn real-world value from their in-game 
             activities.
         `,
     },
@@ -29,12 +29,12 @@ export const features = [
     {
         name: 'Omniverse',
         image: FeatureImgOmniverse,
-        info: `
+        info: ` 
             SinVerse is a cutting-edge virtual world that enables limited partners to host their projects within a vast Metaverse 
             arena, effectively creating an Omniverse. Beyond onboarding high-impact and scalable projects, SinVerse also offers 
-            suitable land locations for hosting them. Our partners, including Cashaa Bank, DWF Labs, KuCoin, and Sugar Bounce. 
-            The synergy between these projects and their capabilities in a Rated-R Metaverse creates incredible opportunities for 
-            cross-marketing, technology exchange, and community building.
+            suitable land locations for hosting them. Our current partners include Cashaa Bank, DWF Labs, KuCoin, and Sugar 
+            Bounce. The synergy between these projects and their capabilities in a R-Rated Metaverse creates incredible 
+            opportunities for cross-marketing, technology exchange, and community building.
         `,
     },
 ];

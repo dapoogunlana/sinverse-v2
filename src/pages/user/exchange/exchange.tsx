@@ -31,10 +31,7 @@ function Exchange(props: any) {
         <div className='py-5 w96'>
         <div className='w96 max1200 list-sect mb-5' data-aos='zoom-in'>
           <p className='text-center relative reduced-web mb-0'>
-            To buy SIN tokens, you can use both centralized and decentralized exchanges. Centralized exchanges are traditional 
-            platforms where a third party facilitates transactions between buyers and sellers. Below, you will find a list of 
-            exchanges where SIN is currently trading on actively. On the other hand, decentralized exchanges allow for 
-            peer-to-peer transactions without the need for intermediaries.
+            In order to purchase SIN tokens (a BEP-20 token), you will first need to create an account on the exchange of your choice and complete the required verification process. Once your account has been verified, you can deposit funds using supported cryptocurrencies such as USDT and BNB. After depositing the funds, you can proceed to place an order to buy SIN tokens and wait for the transaction to be processed.
           </p>
         </div>
           <div className='w96 max1200 list-sect' data-aos='zoom-in' data-aos-delay='300'>
@@ -57,16 +54,7 @@ function Exchange(props: any) {
           </div>
         <div className='w96 max1200 list-sect mt-5' data-aos='zoom-in' data-aos-delay='600'>
           <p className='text-center relative reduced-web mb-0'>
-            Before you can buy SIN tokens, you'll need to create an account on the exchange of your choice and complete the 
-            necessary verification process. Once you have verified your account, you can deposit funds into your account using 
-            supported cryptocurrencies such as USDT & BNB. From there, you can place a buy order for SIN tokens and wait for 
-            your transaction to be processed.
-            <br/><br/>
-            It's important to note that different exchanges may have varying fees, transaction limits, and deposit/withdrawal 
-            options. Be sure to do your research and compare different exchanges to find the best one that suits your needs. 
-            Additionally, always practice good security measures such as enabling two-factor authentication and keeping your 
-            private keys safe. Also note that this content is for information purposes only, this is not a call to buy or 
-            trade SIN.
+            It's important to keep in mind that different exchanges have varying fees, transaction limits, and deposit/withdrawal options. Therefore, it's recommended to conduct thorough research and compare different exchanges to find the one that best suits your needs. It's also important to practice good security measures such as enabling two-factor authentication and keeping your private keys secure. Please note that this information is for educational purposes only, and not a solicitation to buy or trade SIN.
           </p>
         </div>
         </div>

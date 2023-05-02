@@ -38,7 +38,7 @@ function About(props: any) {
         <div className='intro'>
           <div className='radial-cover'></div>
           <div className='header-spacer'></div>
-          <TopicHolder max={1250} className='w96 my-5 relative'>About Sinverse</TopicHolder>
+          <TopicHolder max={1250} className='w96 my-5 relative'>About SinVerse</TopicHolder>
           <div className='intro-writeup' data-aos='zoom-out'data-aos-delay='500'>
             <p className='mb-0'>
               SinVerse (rebranded from Sin City Metaverse) is a virtual world and multiplayer empire building game based on 
@@ -64,7 +64,7 @@ function About(props: any) {
       </div>
       <div className='team-sect pb-5'>
         <div className='w96 max1200 py-5'>
-          <h3 className='text-center'>Our Team</h3>
+          <h3 className='text-center'>Core Team</h3>
           <div className='row'>
             {teamList.map((member, index) => {
               return <div className='col-lg-3 col-md-6' key={index} data-aos='fade-up' data-aos-delay={200 * index}>

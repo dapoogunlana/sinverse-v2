@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { tokenFaqData } from './token-data';
 import './token.scss';
-import { Tokenomics } from '../../../assets/files';
+import { WhitePaper } from '../../../assets/files';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
 import { SinToken, HeroDownloadWhitepaper, CardStretchBg, TokenWhereToBuy, CountIcon1, CountIcon2, CountIcon3, TokenomicsImage, } from '../../../assets/images/new';
@@ -17,7 +17,7 @@ function Token(props: any) {
   }
 
   const openTokenomics = () => {
-    window.open(Tokenomics);
+    window.open(WhitePaper);
   }
 
   useEffect(() => {
@@ -42,12 +42,16 @@ function Token(props: any) {
               <div className='col-md-6 center-info'>
                 <div className='w90 center-mobile text-sect'>
                   <p>
-                    SIN token is the native utility token of the Sinverse Metaverse, which can be used to buy and sell virtual 
-                    assets and services within the game. SIN token is an BEP-20 standard token built on the Ethereum blockchain, 
-                    which makes it compatible with a wide range of wallets and exchanges. SIN tokens are used to pay for land 
-                    purchases, transaction fees, in-game purchases, and to reward players who participate in mini-games or 
-                    complete tasks within the game. As Sinverse continues to expand and attract more players, the demand for SIN 
-                    tokens is expected to increase, creating potential opportunities for token holders to profit.
+                    SinCity (SIN) token serves as the native utility token of SinVerse, enabling users to buy and sell virtual 
+                    assets and services within the game. Built on the BEP-20 standard, SIN token operates on the Binance Smart 
+                    Chain, ensuring compatibility with a range of wallets and exchanges. You can use SIN tokens to purchase 
+                    virtual land, pay for transaction fees, buy in-game items, and reward players who participate in mini-games 
+                    or complete tasks within the game.
+                    <br/><br/>
+                    In the SinVerse metaverse, a single token model play-and-earn system is implemented, which ensures a 
+                    sustainable recycling method through revenue generated on the platform. This system supports a circular 
+                    economy, ensuring rewards remain sustainable without harming the ecosystem. This approach provides a fair 
+                    and sustainable environment for players to enjoy the game and earn rewards simultaneously.
                   </p>
                 </div>
               </div>
@@ -127,7 +131,7 @@ function Token(props: any) {
       <div className='rewards'>
         <div className='bg-cover'>
           <div className='w90 max1100' data-aos="fade-up">
-          <h4 className='text-center pb-3'>Loyalty Reward</h4>
+          <h4 className='text-center pb-3'>Token Rewards</h4>
             <div className='row'>
               <div className='col-md-6 my-3'>
                 <div className='w90 text-holder' data-aos="fade-right">
@@ -136,11 +140,11 @@ function Token(props: any) {
                     <img src={CountIcon1} alt="" />
                   </div>
                   <p className='mb-2'>
-                    Players of Sinverse games can earn SIN tokens in a variety of ways. The most straightforward way is by 
-                    participating in the games themselves. Each game has a unique set of rules and objectives, but players can 
-                    earn SIN tokens as they progress through the levels, complete challenges, and achieve certain milestones. 
-                    The amount of SIN tokens earned will vary depending on the difficulty of the game and the level of skill 
-                    required to complete it.
+                    In SinVerse, players can earn SIN tokens by participating in the games, completing challenges, and achieving 
+                    milestones. The amount of tokens earned depends on the game's difficulty and skill required. As players 
+                    progress and improve their skills, they can potentially earn more tokens by exchanging the in-game currency 
+                    Gold SIN coins. Overall, SIN tokens incentivize players to enjoy the games, improve their skills, and 
+                    progress further, resulting in a dynamic and rewarding gaming experience.
                   </p>
                 </div>
               </div>
@@ -153,10 +157,11 @@ function Token(props: any) {
                     <img src={CountIcon2} alt="" />
                   </div>
                   <p className='mb-2'>
-                    Additionally, Sinverse offers a referral program that rewards players for inviting friends to join the 
-                    platform. Players can share their referral links with friends, and when those friends sign up and start 
-                    playing games on the platform, the original player will earn a percentage of the SIN tokens that their 
-                    friend earns.
+                    SinVerse will also provide a referral program that incentivizes players to invite their friends to join the 
+                    platform. By sharing their referral links, players can earn a percentage of the Gold SIN coins that their 
+                    referred friends earn while playing games on the platform. This rewards both the referring player and their 
+                    friend, creating a win-win situation. By inviting more friends to join SinVerse, players can potentially 
+                    earn more SIN tokens and enhance their overall gaming experience.
                   </p>
                 </div>
               </div>
@@ -167,11 +172,10 @@ function Token(props: any) {
                     <img src={CountIcon3} alt="" />
                   </div>
                   <p className='mb-2'>
-                    Finally, Sinverse may offer occasional airdrops, where players can receive free SIN tokens simply by 
-                    holding a certain amount of tokens in their wallets. These airdrops may be announced on the platform's 
-                    website or social media channels, so players should keep an eye out for any updates. Overall, there are 
-                    multiple ways for players to earn SIN tokens while playing games on the Sinverse platform, making it an 
-                    attractive option for gamers and cryptocurrency enthusiasts alike.
+                    Staking rewards in SinVerse are governed by a DAO and are earned by landowners who actively promote the 
+                    game. These rewards are generated through initial in-game asset sales on the NFT Marketplace, future 
+                    royalties, and faction taxes, creating a self-recycling profit-share opportunity for those who contribute 
+                    to the ecosystem's growth.
                   </p>
                 </div>
               </div>

@@ -148,11 +148,11 @@ function UserFooter(props: any) {
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.exchange}`}>Exchange</Link>
                   </p>
-                  <p className="reduced-soft">
+                  {/* <p className="reduced-soft">
                     <Link to={`/${routeConstants.documents}`}>Documents</Link>
-                  </p>
+                  </p> */}
                   <p className="reduced-soft">
-                    <Link to={`/${routeConstants.token}`}>Sin Token</Link>
+                    <Link to={`/${routeConstants.token}`}>SIN Token</Link>
                   </p>
                   <p className="reduced-soft md-close">
                     <Link to={`/${routeConstants.download}`}>
@@ -173,9 +173,9 @@ function UserFooter(props: any) {
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.districtReveal}`}>District Reveals</Link>
                   </p>
-                  <p className="reduced-soft">
+                  {/* <p className="reduced-soft">
                     <Link to={`/${routeConstants.faq}`}>What You Can Do</Link>
-                  </p>
+                  </p> */}
                   <p className="reduced-soft md-open">
                     <Link to={`/${routeConstants.download}`}>
                       <SinButton size={'small'} >Download</SinButton>
