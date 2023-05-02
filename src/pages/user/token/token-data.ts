@@ -38,7 +38,7 @@ export const tokenFaqData  = [
     {
         question: `What is the maximum supply of SIN tokens?`,
         answer: `
-        The maximum supply of SIN tokens is 1 billion tokens. Full circulation is expected to be achieved by October 2026
+        The maximum supply of SIN tokens is 1 billion tokens. Full circulation is expected to be achieved by October 2026.
         `,
         active: false
     },

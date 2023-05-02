@@ -38,7 +38,7 @@ export const landTypesInfo = [
         name: 'Sustainable Land Staking Rewards',
         image: LandsRoads,
         info: `
-            Staking rewards in SinVerse are governed by a DAO and are earned by landowners who actively promote the game. These rewards are generated through initial in-game asset sales on the NFT Marketplace, future royalties, and faction taxes, creating a self-recycling profit-share opportunity for those who contribute to the ecosystem's growth..
+            Staking rewards in SinVerse are governed by a DAO and are earned by landowners who actively promote the game. These rewards are generated through initial in-game asset sales on the NFT Marketplace, future royalties, and faction taxes, creating a self-recycling profit-share opportunity for those who contribute to the ecosystem's growth.
         `,
         active: false,
     },

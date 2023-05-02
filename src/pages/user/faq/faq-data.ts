@@ -38,7 +38,7 @@ export const faqData  = [
     {
         question: `What is the maximum supply of SIN tokens?`,
         answer: `
-        The maximum supply of SIN tokens is 1 billion tokens. However, the team has stated that they will mplement a buyback and burn mechanism to reduce the supply of SINVERSE tokens over time, which will increase the value of the tokens in circulation.
+        The maximum supply of SIN tokens is 1 billion tokens. Full circulation is expected to be achieved by October 2026.
         `,
         active: false
     },
