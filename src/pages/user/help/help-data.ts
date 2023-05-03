@@ -29,7 +29,7 @@ export const helpList = [
             `Note`,
             `Bank deposits are not processed on weekends or public holidays. If you deposit using your saved credit or debit card, the money you deposited should reflect instantly.`,
             `Make sure that your unique reference number, also known as a BX reference (or in some countries, your unique deposit amount) is 100% correct before you make a deposit. Include your BX reference number for bank transfers.`,
-            `We don't accept deposits from third parties, payments must be made in your own name which has been verified with Sinverse.`,
+            `We don't accept deposits from third parties, payments must be made in your own name which has been verified with SinVerse.`,
         ],
         table: {
             header: [
@@ -82,7 +82,7 @@ export const helpList = [
             Deposits must be made using a bank account that belongs to the same person who owns the Manilla wallet.
             In other words, the bank account must be in your name.`,
             `Do not deposit money using a friend or family member’s bank account.
-            If you wish to use a company bank account to make deposits from Manilla, please apply for a company account at Sinverse.`,
+            If you wish to use a company bank account to make deposits from Manilla, please apply for a company account at SinVerse.`,
             `Enter the correct reference number in the payment reference field (if applicable).
             It can take up to two business days for your money to show in your Manilla wallet under certain circumstances.`,
             `Please be patient. If it has taken longer than that, please upload a proof of payment here.`,

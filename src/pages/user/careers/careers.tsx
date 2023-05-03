@@ -39,7 +39,7 @@ function Careers(props: any) {
       <div className='content-body py-5'>
         <div className='w90 max900 pb-4'>
           <p className='text-center'>
-            Sinverse is a customer centric blockchain firm and this regularly requires  the support of skilled and 
+            SinVerse is a customer centric blockchain firm and this regularly requires  the support of skilled and 
             experienced manpower to provide an efficient ecosystem for our users. We welcome anyone irrespective of their 
             location to fill our application form and submit their resume into our resume bank. Manilla is an equal opportunity 
             employer and we encourage all to apply for any opening that matches their skill set as only qualified candidates 

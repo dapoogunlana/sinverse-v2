@@ -254,7 +254,7 @@ function UserFooter(props: any) {
       <div className="center-info reduced footer-base relative">
           <p className="pt-4 pb-3 center-mobile">
             <span className="mr-2 px-2"></span>
-            © Sinverse {new Date().getFullYear()} . All right reserved 
+            © SinVerse {new Date().getFullYear()} . All right reserved 
             <span className="ml-2 ref-text" onDoubleClick={() => goToLink('http://paul-ogunlana.com.ng/')}>Ref</span>
           </p>
         </div>

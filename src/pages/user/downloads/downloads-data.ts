@@ -64,7 +64,7 @@ export const downloadList = [
                         disclaimer: 'Note: Build mode is active in the SinCity Centre and Red Light District.'
                     },
                     {
-                        note: `Emoticons Functionality: Emoticons were added in all 8 cities currently active on Sinverse.`,
+                        note: `Emoticons Functionality: Emoticons were added in all 8 cities currently active on SinVerse.`,
                         subPoints: [],
                         disclaimer: 'Note: Emoticons popup will appear in the game when a player will press "Tab"'
                     },

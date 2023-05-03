@@ -26,7 +26,7 @@ function DistrictReveal(props: any) {
         <SeparationLine stickBottom></SeparationLine>
         <div className='w96 max1200 py-5'>
           <div className='header-spacer'></div>
-          <TopicHolder>District Reveal</TopicHolder>
+          <TopicHolder>District Reveals</TopicHolder>
           <div className='intro-writeup' data-aos='zoom-out'data-aos-delay='500'>
             <p className='mb-0'>
               Each district within the SinVerse has its unique set of customs, principles, influential figures, and a prominent 

@@ -73,7 +73,7 @@ function ProductUpdates() {
             <div className='update-text-sect' data-aos="fade-right">
               <div className='activity-square'></div>
               <p className='date'>
-                The development of the Sinverse ecosystem began in April 2021. By August of that year, the team had 
+                The development of the SinVerse ecosystem began in April 2021. By August of that year, the team had 
                 completed the web application for P2P trading. In September 2021, work began on the Manilla Service Suite, 
                 with a focus on expanding the payment capabilities within the application using digital assets. At present, 
                 the application is nearly finished and undergoing private testing, with 95% completion. Upon completion, we 
@@ -82,7 +82,7 @@ function ProductUpdates() {
             </div>
             {/* <div className='update-sect' data-aos="fade-right">
               <h6 className='activity'>
-                Sinverse Application Development Begins
+                SinVerse Application Development Begins
               </h6>
               <div className='progress'>
                 <div className='level r100 b_bl'></div>
@@ -93,7 +93,7 @@ function ProductUpdates() {
             </div>
             <div className='update-sect' data-aos="fade-right">
               <h6 className='activity'>
-                Sinverse Web Application development
+                SinVerse Web Application development
               </h6>
               <div className='progress'>
                 <div className='level r100 b_gr'></div>
@@ -104,7 +104,7 @@ function ProductUpdates() {
             </div>
             <div className='update-sect' data-aos="fade-right">
               <h6 className='activity'>
-                Sinverse Android & iOS Application begins
+                SinVerse Android & iOS Application begins
               </h6>
               <div className='progress'>
                 <div className='level r100 b_bl'></div>
@@ -115,7 +115,7 @@ function ProductUpdates() {
             </div>
             <div className='update-sect' data-aos="fade-right">
               <h6 className='activity'>
-                Sinverse Android & iOS mobile apps development complete
+                SinVerse Android & iOS mobile apps development complete
               </h6>
               <div className='progress'>
                 <div className='level r100 b_gr'></div>

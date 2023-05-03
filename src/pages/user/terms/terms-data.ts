@@ -200,7 +200,7 @@ export const termsList = [
         topic: '8.Intellectual Property',
         body: [
             {
-                point: `Ownership. Users agree and acknowledge that Manilla Technologies solely and exclusively owns all copyright, industrial and intellectual property that has to do with the website. These include its programming, its domain name, functionality, design, content, databases, files, and other features, also that the law protects such rights. The trade name Sinverse, Manilla Technologies, and all products and services that have to do with the brand are exclusively owned by Manilla Technologies, and unauthorized use of them is subject to consequences by the law.`,
+                point: `Ownership. Users agree and acknowledge that Manilla Technologies solely and exclusively owns all copyright, industrial and intellectual property that has to do with the website. These include its programming, its domain name, functionality, design, content, databases, files, and other features, also that the law protects such rights. The trade name SinVerse, Manilla Technologies, and all products and services that have to do with the brand are exclusively owned by Manilla Technologies, and unauthorized use of them is subject to consequences by the law.`,
                 subPoints: [],
             },
             {

@@ -4,7 +4,7 @@ import { Outlet  } from 'react-router-dom';
 function AdminFooter() {
   return (
     <div className='py-3 text-center white'>
-      <p className='mb-0'>Sinverse. All Rights Reserved</p>
+      <p className='mb-0'>SinVerse. All Rights Reserved</p>
     </div>
   );
 }

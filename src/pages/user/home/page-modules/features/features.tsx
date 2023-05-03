@@ -23,7 +23,7 @@ function Features() {
     <div className='features'>
       <SeparationLine stickTop></SeparationLine>
       <div className='w96 max1200'>
-       <h2 className='text-center'>Features of Sinverse</h2>
+       <h2 className='text-center'>Features of SinVerse</h2>
        <div className='w96 max1100 row'>
          {
            features.map((feature, index) => (

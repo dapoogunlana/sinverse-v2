@@ -14,7 +14,7 @@ export const careerData  = [
         title: `Position 2 - Growth Hack Specialist`,
         details: [
             `Growth hackers dramatically turn business growth potential into massive success. The focu here is to "hack" growth potential by inducing and improving market expansion for companies through a variety of processes such as analyzing performance and goals, experimenting with strategies, testing outcomes, and implementing solutions. They also analyze data, prioritize goals, and scale growth strategies for companies.`,
-            `We are searching for a growth hacker to drive awareness, sales, and expansion of our products and services within the boundaries of Sinverse. In this role, you will work with, and lead our growth team to determine key issues, bottlenecks, and opportunities for our business. You will devise, implement, and execute initiatives and strategies to grow our brand's market share and customer base.`,
+            `We are searching for a growth hacker to drive awareness, sales, and expansion of our products and services within the boundaries of SinVerse. In this role, you will work with, and lead our growth team to determine key issues, bottlenecks, and opportunities for our business. You will devise, implement, and execute initiatives and strategies to grow our brand's market share and customer base.`,
         ],
         active: false,
         expires: undefined,

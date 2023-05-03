@@ -10,7 +10,7 @@ export const cardFaqData  = [
     {
         question: `Is the Manilla Card free?`,
         answer: `
-        The Card, just like the Sinverse account, is free for holders of MNLA token.
+        The Card, just like the SinVerse account, is free for holders of MNLA token.
         `,
         active: false
     },
@@ -24,7 +24,7 @@ export const cardFaqData  = [
     {
         question: `Is there any cash-back policy associated with the Manilla Card?`,
         answer: `
-        The Manila Card also comes with a 2% cash back program for cardholders. These cash back rewards come in the form of MNLA tokens.Therefore, the actual value of the cash back rewards varies with the value of the MNLA token. Your cashback balance could grow or shrink depending on how well Sinverse is doing as a company.
+        The Manila Card also comes with a 2% cash back program for cardholders. These cash back rewards come in the form of MNLA tokens.Therefore, the actual value of the cash back rewards varies with the value of the MNLA token. Your cashback balance could grow or shrink depending on how well SinVerse is doing as a company.
         `,
         active: false
     },

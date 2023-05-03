@@ -71,7 +71,7 @@ export const amlPolicyList = [
         topic: '2',
         body: [
             {
-                point: ` In accordance with the above stated laws, Sinverse strongly adheres to the AML policies therefore to carry out business transactions with customers (users) `,
+                point: ` In accordance with the above stated laws, SinVerse strongly adheres to the AML policies therefore to carry out business transactions with customers (users) `,
                 subPoints: [],
             },
             {

@@ -137,11 +137,11 @@ function Staking(props: any) {
                     period, the higher the potential rewards, but also the higher the risk of losing the locked tokens if the 
                     staker does not follow the rules.
                   </p>
-                  <p className='font-weight-bold mb-1'>Sinverse DAO</p>
+                  <p className='font-weight-bold mb-1'>SinVerse DAO</p>
                   <p className='reduced mb-4'>
                     Staking also helps to reduce the circulating supply of SIN tokens, which can have a positive impact on the 
-                    token's value and price stability. Overall, Sinverse staking is an important tool for users looking to earn 
-                    rewards and participate in the governance of the Sinverse DAO.
+                    token's value and price stability. Overall, SinVerse staking is an important tool for users looking to earn 
+                    rewards and participate in the governance of the SinVerse DAO.
                   </p>
                   <p className='font-weight-bold mb-1'>Sustainable Staking Rewards</p>
                   <p className='reduced mb-4'>

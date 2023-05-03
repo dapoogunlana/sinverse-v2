@@ -138,7 +138,7 @@ function DownloadInstructions(props: any) {
                 </p>
                 <ol className='pl-3 mb-0'>
                   <li className='reduced-soft'>
-                    Launch Sinverse.exe Installer
+                    Launch SinVerse.exe Installer
                   </li>
                   <li className='reduced-soft'>
                     Click to install SinVerse (must be on the latest version)

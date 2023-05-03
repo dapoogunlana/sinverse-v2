@@ -43,7 +43,7 @@ export const landTypesInfo = [
         active: false,
     },
     {
-        name: 'District & Land ownership',
+        name: 'District & Land Ownership',
         image: LandsDistrictOwnership,
         info: `
             SinVerse is a metaverse with 17 unique districts and 15,000 plots of land, each offering a distinct environment for your virtual world. As a player, you can acquire land through gameplay or direct purchases on the marketplace. Each plot has its own characteristics, allowing you to farm in-game items, construct buildings and build businesses. You can choose from high-security zones for complete safety to zero-security zones with high rewards but no rules or safety. SinVerse's land ownership provides a range of benefits, from earning rewards to creating passive income-generating businesses.
@@ -51,7 +51,7 @@ export const landTypesInfo = [
         active: false,
     },
     {
-        name: 'Business Licences',
+        name: 'Business Licenses',
         image: LandsLicences,
         info: `
             Operating a business in SinVerse is a vital aspect of the game, and as a landowner, you can obtain premium or exclusive business licenses in the form of NFTs to create businesses that generate real passive income. The possibilities are endless, from virtual pet shops to casinos. You can also lease your land and businesses to fellow gamers and benefit from profit-sharing agreements. Business licenses in SinVerse provide a unique opportunity to earn rewards and contribute to the ecosystem's growth.

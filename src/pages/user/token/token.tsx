@@ -5,10 +5,14 @@ import { WhitePaper } from '../../../assets/files';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
 import { SinToken, HeroDownloadWhitepaper, CardStretchBg, TokenWhereToBuy, CountIcon1, CountIcon2, CountIcon3, TokenomicsImage, } from '../../../assets/images/new';
+import { sendRequest } from '../../../services/utils/request';
+import { apiLinks } from '../../../config/environment';
+import { formatNumber } from '../../../services/utils/data-manipulation-utilits';
 
 function Token(props: any) {
 
   const [reactiveFaqs, setReactiveFaqs] = useState(tokenFaqData);
+  const [sinverseStats, setSinverseStats] = useState<any>({});
 
   const openQuestion = (index: number) => {
     const newFaqs = [...reactiveFaqs];
@@ -19,10 +23,15 @@ function Token(props: any) {
   const openTokenomics = () => {
     window.open(WhitePaper);
   }
-
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [props]);
+    sendRequest({
+        url: apiLinks.cryptoCompare,
+        external: true
+    }, (res: any) => {
+      setSinverseStats(res.Data?.SIN || {});
+      window.scrollTo(0, 0);
+    }, () => {});
+  },[props]);
   
   return (
     <div className='token'>
@@ -30,7 +39,7 @@ function Token(props: any) {
         <div className='header-spacer'></div>
         <SeparationLine stickBottom></SeparationLine>
         <div className='w90 max1250 py-2'>
-        <TopicHolder max={1250} className='w96 my-5 relative'>Sinverse Token</TopicHolder>
+        <TopicHolder max={1250} className='w96 my-5 relative'>SinVerse Token</TopicHolder>
 
           <div className='top-card'>
             <div className='row'>
@@ -61,11 +70,13 @@ function Token(props: any) {
           <div className='stats-sect' data-aos='zoom-out'>
             <div>
               <h6>1,000,000,000</h6>
+              {/* <h6>{formatNumber(sinverseStats.TotalCoinsMined)}</h6> */}
               <p>Total SIN Supply</p>
             </div>
             <span></span>
             <div>
               <h6>0.00</h6>
+              {/* <h6>{formatNumber(sinverseStats.TotalCoinsMined)}</h6> */}
               <p>SIN Price</p>
             </div>
             <span></span>
@@ -118,7 +129,7 @@ function Token(props: any) {
         <div className=' py-5 token-download-bg'>
           <SeparationLine stickTop></SeparationLine>
           <SeparationLine stickBottom></SeparationLine>
-          <h3 className='text-center py-4'>Sinverse Tokenomics</h3>
+          <h3 className='text-center py-4'>SinVerse Tokenomics</h3>
           <div className='download py-4 text-center' data-aos='zoom-out'>
             <div className='w70 imh'>
               <img src={TokenomicsImage} className='clickable hover-zoom' alt="" onClick={openTokenomics} />
