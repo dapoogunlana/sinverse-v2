@@ -24,7 +24,6 @@ function Token(props: any) {
 
   const [reactiveFaqs, setReactiveFaqs] = useState(tokenFaqData);
   const [sinverseStats, setSinverseStats] = useState<any>({});
-  const [sinverseStats2, setSinverseStats2] = useState<any>({});
 
   const openQuestion = (index: number) => {
     const newFaqs = [...reactiveFaqs];
@@ -37,16 +36,10 @@ function Token(props: any) {
   }
   useEffect(() => {
     sendRequest({
-        url: apiLinks.cryptoCompare,
-        external: true
-    }, (res: any) => {
-      setSinverseStats(res.Data?.SIN || {});
-    }, () => {});
-    sendRequest({
         url: apiLinks.coinGeco,
         external: true
     }, (res: any) => {
-      setSinverseStats2(res || {});
+      setSinverseStats(res || {});
     }, () => {});
     window.scrollTo(0, 0);
   },[props]);
@@ -88,31 +81,30 @@ function Token(props: any) {
           <div className='stats-sect' data-aos='zoom-out'>
             <div>
               {/* <h6>1,000,000,000</h6> */}
-              <h6>{formatNumber(sinverseStats.TotalCoinsMined)}</h6>
+              <h6>{formatNumber(sinverseStats.market_data?.total_supply)}</h6>
               <p>Total SIN Supply</p>
             </div>
             <span></span>
             <div>
               {/* <h6>0.00</h6> */}
-              <h6>${formatNumber(sinverseStats2.market_data?.current_price?.usd, 5)}</h6>
+              <h6>${formatNumber(sinverseStats.market_data?.current_price?.usd, 6)}</h6>
               <p>SIN Price</p>
             </div>
             <span></span>
             <div>
               {/* <h6>0.00</h6> */}
-              <h6>{formatNumber(sinverseStats.CirculatingSupply)}</h6>
+              <h6>{formatNumber(sinverseStats.market_data?.circulating_supply)}</h6>
               <p>Circulating Supply</p>
             </div>
             <span></span>
             <div>
               {/* <h6>0.00</h6> */}
-              <h6>${formatNumber(sinverseStats2.market_data?.high_24h?.usd, 5)}</h6>
+              <h6>${formatNumber(sinverseStats.market_data?.total_volume?.usd)}</h6>
               <p>24hrs Volume</p>
             </div>
             <span></span>
             <div>
-              {/* <h6>0.00</h6> */}
-              <h6>{formatNumber(sinverseStats.CirculatingSupply)}</h6>
+              <h6>0.00</h6>
               <p>Total Burns</p>
             </div>
           </div>

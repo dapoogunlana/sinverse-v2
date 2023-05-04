@@ -2,6 +2,7 @@ export const apiLinks = {
     binance: `https://api.binance.com/api/v3/ticker/24hr`,
     coinGeco: 'https://api.coingecko.com/api/v3/coins/sin-city',
     cryptoCompare: `https://min-api.cryptocompare.com/data/all/coinlist?fsym=SIN&api_key=7c4c789b0b6c160099497bdfca52a1e941a04d982a37159634689f409ee2e1bd`,
+    coinMarketCap: 'https://pro-api.coinmarketcap.com/v1/',
     url: (window.location.href.indexOf('localhost') === -1) ?
      'https://manilla-backend.herokuapp.com/api/v2/' : 'http://localhost:3500/api/v2/',
     // url: (window.location.href.indexOf('localhost') === -1) ?
