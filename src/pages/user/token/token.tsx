@@ -4,15 +4,27 @@ import './token.scss';
 import { WhitePaper } from '../../../assets/files';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
-import { SinToken, HeroDownloadWhitepaper, CardStretchBg, TokenWhereToBuy, CountIcon1, CountIcon2, CountIcon3, TokenomicsImage, } from '../../../assets/images/new';
+import {
+  SinToken,
+  CardStretchBg, 
+  TokenWhereToBuyKuCoin,
+  TokenWhereToBuyPancakeswap,
+  TokenWhereToBuyMXC,
+  TokenWhereToBuyGateIo,
+  CountIcon1,
+  CountIcon2,
+  CountIcon3,
+  TokenomicsImage,
+} from '../../../assets/images/new';
 import { sendRequest } from '../../../services/utils/request';
-import { apiLinks } from '../../../config/environment';
+import { apiLinks, externalLinkConstants } from '../../../config/environment';
 import { formatNumber } from '../../../services/utils/data-manipulation-utilits';
 
 function Token(props: any) {
 
   const [reactiveFaqs, setReactiveFaqs] = useState(tokenFaqData);
   const [sinverseStats, setSinverseStats] = useState<any>({});
+  const [sinverseStats2, setSinverseStats2] = useState<any>({});
 
   const openQuestion = (index: number) => {
     const newFaqs = [...reactiveFaqs];
@@ -29,8 +41,14 @@ function Token(props: any) {
         external: true
     }, (res: any) => {
       setSinverseStats(res.Data?.SIN || {});
-      window.scrollTo(0, 0);
     }, () => {});
+    sendRequest({
+        url: apiLinks.coinGeco,
+        external: true
+    }, (res: any) => {
+      setSinverseStats2(res || {});
+    }, () => {});
+    window.scrollTo(0, 0);
   },[props]);
   
   return (
@@ -69,29 +87,32 @@ function Token(props: any) {
           <h2 className='pt-5 text-center'>Token Details</h2>
           <div className='stats-sect' data-aos='zoom-out'>
             <div>
-              <h6>1,000,000,000</h6>
-              {/* <h6>{formatNumber(sinverseStats.TotalCoinsMined)}</h6> */}
+              {/* <h6>1,000,000,000</h6> */}
+              <h6>{formatNumber(sinverseStats.TotalCoinsMined)}</h6>
               <p>Total SIN Supply</p>
             </div>
             <span></span>
             <div>
-              <h6>0.00</h6>
-              {/* <h6>{formatNumber(sinverseStats.TotalCoinsMined)}</h6> */}
+              {/* <h6>0.00</h6> */}
+              <h6>${formatNumber(sinverseStats2.market_data?.current_price?.usd, 5)}</h6>
               <p>SIN Price</p>
             </div>
             <span></span>
             <div>
-              <h6>0.00</h6>
+              {/* <h6>0.00</h6> */}
+              <h6>{formatNumber(sinverseStats.CirculatingSupply)}</h6>
               <p>Circulating Supply</p>
             </div>
             <span></span>
             <div>
-              <h6>0.00</h6>
+              {/* <h6>0.00</h6> */}
+              <h6>${formatNumber(sinverseStats2.market_data?.high_24h?.usd, 5)}</h6>
               <p>24hrs Volume</p>
             </div>
             <span></span>
             <div>
-              <h6>0.00</h6>
+              {/* <h6>0.00</h6> */}
+              <h6>{formatNumber(sinverseStats.CirculatingSupply)}</h6>
               <p>Total Burns</p>
             </div>
           </div>
@@ -117,8 +138,27 @@ function Token(props: any) {
               </div>
             </div>
             <div className='col-md-6 center-info'>
-              <div className='imh w90 max350 py-4' data-aos='zoom-out'>
-                <img src={TokenWhereToBuy} className='' alt="" />
+              <div className='w90 max350 buy-token-grid py-4' data-aos='zoom-out'>
+                <div className='buy-card card-1'>
+                  <a href={externalLinkConstants.kuCoin}>
+                    <img src={TokenWhereToBuyKuCoin} className='' alt="" />
+                  </a>
+                </div>
+                <div className='buy-card card-2'>
+                  <a href={externalLinkConstants.pancakeswap}>
+                    <img src={TokenWhereToBuyPancakeswap} className='' alt="" />
+                  </a>
+                </div>
+                <div className='buy-card card-3'>
+                  <a href={externalLinkConstants.mxc}>
+                    <img src={TokenWhereToBuyMXC} className='' alt="" />
+                  </a>
+                </div>
+                <div className='buy-card card-4'>
+                  <a href={externalLinkConstants.gate_io}>
+                    <img src={TokenWhereToBuyGateIo} className='' alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

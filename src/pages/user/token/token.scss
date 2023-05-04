@@ -101,14 +101,30 @@
                 }
             }
         }
-        .face-images-holder{
-            img{
-                width: 100%;
-                border-radius: 15px;
-                box-shadow: 0 3px 25px 2px $white-faint3;
+        .buy-token-grid{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            transition: 0.3s ease;
+            .buy-card{
+                transition: 0.3s ease;
+                img {
+                    width: 100%;
+                    padding: 6%;
+                }
             }
-            @include mediaM(767px){
-                display: none;
+            &:hover{
+                .card-1{
+                    transform: translate(-17px, -7px) rotate(-20deg);
+                }
+                .card-2{
+                    transform: translate(17px, -7px) rotate(20deg);
+                }
+                .card-3{
+                    transform: translate(-2px, 7px);
+                }
+                .card-4{
+                    transform: translate(2px, 7px);
+                }
             }
         }
     }

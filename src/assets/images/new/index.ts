@@ -86,7 +86,10 @@ import AdvisorJamie from './team-members/advisor-jamie.jpg';
 
 import CardStretchBg from './card-stretch-bg.png';
 import SinToken from './sin-token.png';
-import TokenWhereToBuy from './token-where-to-buy.png';
+import TokenWhereToBuyKuCoin from './token-where-to-buy-kucoin.png';
+import TokenWhereToBuyPancakeswap from './token-where-to-buy-pancakeswap.png';
+import TokenWhereToBuyMXC from './token-where-to-buy-mxc.png';
+import TokenWhereToBuyGateIo from './token-where-to-buy-gate_io.png';
 import GameInfoBanner from './game-info-banner.png';
 import CorporateKnifeMan from './corporate-knife-man.png';
 import MaskedAssasin from './masked-assasin.png';
@@ -193,7 +196,10 @@ export {
 
     CardStretchBg,
     SinToken,
-    TokenWhereToBuy,
+    TokenWhereToBuyKuCoin,
+    TokenWhereToBuyPancakeswap,
+    TokenWhereToBuyMXC,
+    TokenWhereToBuyGateIo,
     GameInfoBanner,
     CorporateKnifeMan,
     MaskedAssasin,
