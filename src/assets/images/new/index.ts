@@ -49,7 +49,12 @@ import PartnersCryptoBanter from './partners/partners-crypto-banter.png';
 import PartnersDwfLabs from './partners/partners-dwf-labs.png';
 import PartnersGateLabs from './partners/partners-gate-labs.png';
 import PartnersKucoin from './partners/partners-kucoin.png';
-import RoadmapImg1 from './roadmap/roadmap-img-1.jpg';
+import RoadmapImgSecurity from './roadmap/roadmap-img-security.jpg';
+import RoadmapImgMarketplace from './roadmap/roadmap-img-marketplace.jpg';
+import RoadmapImgBusinesses from './roadmap/roadmap-img-business.jpg';
+import RoadmapImgcoins from './roadmap/roadmap-img-coins.jpg';
+import RoadmapImgLand from './roadmap/roadmap-img-lands.jpg';
+import RoadmapImgMobile from './roadmap/roadmap-img-mobile.jpg';
 import ExchangeKuCoin from './exchange/kucoin.jpg';
 import ExchangePancakeswap from './exchange/pancake-swap.jpg';
 import ExchangeMXC from './exchange/mxc.jpg';
@@ -151,7 +156,12 @@ export {
     PartnersDwfLabs,
     PartnersGateLabs,
     PartnersKucoin,
-    RoadmapImg1,
+    RoadmapImgSecurity,
+    RoadmapImgMarketplace,
+    RoadmapImgBusinesses,
+    RoadmapImgcoins,
+    RoadmapImgLand,
+    RoadmapImgMobile,
     ExchangeKuCoin,
     ExchangePancakeswap,
     ExchangeMXC,
