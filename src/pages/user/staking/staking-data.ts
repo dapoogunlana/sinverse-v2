@@ -41,9 +41,9 @@ export const stakingList2 = [
     {
         name: 'Premium Staking pool',
         apy: '50%',
-        stakingCap: '10, 000,000 $SIN',
+        stakingCap: '10,000,000 $SIN',
         stakingPeriod: '6 Months',
-        startDate: '5 May 9pm UTC',
+        startDate: '5 May 2023',
         guideLink: 'https://medium.com/@TheSinVerse/business-license-staking-pools-go-live-at-9pm-utc-5-may-2023-whitelist-opportunities-c3cdeb9677e6',
         stakingLink: 'https://sinverse.com/premiumstake/',
         full: false,
@@ -53,9 +53,9 @@ export const stakingList2 = [
     {
         name: 'Exclusive Staking pool',
         apy: '50%',
-        stakingCap: '10, 000,000 $SIN',
+        stakingCap: '10,000,000 $SIN',
         stakingPeriod: '6 Months',
-        startDate: '5 May 9pm UTC',
+        startDate: '5 May 2023',
         guideLink: 'https://medium.com/@TheSinVerse/business-license-staking-pools-go-live-at-9pm-utc-5-may-2023-whitelist-opportunities-c3cdeb9677e6',
         stakingLink: 'https://sinverse.com/exclusivestake/',
         full: false,

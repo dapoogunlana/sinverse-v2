@@ -29,7 +29,7 @@ function LandTypes() {
 
   return (
     <div className='land-types'>
-      <h2 className='text-center pt-3'>Land and Business Licences</h2>
+      <h2 className='text-center pt-3'>Land and Business Licenses</h2>
       <div className='type-holder'>
         <div className='type-case' id="type-case">
           <div className='types'>
