@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DownloadIntro, constructionSignPost } from '../../../../../assets/images/new';
+import { DownloadIntro, constructionSignPost, MarketingSite } from '../../../../../assets/images/new';
 import SeparationLine from '../../../../../components/base-components/separation-line/separation-line';
 import SinButton from '../../../../../components/base-components/sin-button/sin-button';
 import SinCard from '../../../../../components/base-components/sin-card/sin-card';
@@ -23,7 +23,7 @@ function MarketPlace() {
         <div className='row'>
           <div className='col-md-6 center-info' data-aos='zoom-in' data-aos-delay='500'>
             <div className='w70 max350 imh py-3'>
-              <img src={DownloadIntro} alt="" />
+              <img src={MarketingSite} className='shadowed-deep rad-5 ' alt="" />
             </div>
           </div>
           <div className='col-md-6 center-info' data-aos='fade-left'>

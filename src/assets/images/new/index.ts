@@ -108,6 +108,8 @@ import DownloadVersion1_66 from './download-versions/Build-version-1.66.jpg';
 import DownloadVersion1_56 from './download-versions/Build-version-1.56.jpg';
 import DownloadVersion1_22 from './download-versions/Build-version-1.22.jpg';
 
+import MarketingSite from './marketing-site.jpg';
+
 export {
     LogoRed,
     LogoWhite,
@@ -217,4 +219,6 @@ export {
     DownloadVersion1_66,
     DownloadVersion1_56,
     DownloadVersion1_22,
+
+    MarketingSite,
 }

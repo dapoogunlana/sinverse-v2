@@ -102,25 +102,35 @@ function Staking(props: any) {
                           <span className='answer'>{pool.apy}</span>
                         </div>
                         <div className='spread-info staking-info'>
-                          <span className='tag'>Rewards:</span>
-                          <span className='answer'>{pool.rewards}</span>
+                          <span className='tag'>Staking Cap:</span>
+                          <span className='answer'>{pool.stakingCap}</span>
                         </div>
                         <div className='spread-info staking-info'>
-                          <span className='tag'>Pool Days:</span>
-                          <span className='answer'>{pool.poolDays}</span>
+                          <span className='tag'>Staking Period:</span>
+                          <span className='answer'>{pool.stakingPeriod}</span>
                         </div>
                         <div className='spread-info staking-info pb-2'>
                           <span className='tag'>Start Date:</span>
-                          <span className='answer'>{pool.endDate}</span>
-                        </div>
-                        <div className='spread-info staking-info pb-2'>
-                          <span className='tag'>Min/Max:</span>
-                          <span className='answer'>{pool.minMax}</span>
+                          <span className='answer'>{pool.startDate}</span>
                         </div>
                         {
-                          pool.full ? <p className='text-center reduced mb-2'>(Staking pool is full)</p> : <p>.</p>
+                          pool.hideAction ?
+                          <div className='text-center py-4 mb-2 mt-3'>
+                            <p className='text-center reduced mb-2'>(Coming Soon)</p>
+                          </div> :
+                          <>
+                            <div className='guide-link'>
+                              <a href={pool.guideLink} target={'_blank'}>
+                                <span className='link-text'>View Guide</span>
+                                <span className='under-line'></span>
+                              </a>
+                            </div>
+                            {
+                              pool.full ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p></p>
+                            }
+                            <SinButton tint='blue' size='slim' disabled={pool.full} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
+                          </>
                         }
-                        <SinButton tint='blue' size='slim' disabled={pool.full} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
                       </SinCard>
                     </div>
                   })}
