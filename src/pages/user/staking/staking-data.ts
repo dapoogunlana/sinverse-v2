@@ -3,13 +3,13 @@ import { LogoWhiteRound as LogoWhite } from "../../../assets/images/new";
 
 export const stakingList1 = [
     {
-        name: 'LICENSE STAKING',
-        apy: '25%',
-        stakingCap: '10,000,000 SIN',
-        lock: '6 Months',
-        endDate: '5th May 2023',
-        guideLink: 'https://medium.com/@TheSinVerse/sinverse-og-staking-pools-60ca5fe272c',
-        stakingLink: 'https://sinverse.com/ogstaking/',
+        name: 'LAND STAKING',
+        apy: 'TBA',
+        stakingCap: 'TBA',
+        lock: 'TBA',
+        endDate: 'TBA',
+        guideLink: '',
+        stakingLink: '',
         image: LogoWhite,
         closed: true,
         hideAction: true,
