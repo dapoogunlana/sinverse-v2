@@ -40,7 +40,7 @@ export const stakingList1 = [
 export const stakingList2 = [
     {
         name: 'Premium Staking pool',
-        apy: '25%',
+        apy: '50%',
         stakingCap: '10, 000,000 $SIN',
         stakingPeriod: '6 Months',
         startDate: '5 May 9pm UTC',
@@ -52,7 +52,7 @@ export const stakingList2 = [
     },
     {
         name: 'Exclusive Staking pool',
-        apy: '25%',
+        apy: '50%',
         stakingCap: '10, 000,000 $SIN',
         stakingPeriod: '6 Months',
         startDate: '5 May 9pm UTC',
