@@ -2,7 +2,7 @@
 
 .admin-register{
     width: 100%;
-    background-color: #F4F4F4;
+    background-color: #cde3ff;
     position: relative;
     min-height: 100vh;
     .slant-holder{
@@ -21,9 +21,9 @@
         max-width: 1200px;
         margin: auto;
         padding: 3vh 0 6vh;
-        min-height: calc(100vh - 83px);
+        // min-height: calc(100vh - 83px);
         @include mediaM(885px) {
-            min-height: calc(100vh - 55px);
+            // min-height: calc(100vh - 55px);
         }
         .reg-img{
             text-align: center;

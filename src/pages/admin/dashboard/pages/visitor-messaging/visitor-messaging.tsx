@@ -62,7 +62,7 @@ function VisitorMessaging(props: any) {
       
       <div className="row">
           <div className="col-lg-12" data-aos="zoom-in" data-aos-delay="400">
-              <div className="card-hover">
+              <div className="">
                   <div className="db-card-body cover">
                       <div className="content-holder item-card">
                           <h5 className="mb-3 text-center">New Broadcast Email To News Letter Subscribers</h5>
@@ -179,7 +179,7 @@ function VisitorMessaging(props: any) {
           <div className="col-lg-12">
               {
                 emailPosts.map((post, index) => {
-                  return <div className="db-table-card card-hover" key={index} data-aos="zoom-in" data-aos-delay="500">
+                  return <div className="db-table-card " key={index} data-aos="zoom-in" data-aos-delay="500">
                   <div className="db-card-body">
                       <div className={"content-holder2" + (!post.active ? 'compress-answer' : '')} onClick={() => openQuestion(index)}>
                           <div className='spread-info'>

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Logo, RegImg, WhiteAngleBackdrop } from '../../../assets/images';
-import { LogoHighRes } from '../../../assets/images/new';
+import { LogoHighRes, GameInfoBanner, WhiteAngleBackdrop } from '../../../assets/images/new';
 import AdminLoginForm from '../../../components/block-components/admin-login-form/login-form';
 
 import AdminFooter from '../../../layout/admin/footer/admin-footer';
@@ -31,7 +30,7 @@ function AdminLogin() {
         <div className='row reg-holder'>
           <div className='col-lg-6 center-info-col reg-img'>
             <div className='imh w90 max500' data-aos="zoom-in">
-              <img src={RegImg} alt="" />
+              <img src={GameInfoBanner} alt="" />
               <p className='font-weight-bold'>Login to admin account manage app data</p>
               <h3 className=''>Login</h3>
             </div>

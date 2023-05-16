@@ -4,8 +4,9 @@
   width: 80%;
   max-width: 360px;
   display: grid;
+  // display: none;
   grid-template-columns: 50% 50%;
-  border: 1px solid $primary-blue-hover;
+  border: 1px solid #C568FF;
   border-radius: 0 0 10px 10px;
   text-align: center;
   margin: auto;
@@ -14,7 +15,7 @@
     margin: 6px 0;
   }
   .active{
-    background-color: $bar-pourple;
+    background-color: #C568FF;
     transition: 0.3s ease;
     box-shadow: 0 3px 10px 0 $black-faint3;
     pointer-events: none;
@@ -24,7 +25,8 @@
     }
   }
   .dormant{
-    color: $bar-pourple;
+    color: $white;
+    background-color: rgba(136, 22, 207, 0.4);
     transition: 0.3s ease;
     cursor: pointer;
   }
@@ -60,7 +62,7 @@
   }
 }
 .dark-row{
-  background-color: rgb(236, 236, 236);
+  background-color: hsla(277, 100%, 70%, 0.1);
 }
 
 .icon-holder{
@@ -83,15 +85,15 @@
   }
 }
 .red-button{
-  background-color: $red;
+  background-color: $red-hover;
   &:hover{
-    background-color: $red-hover;
+    background-color: $red-active;
   }
 }
 .blue-button{
-  background-color: $primary-blue;
+  background-color: $primary-purple;
   &:hover{
-    background-color: $primary-blue-hover;
+    background-color: $primary-purple-active;
   }
 }
 

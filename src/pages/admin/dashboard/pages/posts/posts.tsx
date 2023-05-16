@@ -215,7 +215,7 @@ function Posts(props: any) {
       
       <div className="row">
           <div className="col-lg-12" data-aos="zoom-in" data-aos-delay="400">
-              <div className="card-hover">
+              <div className="">
                   <div className="db-card-body cover">
                       <div className="content-holder item-card">
                           <h5 className="mb-3 text-center">New News Article</h5>
@@ -299,7 +299,7 @@ function Posts(props: any) {
           <div className="col-lg-12">
               {
                 blogPosts.map((post, index) => {
-                  return <div className="db-table-card card-hover" key={index}>
+                  return <div className="db-table-card " key={index}>
                   <div className="db-card-body">
                       <div className="sizer">
                           <div className={"im-enclose" + (post.image ? ' no-bg': '')}>

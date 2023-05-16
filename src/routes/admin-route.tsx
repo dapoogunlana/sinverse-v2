@@ -8,7 +8,7 @@ const AdminLogin = lazy(() => import("../pages/admin/login/login"));
 const AdminRegister = lazy(() => import("../pages/admin/register/register"));
 const AdminDashboard = lazy(() => import("../pages/admin/dashboard/dashboard"));
 const AdminStats = lazy(() => import("../pages/admin/dashboard/pages/stats/stats"));
-const AdminWhitelistMessaging = lazy(() => import("../pages/admin/dashboard/pages/waitlist-messaging/waitlist-messaging"));
+const AdminWhitelistMessaging = lazy(() => import("../pages/admin/dashboard/pages/whitelist-messaging/whitelist-messaging"));
 const AdminVisitorMessaging = lazy(() => import("../pages/admin/dashboard/pages/visitor-messaging/visitor-messaging"));
 const AdminPosts = lazy(() => import("../pages/admin/dashboard/pages/posts/posts"));
 const AdminLearn = lazy(() => import("../pages/admin/dashboard/pages/learn/learn"));

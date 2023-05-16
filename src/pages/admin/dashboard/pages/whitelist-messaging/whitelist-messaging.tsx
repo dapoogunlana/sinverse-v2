@@ -3,15 +3,15 @@ import { toast } from 'react-toastify';
 import { sendRequest } from '../../../../../services/utils/request';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import './waitlist-messaging.scss';
+import './whitelist-messaging.scss';
 
-function WaitlistMessaging(props: any) {
+function WhitelistMessaging(props: any) {
 
   const [emailPosts, setEmailPosts] = useState<any[]>([]);
 
   const getEmailPosts = () => {
     sendRequest({
-      url: 'whitelist-mail'
+      url: 'metaverse-mail'
     },
     (res: any) => {
       setEmailPosts(res.data || []);
@@ -28,7 +28,7 @@ function WaitlistMessaging(props: any) {
       Disclaimer: form.mail_disclaimer
     };
     sendRequest({
-      url: 'whitelist-mail',
+      url: 'metaverse-mail',
       method: 'POST',
       body: mailObj,
     },
@@ -58,14 +58,14 @@ function WaitlistMessaging(props: any) {
     getEmailPosts();
   },[props]);
   return (
-    <div className='waitlist-post w90 max900 py-5'>
+    <div className='whitelist-post w90 max900 py-5'>
       
       <div className="row">
           <div className="col-lg-12" data-aos="zoom-in" data-aos-delay="400">
-              <div className="card-hover">
+              <div className="">
                   <div className="db-card-body cover">
                       <div className="content-holder item-card">
-                          <h5 className="mb-3 text-center">New Broadcast Email To Wait List Subscribers</h5>
+                          <h5 className="mb-3 text-center">New Broadcast Email To White List Subscribers</h5>
                           <Formik
                             initialValues={{
                               mail_title: '',
@@ -174,12 +174,12 @@ function WaitlistMessaging(props: any) {
           </div>
       </div>
 
-      <h3 className="mt-5">Wait List Subscribers Email History</h3>
+      <h3 className="mt-5">White List Subscribers Email History</h3>
       <div className="row">
           <div className="col-lg-12">
               {
                 emailPosts.map((post, index) => {
-                  return <div className=" db-table-card card-hover" key={index} data-aos="zoom-in" data-aos-delay="500">
+                  return <div className=" db-table-card " key={index} data-aos="zoom-in" data-aos-delay="500">
                   <div className="db-card-body">
                       <div className={"content-holder2" + (!post.active ? 'compress-answer' : '')} onClick={() => openQuestion(index)}>
                           <div className='spread-info'>
@@ -209,4 +209,4 @@ function WaitlistMessaging(props: any) {
   );
 }
 
-export default WaitlistMessaging;
+export default WhitelistMessaging;

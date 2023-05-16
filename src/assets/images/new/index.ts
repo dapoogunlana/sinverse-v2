@@ -3,6 +3,7 @@ import LogoRed from './logo-red.png';
 import LogoWhite from './logo-white.svg';
 import LogoWhiteRound from './logo-white.png';
 import HamburgerButton from './icons/Hamburger-Button.svg';
+import WhiteAngleBackdrop from './white-angle-backdrop.svg';
 import FeatureImgDigitalAssets from './feature-img-digital_assets.jpg';
 import FeaturePlayEarn from './feature-img-play_n_earn.jpg';
 import FeatureImgOmniverse from './feature-img-omniverse.jpg';
@@ -115,6 +116,7 @@ export {
     LogoWhite,
     LogoWhiteRound,
     HamburgerButton,
+    WhiteAngleBackdrop,
     FeatureImgDigitalAssets,
     FeaturePlayEarn,
     FeatureImgOmniverse,

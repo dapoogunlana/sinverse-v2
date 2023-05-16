@@ -6,11 +6,12 @@ import { DashboardIconEmail, DashboardIconSubscribe, DashboardIconTimeLeft } fro
 import MiniLoader from '../../../../../components/block-components/mini-loader/mini-loader';
 import { apiLinks } from '../../../../../config/environment';
 import { routeConstants } from '../../../../../services/constants/route-constants';
+import { formatDate } from '../../../../../services/utils/data-manipulation-utilits';
 import { sendRequest } from '../../../../../services/utils/request';
 import './stats.scss';
 
 function Stats(props: any) {
-  const [portfolioSwitch, setPortfolioSwitch] = useState('waitlist');
+  const [tableSwitch, setTableSwitch] = useState('visitors');
 
   const [subscribers, setSubscribers] = useState([]);
   const [subscribersLoaded, setSubscribersLoaded] = useState(false);
@@ -23,8 +24,8 @@ function Stats(props: any) {
   const [subscriberEmails, setSubscriberEmails] = useState('...')
   const [visitorEmails, setVisitorEmails] = useState('...')
 
-  const updatePortfolioSwitch = (switcher: string) => {
-    setPortfolioSwitch(switcher);
+  const updateTableSwitch = (switcher: string) => {
+    setTableSwitch(switcher);
   }
 
   const activateVisitor = (id: number) => {
@@ -46,8 +47,8 @@ function Stats(props: any) {
     }, (err: any) => {});
   }
 
-  const downloadWaitlist = () => {
-    window.open(`${apiLinks.url}whitelist-subscriber/download`);
+  const downloadWhitelist = () => {
+    window.open(`${apiLinks.url}metaverse-subscriber/download`);
   }
   const downloadVisitorlist = () => {
     // toast.error( 'Feature Under Development');
@@ -57,7 +58,7 @@ function Stats(props: any) {
   const loadSubscribers = () => {
     setSubscribersLoaded(false);
     sendRequest({
-        url: 'whitelist-subscriber',
+        url: 'metaverse-subscriber',
     }, (res: any) => {
       setSubscribersLoaded(true);
       setSubscribers(res.data || []);
@@ -86,7 +87,7 @@ function Stats(props: any) {
 
   const loadSubscriberMails = () => {
     sendRequest({
-      url: 'whitelist-mail'
+      url: 'metaverse-mail'
     },
     (res: any) => {
       setSubscriberEmails(res.data.length || 0);
@@ -114,7 +115,7 @@ function Stats(props: any) {
   
   return (
     <div className='w90 max1000 py-5 stats-page'>
-      <div className='row'>
+      <div className='row mb-4 mt-4'>
         <div className='col-lg-3 col-md-6 pb-3'>
           <div className='main-card' data-aos='zoom-in'>
             <div className='description-grid-50'>
@@ -124,7 +125,7 @@ function Stats(props: any) {
                 </div>
               </div>
               <div className=''>
-                <h6 className='text-right mb-0 mt-2'>Waitlist</h6>
+                <h6 className='text-right mb-0 mt-2'>Whitelist</h6>
               </div>
             </div>
             <h1 className='pt-4 text-right'>{ subscriberCount }</h1>
@@ -177,42 +178,46 @@ function Stats(props: any) {
         </div>
       </div>
 
-      <div className="switcher mt-4 mb-3">
-        <div className={'waitlist ' + (portfolioSwitch === 'waitlist' ? 'active' : 'dormant')} onClick={() => updatePortfolioSwitch('waitlist')}>
-          <p>Waitlist</p>
-        </div>
-        <div className={'visitors ' + (portfolioSwitch === 'visitors' ? 'active' : 'dormant')} onClick={() => updatePortfolioSwitch('visitors')}>
+      <div className="switcher mb-3">
+        <div className={'visitors ' + (tableSwitch === 'visitors' ? 'active' : 'dormant')} onClick={() => updateTableSwitch('visitors')}>
           <p>Visitors</p>
+        </div>
+        <div className={'whitelist ' + (tableSwitch === 'whitelist' ? 'active' : 'dormant')} onClick={() => updateTableSwitch('whitelist')}>
+          <p>Whitelist</p>
         </div>
       </div>
       <div className="row">
       {
-        portfolioSwitch === 'waitlist' ? 
-        <div className='col-md-12'>
+        tableSwitch === 'whitelist' ? 
+        <div className='col-md-12 pt-3'>
           <div className='main-card' data-aos='fade-up'>
             <div className='spread-info mb-3'>
-              <h6 className='mb-0'>Waitlist Subscribers</h6>
-              <button className='blue-button' onClick={downloadWaitlist}>Download</button>
+              <h6 className='mb-0'>Whitelist Subscribers</h6>
+              <button className='blue-button' onClick={downloadWhitelist}>Download</button>
             </div>
             <div className='scroll-holder'>
               <div className='scrollable'>
                 <table className='responsive-table'>
                   <thead>
                     <tr className='dark-row'>
-                      <th className=''>Name</th>
                       <th className=''>Email</th>
-                      <th className=''>Phone Number</th>
-                      <th className=''>Country</th>
+                      <th className=''>Date</th>
+                      <th className=''>Plots</th>
+                      <th className=''>City</th>
+                      <th className=''>NFT Code</th>
+                      <th className=''>Subscribed</th>
                     </tr>
                   </thead>
                   {
                     subscribersLoaded && subscribers.map((item: any, index) => {
                       return <tbody key={index}>
                         <tr className={(index % 2) ? 'dark-row' : ''}>
-                          <td>{item.firstName} {item.lastName}</td>
                           <td>{item.email}</td>
-                          <td>{item.phoneNo}</td>
-                          <td>{item.country}</td>
+                          <td>{formatDate(item.dateSubscribed)}</td>
+                          <td>{item.plots}</td>
+                          <td>{item.city}</td>
+                          <td>{item.code}</td>
+                          <td>{item.subscribed ? 'True' : 'False'}</td>
                         </tr>
                       </tbody>
                     })
@@ -229,7 +234,7 @@ function Stats(props: any) {
           </div>
         </div>
         :
-        <div className='col-md-12'>
+        <div className='col-md-12 pt-3'>
           <div className='main-card' data-aos='fade-up'>
             <div className='spread-info mb-3'>
               <h6 className='mb-0'>Website Visitors</h6>
@@ -257,7 +262,7 @@ function Stats(props: any) {
                             {
                               item.subscribed ? 
                               <button className='red-button' onClick={() => deactivateVisitor(item._id)}>Deactivate</button> :
-                              <button className='blue-button' onClick={() => activateVisitor(item._id)}>Activate</button>
+                              <button className='blue-button' onClick={() => activateVisitor(item._id)}>&nbsp; Activate &nbsp;</button>
                             }
                           </td>
                         </tr>

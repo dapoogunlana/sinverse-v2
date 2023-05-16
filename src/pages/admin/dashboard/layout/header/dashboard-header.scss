@@ -1,11 +1,12 @@
 @import '../../../../../assets/styles/variables.scss';
+@import '../../../../../assets/styles/layout.scss';
 
 .admin-header{
     position: fixed;
     width: 100%;
     z-index: 10;
     right: 0;
-    background-color: #F4F4F4;
+    background-color: $black-faint2;
     .sidebar-icon{
         font-size: 1.5em;
         color: $primary-blue-hover;
@@ -17,10 +18,11 @@
         border-radius: 5px;
         border: none;
         padding: 5px 10px;
-        background-color: $primary-blue-hover-faint4;
+        background-color: $primary-purple;
+        color: $white;
         transition: 0.25s ease;
         &:hover{
-            background-color: $primary-blue-hover;
+            background-color: $primary-purple-hover;
             color: $white;
         }
         &:active{

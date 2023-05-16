@@ -2,9 +2,9 @@
 
 .visitor-post{
     .cover{
-        border: 1px dashed $primary-blue;
         border-radius: 20px;
-        background-color: $white-faint1;
+        background-color: rgba(77, 18, 128, 0.8);
+        border: 1px solid #C568FF;
         padding: 30px 26px;
         .item-card{
             .input-grp{
@@ -18,16 +18,29 @@
                     width: 100%;
                     border-radius: 8px;
                     padding: 5px 15px;
-                    border: 1px solid $primary-blue-hover-faint3;
+                    border: 1px solid #C568FF;
                     box-shadow: 0 4px 8px -3px $black-faint4;
                     transition: 0.3s ease;
-                    background-color: $white;
+                    background-color: $primary-purple; 
+                    color: $white;
                     &:focus{
-                    outline: none;
-                    border-color: $primary-blue;
-                    box-shadow: 0 4px 8px 0 $black-faint3;
+                        outline: none;
+                        border-color: $white;
+                        box-shadow: 0 4px 8px 0 $black-faint3;
                     }
-
+                    &::placeholder{
+                        color: $white-faint1;
+                    }
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover, 
+                    &:-webkit-autofill:focus, 
+                    &:-webkit-autofill:active{
+                        -webkit-box-shadow: 0 0 0 30px $primary-purple-hover inset !important;
+                        box-shadow: 0 0 0 30px $primary-purple-hover inset !important;
+                    }
+                }
+                input:-webkit-autofill{
+                    -webkit-text-fill-color: $white !important;
                 }
                 input[type=file]{
                     padding: 2px 15px;
@@ -49,7 +62,8 @@
     margin: 2vh auto 3vh;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: rgba(77, 18, 128, 0.8);
+    border: 1px solid #C568FF;
     box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.1);
     .db-card-body{
         padding: 10px;
@@ -127,17 +141,17 @@
 .edit-box{
     // right: 10px;
     top: 60px;
-    background-color: $primary-blue;
+    background-color: $primary-purple;
     &:hover{
-        background-color: $primary-blue-hover;
+        background-color: $black;
     }
 }
 .copy-box{
     // right: 10px;
     top: 110px;
-    background-color: $primary-blue-brighter;
+    background-color: #C568FF;
     &:hover{
-        background-color: $primary-blue-bright;
+        background-color: #9320db;
     }
 }
 .post-section{
