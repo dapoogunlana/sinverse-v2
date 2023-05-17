@@ -5,8 +5,6 @@ export const apiLinks = {
     coinMarketCap: 'https://pro-api.coinmarketcap.com/v1/',
     url: (window.location.href.indexOf('localhost') === -1) ?
      'https://manilla-backend.herokuapp.com/api/v2/' : 'http://localhost:3500/api/v2/',
-    // url: (window.location.href.indexOf('localhost') === -1) ?
-    //  'https://manilla-backend.herokuapp.com/api/v4/' : 'https://manilla-backend.herokuapp.com/api/v4/',
     next: ``,
 }
 

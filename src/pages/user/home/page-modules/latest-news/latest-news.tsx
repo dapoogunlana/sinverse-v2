@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import {  } from '../../../../../assets/images';
 import SinButton from '../../../../../components/base-components/sin-button/sin-button';
 import { Carousel } from '../../../../../components/block-components/carousel';
 import { routeConstants } from '../../../../../services/constants/route-constants';
 import { clipToLength, convertStringForUrl, formatDate } from '../../../../../services/utils/data-manipulation-utilits';
 import { sendRequest } from '../../../../../services/utils/request';
-import { newsList } from '../../../news/news-data';
 import './latest-news.scss';
 
 function LatestNews(props: any) {

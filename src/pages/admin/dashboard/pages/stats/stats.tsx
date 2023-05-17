@@ -1,31 +1,37 @@
 import React, { useEffect, useState } from 'react';
-import { Link  } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Logger } from 'sass';
-import { DashboardIconEmail, DashboardIconSubscribe, DashboardIconTimeLeft } from '../../../../../assets/images';
+import { DashboardIconEmail, DashboardIconSubscribe, DashboardIconTimeLeft } from '../../../../../assets/images/new';
+import PaginatedItems from '../../../../../components/base-components/pagination-component/pagination-component';
 import MiniLoader from '../../../../../components/block-components/mini-loader/mini-loader';
 import { apiLinks } from '../../../../../config/environment';
-import { routeConstants } from '../../../../../services/constants/route-constants';
-import { formatDate } from '../../../../../services/utils/data-manipulation-utilits';
+import { clipToLength, formatDate, stringifyFilter } from '../../../../../services/utils/data-manipulation-utilits';
 import { sendRequest } from '../../../../../services/utils/request';
 import './stats.scss';
 
 function Stats(props: any) {
+
+  const token = sessionStorage.getItem('token');
   const [tableSwitch, setTableSwitch] = useState('visitors');
 
   const [subscribers, setSubscribers] = useState([]);
   const [subscribersLoaded, setSubscribersLoaded] = useState(false);
   const [subscriberCount, setSubscriberCount] = useState('...');
+  const [subscriberPaginationInfo, setSubscriberPaginationInfo] = useState({limit: 50, page: 1, count: 0});
 
   const [visitors, setVisitors] = useState([]);
   const [visitorsLoaded, setVisitorsLoaded] = useState(false);
   const [visitorCount, setVisitorCount] = useState('...');
+  const [visitorPaginationInfo, setVisitorPaginationInfo] = useState({limit: 50, page: 1, count: 0});
 
   const [subscriberEmails, setSubscriberEmails] = useState('...')
   const [visitorEmails, setVisitorEmails] = useState('...')
 
-  const updateTableSwitch = (switcher: string) => {
+  const updateTableSwitch = (switcher: 'visitors' | 'whitelist') => {
     setTableSwitch(switcher);
+    setTimeout(() => {
+      changeVisitorPage(1, true);
+      changeSubscriberPage(1, true);
+    }, 10)
   }
 
   const activateVisitor = (id: number) => {
@@ -48,42 +54,60 @@ function Stats(props: any) {
   }
 
   const downloadWhitelist = () => {
-    window.open(`${apiLinks.url}metaverse-subscriber/download`);
+    window.open(`${apiLinks.url}metaverse-subscriber/download?access_token=${token}`);
   }
   const downloadVisitorlist = () => {
     // toast.error( 'Feature Under Development');
-    window.open(`${apiLinks.url}visitor/download`);
+    window.open(`${apiLinks.url}visitor/download?access_token=${token}`);
   }
 
   const loadSubscribers = () => {
+    const params = {
+      limit: subscriberPaginationInfo.limit,
+      page: subscriberPaginationInfo.page,
+    }
     setSubscribersLoaded(false);
     sendRequest({
-        url: 'metaverse-subscriber',
+        url: 'metaverse-subscriber' + stringifyFilter(params),
     }, (res: any) => {
       setSubscribersLoaded(true);
       setSubscribers(res.data || []);
-      setSubscriberCount(res.data?.length || 0);
+      setSubscriberCount(res.totalCount || 0);
     }, (err: any) => {
       setSubscribersLoaded(true);
       toast.error(err?.message || 'Unable to load');
       setSubscribers([]);
     });
   }
+  const changeSubscriberPage = (newPage: any, force = false) => {
+    if (newPage !== subscriberPaginationInfo.page || force) {
+      setSubscriberPaginationInfo({...subscriberPaginationInfo, page: newPage});
+    }
+  }
+
   const loadVisitors = () => {
+    const params = {
+      limit: visitorPaginationInfo.limit,
+      page: visitorPaginationInfo.page,
+    }
     setVisitorsLoaded(false);
     sendRequest({
-        url: 'visitor',
+        url: 'visitor' + stringifyFilter(params),
     }, (res: any) => {
       setVisitorsLoaded(true);
       setVisitors(res.data || []);
-      setVisitorCount(res.data?.length || 0);
+      setVisitorCount(res.totalCount || 0);
     }, (err: any) => {
       setVisitorsLoaded(true);
       toast.error(err.message || 'Unable to load');
       setVisitors([]);
     });
   }
-
+  const changeVisitorPage = (newPage: any, force = false) => {
+    if (newPage !== visitorPaginationInfo.page || force) {
+      setVisitorPaginationInfo({...visitorPaginationInfo, page: newPage});
+    }
+  }
 
   const loadSubscriberMails = () => {
     sendRequest({
@@ -112,40 +136,17 @@ function Stats(props: any) {
     loadVisitors();
     loadVisitorMails();
   },[props]);
+
+  useEffect(() => {
+    loadSubscribers();
+  },[subscriberPaginationInfo]);
+  useEffect(() => {
+    loadVisitors();
+  },[visitorPaginationInfo]);
   
   return (
     <div className='w90 max1000 py-5 stats-page'>
       <div className='row mb-4 mt-4'>
-        <div className='col-lg-3 col-md-6 pb-3'>
-          <div className='main-card' data-aos='zoom-in'>
-            <div className='description-grid-50'>
-              <div className='relative'>
-                <div className='icon-holder'>
-                  <img src={DashboardIconTimeLeft} width={50} alt="" />
-                </div>
-              </div>
-              <div className=''>
-                <h6 className='text-right mb-0 mt-2'>Whitelist</h6>
-              </div>
-            </div>
-            <h1 className='pt-4 text-right'>{ subscriberCount }</h1>
-          </div>
-        </div>
-        <div className='col-lg-3 col-md-6 pb-3'>
-          <div className='main-card' data-aos='zoom-in'>
-            <div className='description-grid-50'>
-              <div className='relative'>
-                <div className='icon-holder'>
-                  <img src={DashboardIconEmail} width={50} alt="" />
-                </div>
-              </div>
-              <div className=''>
-                <h6 className='text-right mb-0 mt-2'>Messages</h6>
-              </div>
-            </div>
-            <h1 className='pt-4 text-right'>{ subscriberEmails }</h1>
-          </div>
-        </div>
         <div className='col-lg-3 col-md-6 pb-3'>
           <div className='main-card' data-aos='zoom-in'>
             <div className='description-grid-50'>
@@ -174,6 +175,36 @@ function Stats(props: any) {
               </div>
             </div>
             <h1 className='pt-4 text-right'>{ visitorEmails }</h1>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 pb-3'>
+          <div className='main-card' data-aos='zoom-in'>
+            <div className='description-grid-50'>
+              <div className='relative'>
+                <div className='icon-holder'>
+                  <img src={DashboardIconTimeLeft} width={50} alt="" />
+                </div>
+              </div>
+              <div className=''>
+                <h6 className='text-right mb-0 mt-2'>Whitelist</h6>
+              </div>
+            </div>
+            <h1 className='pt-4 text-right'>{ subscriberCount }</h1>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 pb-3'>
+          <div className='main-card' data-aos='zoom-in'>
+            <div className='description-grid-50'>
+              <div className='relative'>
+                <div className='icon-holder'>
+                  <img src={DashboardIconEmail} width={50} alt="" />
+                </div>
+              </div>
+              <div className=''>
+                <h6 className='text-right mb-0 mt-2'>Messages</h6>
+              </div>
+            </div>
+            <h1 className='pt-4 text-right'>{ subscriberEmails }</h1>
           </div>
         </div>
       </div>
@@ -212,11 +243,11 @@ function Stats(props: any) {
                     subscribersLoaded && subscribers.map((item: any, index) => {
                       return <tbody key={index}>
                         <tr className={(index % 2) ? 'dark-row' : ''}>
-                          <td>{item.email}</td>
+                          <td title={item.email}>{clipToLength(item.email, 16)}</td>
                           <td>{formatDate(item.dateSubscribed)}</td>
                           <td>{item.plots}</td>
-                          <td>{item.city}</td>
-                          <td>{item.code}</td>
+                          <td title={item.city}>{clipToLength(item.city, 16)}</td>
+                          <td title={item.code}>{clipToLength(item.code, 13)}</td>
                           <td>{item.subscribed ? 'True' : 'False'}</td>
                         </tr>
                       </tbody>
@@ -224,6 +255,15 @@ function Stats(props: any) {
                   }
                 </table>
               </div>
+              {
+                subscribers.length > 0 && subscribersLoaded && 
+                <PaginatedItems
+                  itemsPerPage={subscriberPaginationInfo.limit}
+                  activePage={subscriberPaginationInfo.page}
+                  totalCount={subscriberCount}
+                  changePage={changeSubscriberPage}
+                />
+              }
               {
                 subscribers.length === 0 && subscribersLoaded && <h5 className='text-center pt-3'>No data Available</h5>
               }
@@ -242,7 +282,7 @@ function Stats(props: any) {
             </div>
             <div className='scroll-holder'>
               <div className='scrollable'>
-                <table className='responsive-table'>
+                <table className='responsive-table mb-3'>
                   <thead>
                     <tr className='dark-row'>
                       <th className=''>Email</th>
@@ -271,6 +311,15 @@ function Stats(props: any) {
                   }
                 </table>
               </div>
+              {
+                visitors.length > 0 && visitorsLoaded && 
+                <PaginatedItems
+                  itemsPerPage={visitorPaginationInfo.limit}
+                  activePage={visitorPaginationInfo.page}
+                  totalCount={visitorCount}
+                  changePage={changeVisitorPage}
+                />
+              }
               {
                 visitors.length === 0 && visitorsLoaded && <h5 className='text-center pt-3'>No data Available</h5>
               }

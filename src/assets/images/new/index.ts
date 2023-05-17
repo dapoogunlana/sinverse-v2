@@ -4,6 +4,9 @@ import LogoWhite from './logo-white.svg';
 import LogoWhiteRound from './logo-white.png';
 import HamburgerButton from './icons/Hamburger-Button.svg';
 import WhiteAngleBackdrop from './white-angle-backdrop.svg';
+import DashboardIconSubscribe from './icons/dashboard-icon-subscribe.svg';
+import DashboardIconTimeLeft from './icons/dashboard-icon-time-left.svg';
+import DashboardIconEmail from './icons/dashboard-icon-email.svg';
 import FeatureImgDigitalAssets from './feature-img-digital_assets.jpg';
 import FeaturePlayEarn from './feature-img-play_n_earn.jpg';
 import FeatureImgOmniverse from './feature-img-omniverse.jpg';
@@ -117,6 +120,9 @@ export {
     LogoWhiteRound,
     HamburgerButton,
     WhiteAngleBackdrop,
+    DashboardIconSubscribe,
+    DashboardIconTimeLeft,
+    DashboardIconEmail,
     FeatureImgDigitalAssets,
     FeaturePlayEarn,
     FeatureImgOmniverse,

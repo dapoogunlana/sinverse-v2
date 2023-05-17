@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CalendarIcon } from '../../../assets/images';
-import { newsList } from './news-data';
 import { routeConstants } from '../../../services/constants/route-constants';
 import './news.scss';
 import { clipToLength, convertStringForUrl, formatDate } from '../../../services/utils/data-manipulation-utilits';
-import ContactSect from '../../../components/block-components/contact-sect/contact-sect';
 import { sendRequest } from '../../../services/utils/request';
 import TopicHolder from '../../../components/base-components/topic-holder/topic-holder';
 import SeparationLine from '../../../components/base-components/separation-line/separation-line';
