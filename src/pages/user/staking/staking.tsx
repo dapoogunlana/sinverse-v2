@@ -59,7 +59,7 @@ function Staking(props: any) {
                         </div>
                         <div className='spread-info staking-info pb-2'>
                           <span className='tag'>Start Date:</span>
-                          <span className='answer'>{pool.endDate}</span>
+                          <span className='answer'>{pool.startDate}</span>
                         </div>
                         {
                           pool.hideAction ?
@@ -67,14 +67,14 @@ function Staking(props: any) {
                             <p className='text-center reduced mb-2'>(Coming Soon)</p>
                           </div> :
                           <>
-                            <div className='guide-link'>
+                            <div className={'guide-link' + (!pool.guideLink? ' disabled' : '')}>
                               <a href={pool.guideLink} target={'_blank'}>
                                 <span className='link-text'>View Guide</span>
                                 <span className='under-line'></span>
                               </a>
                             </div>
                             {
-                              pool.closed ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p>.</p>
+                              pool.closed ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p className='reduced mb-2'>.</p>
                             }
                             <SinButton tint='blue' size='slim' disabled={pool.closed} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
                           </>

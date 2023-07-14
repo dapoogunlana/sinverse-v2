@@ -27,7 +27,7 @@
      industryNews: 'news',
      token: 'token',
      documents: 'documents',
-     download: 'download',
+     download: 'downloads',
      downloadInstructions: 'download-instructions',
      gameInfo: 'game-info',
      staking: 'staking',

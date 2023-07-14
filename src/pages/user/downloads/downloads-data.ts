@@ -1,5 +1,6 @@
-import { WhitePaper, Doc1, Doc2 } from "../../../assets/files";
+import { WhitePaper } from "../../../assets/files";
 import {
+    DownloadVersion2_70,
     DownloadVersion1_90,
     DownloadVersion1_87,
     DownloadVersion1_84,
@@ -13,8 +14,39 @@ import {
 
 export const downloadList = [
     {
+        version: 'Build Version 2.70',
+        image: DownloadVersion2_70,
+        section: [
+            {
+                points: [
+                    {
+                        note: `CSafe Usage (1 safe for 1 land): This feature will be available once the Marketplace goes live. Users will be able to safely utilize their land through the implementation of a 1:1 safe ratio.`,
+                        subPoints: []
+                    },
+                    {
+                        note: `Material Shop: The inventory section now includes functionality for purchasing materials. Users can easily acquire materials through this feature.`,
+                        subPoints: []
+                    },
+                    {
+                        note: `Drug Dealer Update: The Drug Dealer feature has been updated to include the shield peddler. This shield peddler provides users with protection for approximately 1 minute, enhancing their gameplay experience.`,
+                        subPoints: []
+                    },
+                    {
+                        note: `Pistol for 0.5 Gold: All users will now start with one pistol. They have the option to drop it and subsequently purchase additional pistols for 0.5 Gold each.`,
+                        subPoints: []
+                    },
+                    {
+                        note: ` Happy Hours Implementation: Random happy hours will now be automatically set from the server on a daily basis. These happy hours are currently set at a 2X multiplier.`,
+                        subPoints: []
+                    },
+                ]
+            }
+        ],
+        link: 'https://sinverse.com/get/Sinverse.exe',
+    },
+    {
         version: 'Build Version 1.98',
-        image: DownloadVersion1_90,
+        image: DownloadVersion2_70,
         section: [
             {
                 points: [
@@ -45,7 +77,7 @@ export const downloadList = [
                 ]
             }
         ],
-        link: 'https://sinverse.com/download/get/Sinverse.exe',
+        link: 'https://sinverse.com/get/Sinverse.exe',
     },
     {
         version: 'Build Version 1.87',
@@ -93,7 +125,7 @@ export const downloadList = [
                 ]
             }
         ],
-        link: 'https://sinverse.com/download/get/Sinverse.exe',
+        link: 'https://sinverse.com/get/Sinverse.exe',
     },
     {
         version: 'Build Version 1.84',
@@ -128,7 +160,7 @@ export const downloadList = [
                 ]
             }
         ],
-        link: 'https://sinverse.com/download/get/SinVerse_demo_1.84.zip',
+        link: 'https://sinverse.com/get/Sinverse.exe',
     },
     {
         version: 'Build Version 1.83',

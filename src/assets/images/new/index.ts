@@ -103,6 +103,7 @@ import LogoSpinner from './logo-spinner.svg';
 import RoadmapImage from './roadmap_image.jpg';
 import constructionSignPost from './construction-sign-post.png';
 
+import DownloadVersion2_70 from './download-versions/Build-version-2.70.jpg';
 import DownloadVersion1_90 from './download-versions/Build-version-1.90.jpg';
 import DownloadVersion1_87 from './download-versions/Build-version-1.87.jpg';
 import DownloadVersion1_84 from './download-versions/Build-version-1.84.jpg';
@@ -219,6 +220,7 @@ export {
     RoadmapImage,
     constructionSignPost,
 
+    DownloadVersion2_70,
     DownloadVersion1_90,
     DownloadVersion1_87,
     DownloadVersion1_84,
