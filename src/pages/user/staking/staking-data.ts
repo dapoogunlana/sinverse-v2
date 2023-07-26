@@ -11,8 +11,9 @@ export const stakingList1 = [
         guideLink: 'https://medium.com/@TheSinVerse/og-staking-pool-v2-all-the-details-3a181409f7df',
         stakingLink: 'https://sinverse.com/ogstakingv2/',
         image: LogoWhite,
-        closed: false,
+        closed: true,
         hideAction: false,
+        exemption: true,
     },
     {
         name: 'LAND V3 STAKING',
@@ -24,6 +25,8 @@ export const stakingList1 = [
         stakingLink: 'https://sinverse.com/stakingv3',
         image: LogoWhite,
         closed: true,
+        hideAction: false,
+        exemption: true,
     },
     {
         name: 'LAST CHANCE SALOON',
@@ -35,6 +38,8 @@ export const stakingList1 = [
         stakingLink: 'https://sinverse.com/stakingv4',
         image: LogoWhite,
         closed: true,
+        hideAction: false,
+        exemption: true,
     },
 ];
 export const stakingList2 = [
@@ -49,6 +54,7 @@ export const stakingList2 = [
         full: true,
         hideAction: false,
         image: LogoWhite,
+        exemption: false,
     },
     {
         name: 'Exclusive Staking pool',
@@ -61,5 +67,6 @@ export const stakingList2 = [
         full: true,
         hideAction: false,
         image: LogoWhite,
+        exemption: false,
     },
 ];

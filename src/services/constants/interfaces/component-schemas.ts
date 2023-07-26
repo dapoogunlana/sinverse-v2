@@ -22,6 +22,7 @@ export interface ItopicComponent {
     className?: string;
     max?: number;
     children: string;
+    subChild?: string;
 }
 
 export interface IAppModalProps {

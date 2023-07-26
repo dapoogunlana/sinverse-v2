@@ -12,6 +12,8 @@ import { socialLinks } from '../../../config/environment';
 
 function Staking(props: any) {
 
+  const subChild = 'All staking pools are closed';
+
   const goToLink = (link: string) => {
     if(link) {
       window.open(link, '_blank');
@@ -74,9 +76,9 @@ function Staking(props: any) {
                               </a>
                             </div>
                             {
-                              pool.closed ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p className='reduced mb-2'>.</p>
+                              pool.closed ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p className='reduced mb-2 c-black'>.</p>
                             }
-                            <SinButton tint='blue' size='slim' disabled={pool.closed} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
+                            <SinButton tint='blue' size='slim' disabled={pool.closed && !pool.exemption} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
                           </>
                         }
                       </SinCard>
@@ -126,9 +128,9 @@ function Staking(props: any) {
                               </a>
                             </div>
                             {
-                              pool.full ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p></p>
+                              pool.full ? <p className='text-center reduced mb-2'>(Staking Closed)</p> : <p className='reduced mb-2 c-black'>.</p>
                             }
-                            <SinButton tint='blue' size='slim' disabled={pool.full} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
+                            <SinButton tint='blue' size='slim' disabled={pool.full && !pool.exemption} action={() => goToLink(pool.stakingLink)}>Start Staking</SinButton>
                           </>
                         }
                       </SinCard>

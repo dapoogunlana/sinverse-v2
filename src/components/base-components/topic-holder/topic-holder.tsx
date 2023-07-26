@@ -14,7 +14,13 @@ function TopicHolder (props: ItopicComponent) {
         <div className='width-100'>
             <div className={className} data-aos='fade-right'>
                 <div className='line'></div>
-                <h3 className='mb-0 py-3'>{props.children}</h3>
+                <h3 className='mb-0 py-3'>
+                    {props.children}
+                    {
+                        props.subChild &&
+                        <span className='reduced-x'>&nbsp; ({props.subChild})</span> 
+                    }
+                </h3>
                 <div className='line'></div>
             </div>
         </div>
