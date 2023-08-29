@@ -23,10 +23,6 @@ function About(props: any) {
       <SubSpace/>
       <GamePlay/>
       <KuCoinSpace/>
-      <iframe
-        src="https://www.chatbase.co/chatbot-iframe/1ibF1elOTEcyFiBnf8QV-" width="100%"
-        style={{height: '100%', minHeight: '700px'}} frameBorder="0"
-      ></iframe>
       <Features/>
       <LandTypes/>
       <MarketPlace/>
