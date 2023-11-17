@@ -30,6 +30,16 @@ function LandTypes() {
   return (
     <div className='land-types'>
       <h2 className='text-center pt-3'>Land and Business Licenses</h2>
+      <div className='active-sect'>
+        <div className="active-image">
+            <img src={activeInfo.image} alt="" />
+        </div>
+        <span></span>
+        <div className='active-info'>
+          <h6>{activeInfo.name}</h6>
+            <p className='' dangerouslySetInnerHTML={{__html: activeInfo.info}}></p>
+        </div>
+      </div>
       <div className='type-holder'>
         <div className='type-case' id="type-case">
           <div className='types'>
@@ -51,13 +61,6 @@ function LandTypes() {
             <i className="fa-solid fa-caret-right"></i>
           </div>
         </div>
-      </div>
-      <div className="active-image">
-          <img src={activeInfo.image} alt="" />
-      </div>
-      <div className='active-info'>
-        <h6>{activeInfo.name}</h6>
-          <p className='' dangerouslySetInnerHTML={{__html: activeInfo.info}}></p>
       </div>
       <SeparationLine stickBottom></SeparationLine>
     </div>
