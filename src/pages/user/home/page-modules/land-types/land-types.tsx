@@ -36,7 +36,7 @@ function LandTypes() {
         </div>
         <span></span>
         <div className='active-info'>
-          <h6>{activeInfo.name}</h6>
+          <h2 className='text-center pt-3 relative'>{activeInfo.name}</h2>
             <p className='' dangerouslySetInnerHTML={{__html: activeInfo.info}}></p>
         </div>
       </div>

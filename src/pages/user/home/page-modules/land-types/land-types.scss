@@ -157,6 +157,11 @@
                     font-size: 00.9em;
                 }
             }
+            h2{
+                @include mediaM (750px) {
+                    font-size: 1.6em;
+                }
+            }
         }
         @include mediaM(1050px) {
             display: block;
