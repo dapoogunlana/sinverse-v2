@@ -17,6 +17,8 @@ import GameplayImgSquidGames from './gameplay-img-squid_games.jpg';
 import GameplayOverlay from './game-play-overlay.png';
 import HeroDownloadGame from './hero-download-game.jpg';
 import HeroDownloadWhitepaper from './hero-download-whitepaper.jpg';
+import HeroDownloadGameText from './hero-download-game-text.svg';
+import HeroDownloadWhitepaperText from './hero-download-whitepaper-text.svg';
 import TokenomicsImage from './Sinverse-web-tokenomics-2.png';
 import HeroImg from './hero-img.png';
 import HeroImgMobile from './hero-img-mobile.png';
@@ -102,6 +104,8 @@ import LogoHighRes from './logo-high-res.png';
 import LogoSpinner from './logo-spinner.svg';
 import RoadmapImage from './roadmap_image.jpg';
 import constructionSignPost from './construction-sign-post.png';
+import landMarketIcon from './land-market-icon.png';
+import marketTempIcon from './market-temp-icon.png';
 
 import DownloadVersion2_70 from './download-versions/Build-version-2.70.jpg';
 import DownloadVersion1_90 from './download-versions/Build-version-1.90.jpg';
@@ -134,6 +138,8 @@ export {
     GameplayOverlay,
     HeroDownloadGame,
     HeroDownloadWhitepaper,
+    HeroDownloadGameText,
+    HeroDownloadWhitepaperText,
     TokenomicsImage,
     HeroImg,
     HeroImgMobile,
@@ -219,6 +225,8 @@ export {
     LogoSpinner,
     RoadmapImage,
     constructionSignPost,
+    landMarketIcon,
+    marketTempIcon,
 
     DownloadVersion2_70,
     DownloadVersion1_90,

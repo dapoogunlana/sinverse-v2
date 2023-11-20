@@ -1,7 +1,16 @@
 import React, {  } from 'react';
 import { useNavigate } from 'react-router';
 import { WhitePaper } from '../../../../../assets/files';
-import { HeroDownloadGame, HeroDownloadWhitepaper, SINVERSE, HeroImgMobile, HeroScrollDownCircle, HeroScrollDownArrow } from '../../../../../assets/images/new';
+import {
+  HeroDownloadGame,
+  HeroDownloadWhitepaper,
+  SINVERSE,
+  HeroImgMobile,
+  HeroScrollDownCircle,
+  HeroScrollDownArrow,
+  HeroDownloadGameText,
+  HeroDownloadWhitepaperText,
+} from '../../../../../assets/images/new';
 import { routeConstants } from '../../../../../services/constants/route-constants';
 import './banner.scss';
 
@@ -37,7 +46,7 @@ function Hero2() {
                 <img src={HeroImgMobile} data-aos='zoom-out' alt="" />
               </div>
             </div>
-            <div className='spread-info-top w100-flat' data-aos='zoom-in' data-aos-delay='1200'>
+            {/* <div className='spread-info-top w100-flat' data-aos='zoom-in' data-aos-delay='1200'>
               <div className='hero-download' onClick={downloadWhitepaper}>
                 <img src={HeroDownloadWhitepaper} alt="" />
                 <p className='reduced-soft pt-2'>Download Whitepaper</p>
@@ -45,6 +54,17 @@ function Hero2() {
               <div className='hero-download' onClick={downloadGame}>
                 <img src={HeroDownloadGame} alt="" />
                 <p className='reduced-soft pt-2'>Download Game</p>
+              </div>
+            </div> */}
+            <div className='spread-holder'>
+              <div className='spread-downloads w100-flat' data-aos='zoom-in' data-aos-delay='1200'>
+                <div className='hero-download-button red' onClick={downloadWhitepaper}>
+                  <img src={HeroDownloadWhitepaperText} alt="" />
+                </div>
+                <div className='dvd'></div>
+                <div className='hero-download-button purple' onClick={downloadGame}>
+                  <img src={HeroDownloadGameText} alt="" />
+                </div>
               </div>
             </div>
           </div>

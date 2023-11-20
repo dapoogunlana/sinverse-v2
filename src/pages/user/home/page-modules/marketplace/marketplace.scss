@@ -2,23 +2,180 @@
 
 
 .market-place{
-    background-image: linear-gradient(#080015, #3D1141, #080015);
+    background-image: linear-gradient(#080015, #0C0B54, #080015);
     color: $white;
-    .link{
-        font-weight: 700;
-        color: #d089ff;
-    }
-}
-.under-construction-popup{
-    max-width: 450px !important;
-    .modal-content{
-        color: $white;
-        width: 100%;
-    }
-    .team-card{
-        width: 100%;
-        .sin-card{
-            padding: 0.8em;
+    .market-items-sect{
+        .marketplace-slide-holder {
+          width: 100%;
+          padding: 2px;
+          position: relative;
+          .marketplace-slide{
+              width: 90%;
+              max-width: 360px;
+              margin: 1em auto;
+              cursor: pointer;
+            //   padding: 15px;
+              border-radius: 20px;
+              background-color: rgba(223, 212, 255, 0.1);
+              transition: 0.3s ease;
+              &:hover{
+                  transform: scale(1.05);
+              }
+            //   border: 1.5px dashed $primary-blue-hover-faint2;
+              .im-container{
+                  height: 0;
+                  cursor: pointer;
+                  padding-bottom: 64%;
+                  border-radius: 10px;
+                  position: relative;
+                  background-image: radial-gradient(rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+                  // box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.40);
+                  box-shadow: 0 2px 25px 0 $black-faint4;
+                  background-size: cover;
+                //   overflow: hidden;
+                //   margin-bottom: 15px;
+                  .abs-holder{
+                    position: absolute;
+                    left: 0;
+                    top: 0%;
+                    width: 100%;
+                    height: 100%;
+                  }
+                  img{
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      width: 100%;
+                      transform: translateY(-50%);
+                  }
+              }
+              .image-holder{
+                  box-shadow: 0 2px 25px 0 $black-faint4;
+                //   overflow: hidden;
+                  border-radius: 10px 10px 5px 5px;
+                  img{
+                      width: 100%;
+                      cursor: pointer;
+                  }
+                  margin-bottom: 15px;
+              }
+              .text-holder{
+                  box-shadow: 0 2px 25px 0 $black-faint4;
+                  overflow: hidden;
+                  cursor: pointer;
+                //   border-radius: 5px 5px 10px 10px;
+                //   background-color: rgba(0, 0, 0, 0.3);
+                  padding: 15px;
+                  h6{
+                      min-height: 30px;
+                      font-size: 1.15em;
+                  }
+                  .content{
+                      min-height: 92.5px;
+                  }
+                  p{
+                    color: $white;
+                  }
+                  .info-description{
+                      p{
+                          color: $white-faint1;
+                          font-size: 0.7em;
+                          span{
+                              color: $white;
+                              font-weight: 700;
+                              font-size: 1.05em;
+                          }
+                      }
+                  }
+                  .marketplace-button{
+                    //   width: 100%;
+                      padding: 5px 12px;
+                      box-shadow: 0 4px 8px 1px $black-faint4;
+                      margin-top: 1em;
+                      border-radius: 6px;
+                      font-size: 0.8em;
+                      font-weight: 700;
+                      // background-color: #8200d3;
+                      // border: 1px solid rgba(197, 104, 255, 0.6);
+                      border: none;
+                      color: $white;
+                      transition: 0.3s ease;
+                  }
+                  .Common{
+                    background-color: #854b00;
+                  }
+                  .Rare{
+                    background-color: #8200d3;
+                  }
+                  .Legendary{
+                    background-color: #249b00;
+                  }
+              }
+              @include mediaM(767px) {
+                padding: 10px;
+                border-radius: 14px;
+              }
+          }
         }
+    }
+    .land-market-grid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      @include mediaM(767px) {
+        display: block;
+      }
+      .land-market-holder{
+        padding: 1em;
+        .market-card{
+          border-radius: 20px;
+          padding: 1em;
+          .imh{
+            width: 60%;
+            max-width: 240px;
+            margin: auto;
+            padding: 0.6em 0;
+          }
+          button{
+            color: $white;
+            background-color: $black-faint4;
+            border-radius: 8px;
+            padding: 7px 12px;
+            border: 1px solid $white;
+            transition: 0.25s ease;
+            margin: 00.6em 0 1em;
+            &:hover{
+              box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            &:active{
+              filter: brightness(80%);
+              transform: translateY(5px);
+            }
+            &:focus{
+              outline: none;
+            }
+          }
+        }
+        .land{
+          background-image: linear-gradient(160deg, #6D1FD0, rgba(94, 106, 164, 0.28));
+          button{
+            &:hover{
+              background-color: $primary-purple;
+              border-color: $primary-purple;
+            }
+          }
+        }
+        .other{
+          background-image: linear-gradient(160deg, #D01FA9, hsla(327, 28%, 51%, 0.28));
+          .imh{
+            padding: 1em 0;
+          }
+          button{
+            &:hover{
+              background-color: $red;
+              border-color: $red;
+            }
+          }
+        }
+      }
     }
 }

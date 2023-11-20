@@ -97,6 +97,53 @@
                       }
                     }
                 }
+                .spread-holder{
+                    min-height: 150px;
+                    width: 100%;
+                }
+                .spread-downloads{
+                    display: grid;
+                    grid-template-columns: 47% 6% 47%;
+                    .hero-download-button{
+                        padding: 12px 15px;
+                        border-radius: 8px;
+                        transition: 0.3s ease;
+                        box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.24);
+                        img{
+                            width: 100%;
+                        }
+                        &:hover{
+                            transform: scale(1.05) rotate(5deg);
+                        }
+                        &:active{
+                            filter: brightness(80%);
+                            transform: scale(1.1) rotate(5deg) translateY(10px);
+                        }
+                    }
+                    .red{
+                        background-color: $red;
+                    }
+                    .purple{
+                        background-color: $primary-purple;
+                    }
+                    @include mediaM(750px) {
+                        display: block;
+                        width: 100%; padding-bottom: 3em;
+                        .hero-download-button{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 70%;
+                            }
+                        }
+                        .dvd{
+                            width: 100%;
+                            height: 15px;
+                        }
+                    }
+                }
             }
             @include mediaM(750px) {
                 width: 100%;
