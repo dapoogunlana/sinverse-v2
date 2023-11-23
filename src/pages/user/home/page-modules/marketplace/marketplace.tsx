@@ -73,26 +73,42 @@ function MarketPlace(props: any) {
   const updateItemSlide = () => {
     setItemSlide(currentMarketplaceList.map((item, index) => {
       return <div className='marketplace-slide-holder' key={index}>
-        <div className='marketplace-slide' data-aos='fade-up' onClick={() => goToItem(item)}>
+        <div className={'marketplace-slide ' + item.type} data-aos='fade-up'>
           {/* <div className='image-holder'> */}
           <div className="im-container">
             <div className='abs-holder'></div>
-            <img src={`https://ipfs.io/ipfs/${item.image}`} alt="" />
+            {
+              item.type === 'Land' ?
+              <img src={landMarketIcon} alt="" /> :
+              <img src={`https://ipfs.io/ipfs/${item.image}`} alt="" />
+            }
           </div>
           <div className='text-holder'>
             <h6 className=''>{item.name}</h6>
-              <div className='spread-info info-description'>
-                <p className=''>
-                  Type: <br />
-                  <span>{item.category_name}</span>
-                </p>
-                <p className='text-right'>
-                  Owner: <br />
-                  <span>{item.owner_name}</span>
-                </p>
-              </div>
+              {
+                item.type === 'Weapon' &&
+                <div className='spread-info info-description'>
+                  <p className=''>Type: <br /><span>{item.category_name}</span></p>
+                  <p className='text-right'>Owner: <br /><span>{item.owner_name}</span></p>
+                </div>
+              }
+              {
+                item.type === 'Land' &&
+                <div className='spread-info info-description'>
+                  <p className=''>City: <br /><span>{item.city_name}</span></p>
+                  <p className='text-right'>Owner: <br /><span>{item.owner_name}</span></p>
+                </div>
+              }
+              {
+                item.type === 'NFT' &&
+                <div className='spread-info info-description'>
+                  <p className=''>Royalty: <br /><span>{item.royalty_percent}%</span></p>
+                  <p className='text-right'>Owner: <br /><span>{item.owner_name}</span></p>
+                </div>
+              }
             <p className='faint-font reduced-soft mb-2 font-weight-bold'>$SIN <span>{formatNumber(item.price)}</span></p>
-            <span className={'marketplace-button ' + item.Rarity}>{item.Rarity}</span>
+            {/* <span className={'marketplace-button ' + item.Rarity}>{item.Rarity}</span> */}
+            <button className="marketplace-button" onClick={() => goToItem(item)}>Buy Now</button>
             {/* <SinButton fill action={() => goToItem(item)}>Read More</SinButton> */}
           </div>
         </div>
@@ -137,7 +153,7 @@ function MarketPlace(props: any) {
               <div className='imh'>
                 <img src={landMarketIcon} alt="" />
               </div>
-              <h2>Browse our market place for Available Lands to Buy and sell</h2>
+              <h2>Browse our marketplace for Available Lands to Buy and sell</h2>
               <button onClick={() => openMarket('https://marketplace.sinverse.com/land-marketplace')}>Browse now</button>
             </div>
           </div>
@@ -146,7 +162,7 @@ function MarketPlace(props: any) {
               <div className='imh'>
                 <img src={marketTempIcon} alt="" />
               </div>
-              <h2>Browse our market place for other NFTs to Buy and sell</h2>
+              <h2>Trade in-game assets and other NFTs on our Marketplace</h2>
               <button onClick={() => openMarket('https://marketplace.sinverse.com/safenfts')}>Browse now</button>
             </div>
           </div>

@@ -13,7 +13,6 @@
               width: 90%;
               max-width: 360px;
               margin: 1em auto;
-              cursor: pointer;
             //   padding: 15px;
               border-radius: 20px;
               background-color: rgba(223, 212, 255, 0.1);
@@ -24,7 +23,6 @@
             //   border: 1.5px dashed $primary-blue-hover-faint2;
               .im-container{
                   height: 0;
-                  cursor: pointer;
                   padding-bottom: 64%;
                   border-radius: 10px;
                   position: relative;
@@ -55,14 +53,12 @@
                   border-radius: 10px 10px 5px 5px;
                   img{
                       width: 100%;
-                      cursor: pointer;
                   }
                   margin-bottom: 15px;
               }
               .text-holder{
                   box-shadow: 0 2px 25px 0 $black-faint4;
                   overflow: hidden;
-                  cursor: pointer;
                 //   border-radius: 5px 5px 10px 10px;
                 //   background-color: rgba(0, 0, 0, 0.3);
                   padding: 15px;
@@ -88,18 +84,24 @@
                       }
                   }
                   .marketplace-button{
-                    //   width: 100%;
+                      width: 100%;
                       padding: 5px 12px;
                       box-shadow: 0 4px 8px 1px $black-faint4;
                       margin-top: 1em;
                       border-radius: 6px;
                       font-size: 0.8em;
                       font-weight: 700;
-                      // background-color: #8200d3;
+                      background-color: #8200d3;
                       // border: 1px solid rgba(197, 104, 255, 0.6);
                       border: none;
                       color: $white;
                       transition: 0.3s ease;
+                      &:hover{
+                        filter: brightness(80%);
+                      }
+                      &:focus{
+                        outline: none;
+                      }
                   }
                   .Common{
                     background-color: #854b00;
@@ -115,6 +117,28 @@
                 padding: 10px;
                 border-radius: 14px;
               }
+          }
+          .Land{
+            .im-container{
+              img{
+                  position: absolute;
+                  left: 20%;
+                  top: 50%;
+                  width: 60%;
+                  transform: translateY(-50%);
+              }
+            }
+          }
+          .NFT{
+            .im-container{
+              img{
+                  position: absolute;
+                  left: 15%;
+                  top: 50%;
+                  width: 70%;
+                  transform: translateY(-50%);
+              }
+            }
           }
         }
     }

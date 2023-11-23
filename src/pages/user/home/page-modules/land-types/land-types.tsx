@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SeparationLine from '../../../../../components/base-components/separation-line/separation-line';
 import TopicHolder from '../../../../../components/base-components/topic-holder/topic-holder';
+import { Carousel } from '../../../../../components/block-components/carousel';
 import { landTypesInfo } from './land-types-info';
 import './land-types.scss';
 
@@ -26,6 +27,26 @@ function LandTypes() {
     }
     
   }
+  
+  const previewCount = (slideLength: number) => {
+    const width = window.innerWidth;
+    if(width > 1300) {
+      return 5 <= slideLength ? 5 : slideLength;
+    } else if(width > 1050) {
+      return 4 <= slideLength ? 4 : slideLength;
+    } else if(width > 79) {
+      return 3 <= slideLength ? 3 : slideLength;
+    } else {
+      return 2;
+    }
+  }
+
+  const itemSlide = landTypesInfo.map((type, index) => (
+    <div key={index} className={'type' + (type.name === activeInfo.name ? ' active-type': '')} onClick={() => activateType(index)}>
+      <img src={type.image} alt="" />
+      <p className='reduced-soft text-center'>{type.name}</p>
+    </div>
+  ));
 
   return (
     <div className='land-types'>
@@ -42,16 +63,33 @@ function LandTypes() {
       </div>
       <div className='type-holder'>
         <div className='type-case' id="type-case">
-          <div className='types'>
-            {
-              landTypesInfo.map((type, index) => (
-                <div key={index} className={'type' + (type.name === activeInfo.name ? ' active-type': '')} onClick={() => activateType(index)}>
-                  <img src={type.image} alt="" />
-                  <p className='reduced-soft text-center'>{type.name}</p>
-                </div>
-              ))
-            }
-          </div>
+          {
+            window.innerWidth > 1300 ?
+            <div className='types'>
+              {
+                landTypesInfo.map((type, index) => (
+                  <div key={index} className={'type' + (type.name === activeInfo.name ? ' active-type': '')} onClick={() => activateType(index)}>
+                    <img src={type.image} alt="" />
+                    <p className='reduced-soft text-center'>{type.name}</p>
+                  </div>
+                ))
+              }
+
+            </div> :
+            <div className='market-items-sect'>
+              <div className='w96 max1200 py-4'>
+                  <Carousel
+                    loop
+                    autoPlay
+                    delay={6000}
+                    freeMode
+                    slidesPerView={previewCount(itemSlide.length)}
+                    spaceBetween={0}
+                    data={itemSlide}
+                  />
+              </div>
+            </div>
+          }
         </div>
         <div className='actions'>
           <div className='right' onClick={() => moveHorizontal()}>
