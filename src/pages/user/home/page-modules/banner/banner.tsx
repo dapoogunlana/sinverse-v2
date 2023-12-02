@@ -11,6 +11,7 @@ import {
   HeroDownloadGameText,
   HeroDownloadWhitepaperText,
 } from '../../../../../assets/images/new';
+import Fire from '../../../../../components/block-components/fire/fire';
 import { routeConstants } from '../../../../../services/constants/route-constants';
 import './banner.scss';
 
@@ -31,6 +32,7 @@ function Hero2() {
   return (
     <div className='hero-case'>
       <div className='hero'>
+        <Fire/>
         <div className='hero-img-case' data-aos='fade-right'></div>
         <div className='hero-content-case'>
           <div className='w100'>
