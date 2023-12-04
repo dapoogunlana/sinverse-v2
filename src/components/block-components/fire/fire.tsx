@@ -77,8 +77,38 @@ function Fire(props: any) {
           <div className='particle'></div>
           <div className='particle'></div>
           <div className='particle'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
         </div>
       </div>
+      {/* <div className="fire-case2" data-aos="fade-in">
+        <div className='fire'>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+          <div className='particle2'></div>
+        </div>
+      </div> */}
     </>
   );
 }

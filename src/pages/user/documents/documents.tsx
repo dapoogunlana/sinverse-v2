@@ -42,7 +42,7 @@ function Documents(props: any) {
                     </div>
                     <h6 className=' increased'>{document.name}</h6>
                     <p className='reduced-soft'>{document.overview}</p>
-                    <SinButton tint='blue' disabled={!document.downloadable} size='slim' action={() => goToLink(document.link)}>{document.downloadable ? 'Download Now' : 'Coming Soon'}</SinButton>
+                    <SinButton tint='blue' disabled={!document.downloadable} size='slim' action={() => goToLink(document.link)}>{document.downloadable ? 'View Now' : 'Coming Soon'}</SinButton>
                   </SinCard>
                 </div>
               })}

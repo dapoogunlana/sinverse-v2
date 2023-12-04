@@ -128,7 +128,7 @@ function MarketPlace(props: any) {
     <div className='market-place py-5 relative'>
       <SeparationLine stickBottom></SeparationLine>
       <div className='w96 max1200 py-4'>
-        <h2 className='text-center'>Trending Items From The Market Place</h2>
+        <h2 className='text-center'>Trending Items From The Marketplace</h2>
         {
           itemSlide.length > 0 ?
           <div className='market-items-sect'>

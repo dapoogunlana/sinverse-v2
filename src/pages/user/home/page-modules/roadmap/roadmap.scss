@@ -17,6 +17,14 @@
         height: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(50, 48, 154, 0.5), rgba(0, 0, 0, 0.9));
     }
+    .rm-img{
+        width: 90%;
+        margin: auto;
+        max-width: 450px;
+        img{
+            width: 100%;
+        }
+    }
     .road-map-slide-holder{
         width: 100%;
         // min-height: 70vh;

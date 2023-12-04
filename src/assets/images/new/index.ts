@@ -106,6 +106,7 @@ import RoadmapImage from './roadmap_image.jpg';
 import constructionSignPost from './construction-sign-post.png';
 import landMarketIcon from './land-market-icon.png';
 import marketTempIcon from './market-temp-icon.png';
+import roadmapClipart from './roadmap-clipart.png';
 
 import DownloadVersion2_70 from './download-versions/Build-version-2.70.jpg';
 import DownloadVersion1_90 from './download-versions/Build-version-1.90.jpg';
@@ -227,6 +228,7 @@ export {
     constructionSignPost,
     landMarketIcon,
     marketTempIcon,
+    roadmapClipart,
 
     DownloadVersion2_70,
     DownloadVersion1_90,
