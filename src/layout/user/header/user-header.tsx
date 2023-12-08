@@ -111,7 +111,7 @@ function UserHeader2(props: any) {
                 <li>
                   <div className="text-center">
                     <NavLink to={`/${routeConstants.industryNews}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
-                      <span>News</span>
+                      <span>Marketplace</span>
                     </NavLink>
                   </div>
                 </li>
