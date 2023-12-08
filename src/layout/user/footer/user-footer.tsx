@@ -168,7 +168,7 @@ function UserFooter(props: any) {
                     <Link to={`/${routeConstants.gameInfo}`}>Game Info</Link>
                   </p>
                   <p className="reduced-soft">
-                    <Link to={`/${routeConstants.industryNews}`}>News</Link>
+                    <Link to={`/${routeConstants.industryNews}`}>Marketplace</Link>
                   </p>
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.districtReveal}`}>District Reveals</Link>
