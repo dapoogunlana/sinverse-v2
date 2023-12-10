@@ -5,6 +5,11 @@ declare module '*.mp4' {
   export default src;
 }
 
+declare module '*.MOV' {
+  const src: string;
+  export default src;
+}
+
 declare module '*.pdf' {
   const src: string;
   export default src;
