@@ -4,19 +4,25 @@ import { sendRequest } from '../../../../../services/utils/request';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import './visitor-messaging.scss';
+import MiniLoader from '../../../../../components/block-components/mini-loader/mini-loader';
 
 function VisitorMessaging(props: any) {
 
   const [emailPosts, setEmailPosts] = useState<any[]>([]);
+  const [loaded, setLoaded] = useState(false);
 
   const getEmailPosts = () => {
+    setLoaded(false);
+    setEmailPosts([]);
     sendRequest({
-      url: 'visitor-mail'
+      url: 'async-visitor-mail'
     },
     (res: any) => {
       setEmailPosts(res.data || []);
+      setLoaded(true);
     }, (err: any) => {
       toast.error(err.message || 'Unable to load');
+      setLoaded(true);
     });
   }
 
@@ -28,7 +34,7 @@ function VisitorMessaging(props: any) {
       Disclaimer: form.mail_disclaimer
     };
     sendRequest({
-      url: 'visitor-mail',
+      url: 'async-visitor-mail',
       method: 'POST',
       body: mailObj,
     },
@@ -178,10 +184,11 @@ function VisitorMessaging(props: any) {
       <div className="row">
           <div className="col-lg-12">
               {
+                loaded ?
                 emailPosts.map((post, index) => {
                   return <div className="db-table-card " key={index} data-aos="zoom-in" data-aos-delay="500">
                   <div className="db-card-body">
-                      <div className={"content-holder2" + (!post.active ? 'compress-answer' : '')} onClick={() => openQuestion(index)}>
+                      <div className={"content-holder2 " + (!post.active ? 'compress-answer' : '')} onClick={() => openQuestion(index)}>
                           <div className='spread-info'>
                             <h5 className='font-weight-bold'>{ post.title }</h5>
                             <p style={{fontStyle: 'italic', fontSize: '0.8em'}}>{ new Date(post.dateSent).toDateString() }</p>
@@ -193,13 +200,34 @@ function VisitorMessaging(props: any) {
                           </div>
                       </div>
                   </div>
+                  {post.status === 0 && <div className='status-popup spreader waiting'>
+                    <div className='refresh'>
+                      <i className='fas fa-refresh' title='Refresh Progress' onClick={getEmailPosts}></i>
+                    </div>
+                    <p className='text-right mb-0'>Waiting</p>  
+                  </div>}
+                  {post.status === 1 && <div className='status-popup spreader sending'>
+                    <div className='refresh'>
+                      <i className='fas fa-refresh' title='Refresh Progress' onClick={getEmailPosts}></i>
+                    </div>
+                    <p className='text-right mb-0'>Sending</p>  
+                  </div>}
+                  {post.status === 2 && <div className={'status-popup ' + (post.successfulRecipientsCount ? 'sent' : 'failed')}>
+                    <div className='details'>
+                      <p className='mb-1'>Successful deliveries: <span>{post.successfulRecipientsCount}</span></p>
+                      <p className='mb-1'>Failed deliveries: <span>{post.failedRecipientsCount}</span></p>
+                    </div>
+                    <p className='text-right mb-0'>{post.successfulRecipientsCount ? 'Sent' : 'Failed'}</p>
+                  </div>}
               </div>
                 })
+                :
+                <MiniLoader/>
               }
           </div>
           <div className="col-lg-12" data-aos="zoom-in">
               {
-                emailPosts.length === 0 && <div className='main-card pt-3 mt-4'>
+                emailPosts.length === 0 && loaded && <div className='main-card pt-3 mt-4 mb-5'>
                   <h5 className='text-center'>No emails sent yet</h5>
                 </div>
               }

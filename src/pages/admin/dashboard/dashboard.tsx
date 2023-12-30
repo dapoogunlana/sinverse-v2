@@ -12,14 +12,19 @@ function Dashboard() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
   const toggleSidebarVisible = () => {
+    console.log({sidebarVisible})
     setSidebarVisible(!sidebarVisible);
+  }
+  const offSidebarVisible = () => {
+    console.log({sidebarVisible})
+    setSidebarVisible(false);
   }
 
   return (
     <div className='dashboard-grid'>
       <div className={'side-bar' + (sidebarVisible ? ' side-bar-active' : '')}>
-        <div className='side-bg' onClick={toggleSidebarVisible}></div>
-        <Sidebar/>
+        <div className='side-bg' onClick={offSidebarVisible}></div>
+        <Sidebar offSidebarVisible={offSidebarVisible} />
       </div>
       <div className='main-area'>
         <Header toggleSidebarVisible={toggleSidebarVisible} />

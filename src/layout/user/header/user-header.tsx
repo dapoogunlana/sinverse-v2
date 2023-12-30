@@ -7,6 +7,7 @@ import { routeConstants } from "../../../services/constants/route-constants";
 import UserHeaderDropdown from "./header-dropdown";
 import SinButton from "../../../components/base-components/sin-button/sin-button";
 import { LogoWhite } from "../../../assets/images/new";
+import { externalLinkConstants } from "../../../config/environment";
 
 function UserHeader2(props: any) {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -110,9 +111,9 @@ function UserHeader2(props: any) {
                 </li>
                 <li>
                   <div className="text-center">
-                    <NavLink to={`/${routeConstants.industryNews}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
+                    <a href={externalLinkConstants.marketplace} target={'_blank'} onClick={closeMobileMenu}>
                       <span>Marketplace</span>
-                    </NavLink>
+                    </a>
                   </div>
                 </li>
                 <li>

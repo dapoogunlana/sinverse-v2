@@ -16,6 +16,7 @@ export const externalLinkConstants = {
     pancakeswap: 'https://pancakeswap.finance/swap?outputCurrency=0x6397de0f9aedc0f7a8fa8b438dde883b9c201010',
     mxc: 'https://www.mexc.com/exchange/SIN_USDT',
     gate_io: 'https://www.gate.io/trade/SIN_USDT',
+    marketplace: 'https://marketplace.sinverse.com',
 }
  
  

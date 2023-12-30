@@ -5,6 +5,14 @@
     a{
         display: block;
     }
+    .sidebar-icon{
+        font-size: 1.5em;
+        color: $white;
+        cursor: pointer;
+        @include mediaW(992px) {
+            display: none;
+        }
+    }
     .bar-link{
         border-radius: 0 0 10px 10px;
         border: 1.5px solid $white-faint4;

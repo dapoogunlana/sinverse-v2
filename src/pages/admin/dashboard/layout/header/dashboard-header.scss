@@ -9,7 +9,8 @@
     background-color: $black-faint2;
     .sidebar-icon{
         font-size: 1.5em;
-        color: $primary-blue-hover;
+        color: $white;
+        cursor: pointer;
         @include mediaW(992px) {
             display: none;
         }
