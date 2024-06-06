@@ -18,7 +18,9 @@ import GameplayOverlay from './game-play-overlay.png';
 import HeroDownloadGame from './hero-download-game.jpg';
 import HeroDownloadWhitepaper from './hero-download-whitepaper.jpg';
 import HeroDownloadGameText from './hero-download-game-text.svg';
+import HeroDownloadGameWideText from './hero-download-game-wide-text.svg';
 import HeroDownloadWhitepaperText from './hero-download-whitepaper-text.svg';
+import HeroHyperPlayCustomBadge from './HeroHyperPlayCustomBadge.png';
 import TokenomicsImage from './Sinverse-web-tokenomics-2.png';
 import HeroImg from './hero-img.png';
 import HeroImgMobile from './hero-img-mobile.png';
@@ -140,7 +142,9 @@ export {
     HeroDownloadGame,
     HeroDownloadWhitepaper,
     HeroDownloadGameText,
+    HeroDownloadGameWideText,
     HeroDownloadWhitepaperText,
+    HeroHyperPlayCustomBadge,
     TokenomicsImage,
     HeroImg,
     HeroImgMobile,

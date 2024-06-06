@@ -173,6 +173,9 @@ function UserFooter(props: any) {
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.districtReveal}`}>District Reveals</Link>
                   </p>
+                  <p className="reduced-soft">
+                    <a target={'_blank'} href={WhitePaper}>Whitepaper</a>
+                  </p>
                   {/* <p className="reduced-soft">
                     <Link to={`/${routeConstants.faq}`}>What You Can Do</Link>
                   </p> */}

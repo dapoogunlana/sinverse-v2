@@ -10,8 +10,11 @@ import {
   HeroScrollDownArrow,
   HeroDownloadGameText,
   HeroDownloadWhitepaperText,
+  HeroHyperPlayCustomBadge,
+  HeroDownloadGameWideText,
 } from '../../../../../assets/images/new';
 import Fire from '../../../../../components/block-components/fire/fire';
+import { externalLinkConstants } from '../../../../../config/environment';
 import { routeConstants } from '../../../../../services/constants/route-constants';
 import './banner.scss';
 
@@ -24,6 +27,9 @@ function Hero2() {
   }
   const downloadGame = () => {
     navigate(`/${routeConstants.download}`);
+  }
+  const downloadHyperplay = () => {
+    window.open(externalLinkConstants.hyperPlay);
   }
   const goDown = () => {
     document.getElementById('arrow-holder')?.scrollIntoView({behavior: 'smooth'})
@@ -59,13 +65,19 @@ function Hero2() {
               </div>
             </div> */}
             <div className='spread-holder'>
+              <div className='hero-download-button web-purple' onClick={downloadGame}>
+                <img src={HeroDownloadGameWideText} alt="" />
+              </div>
               <div className='spread-downloads w100-flat' data-aos='zoom-in' data-aos-delay='1200'>
                 <div className='hero-download-button red' onClick={downloadWhitepaper}>
                   <img src={HeroDownloadWhitepaperText} alt="" />
                 </div>
-                <div className='dvd'></div>
                 <div className='hero-download-button purple' onClick={downloadGame}>
                   <img src={HeroDownloadGameText} alt="" />
+                </div>
+                <div className='dvd'></div>
+                <div className='hero-download-button blue' onClick={downloadHyperplay}>
+                  <img src={HeroHyperPlayCustomBadge} alt="" />
                 </div>
               </div>
             </div>
