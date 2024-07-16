@@ -86,7 +86,7 @@ function Staking(props: any) {
                   })}
                 </div>
               </div>
-              <div className='w96 list-sect mt-4'>
+              <div className='w96 list-sect mt-4 hide-if-not-web'>
                 <div className='row mx-0'>
                   {stakingList2.map((pool, index) => {
                     return <div className='col-md-6 px-1' key={index} data-aos='fade-up' data-aos-delay={200 * index}>

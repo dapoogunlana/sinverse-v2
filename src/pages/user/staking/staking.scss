@@ -8,6 +8,11 @@
     .bg-cover{
         background-image: radial-gradient(rgba(37, 0, 137, 0.795), $black);
         position: relative;
+        .hide-if-not-web{
+            @media (max-width: 1199px) {
+                display: none;
+            }
+        }
     }
     .radial-cover{
         position: absolute;
