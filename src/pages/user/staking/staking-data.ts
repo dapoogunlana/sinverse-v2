@@ -17,7 +17,7 @@ export const stakingList1 = [
     },
     {
         name: 'UNDERBOSS',
-        apy: '51%',
+        apy: '15%',
         stakingCap: '20,000,000 SIN',
         lock: '9 Months',
         startDate: '15 July 2024',
