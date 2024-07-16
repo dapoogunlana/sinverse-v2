@@ -69,13 +69,13 @@ function UserFooter(props: any) {
   }
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition((location) => {
-      setLocation({
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude,
-        accuracy: location.coords.accuracy,
-      });
-    }, null, {});
+    // navigator.geolocation.getCurrentPosition((location) => {
+    //   setLocation({
+    //     latitude: location.coords.latitude,
+    //     longitude: location.coords.longitude,
+    //     accuracy: location.coords.accuracy,
+    //   });
+    // }, null, {});
   }, [props]);
 
   return (
