@@ -37,9 +37,9 @@ export const stakingList1 = [
         guideLink: 'https://medium.com/@TheSinVerse/introducing-the-new-sinverse-staking-program-loyalty-is-rewarded-209ce20760a7',
         stakingLink: 'https://sinverse.com/kingpin',
         image: LogoWhite,
-        closed: false,
+        closed: true,
         hideAction: false,
-        exemption: true,
+        exemption: false,
     },
 ];
 export const stakingList2 = [
