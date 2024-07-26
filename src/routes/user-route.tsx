@@ -20,6 +20,7 @@ const DownloadPage = lazy(() => import("../pages/user/downloads/downloads"));
 const DownloadInstructionsPage = lazy(() => import("../pages/user/download-instructions/download-instructions"));
 const TokenPage = lazy(() => import("../pages/user/token/token"));
 const FaqPage = lazy(() => import("../pages/user/faq/faq"));
+const PrivacyPolicyPage = lazy(() => import("../pages/user/privacy-policy/privacy-policy"));
 
 function UserRoute() {
   return (
@@ -41,6 +42,7 @@ function UserRoute() {
           <Route path={routeConstants.downloadInstructions} element={<DownloadInstructionsPage/>}></Route>
           <Route path={routeConstants.token} element={<TokenPage/>}></Route>
           <Route path={routeConstants.faq} element={<FaqPage/>}></Route>
+          <Route path={routeConstants.privacyPolicy} element={<PrivacyPolicyPage/>}></Route>
           <Route path={routeConstants.all} element={<Navigate to={routeConstants.home2}/>}></Route>
         </Route>
       </Routes>

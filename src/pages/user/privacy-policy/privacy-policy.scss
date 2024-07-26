@@ -1,0 +1,27 @@
+@import "../../../assets/styles/variables.scss";
+
+.privacy-policy{
+    background-image: url(../../../assets/images/new/about-bg.jpg);
+    color: $white;
+    .sub-space{
+        width: 100%;
+        background-image: linear-gradient(-45deg, #0A0025, rgba(31, 12, 90, 0.8), #0A0025, rgba(31, 12, 90, 0.8), #0A0025);
+        position: relative;
+        h6{
+            font-size: 1.1em;
+            margin-top: 0.9em;
+            padding-top: 0.5em;
+            padding-bottom: 0.3em;
+        }
+        p{
+            font-size: 0.9em;
+            margin-bottom: 0.3em;
+            color: rgb(225, 202, 247);
+            span{
+                font-size: 1.04em;
+                font-weight: 600;
+                color: $white;
+            }
+        }
+    }
+}

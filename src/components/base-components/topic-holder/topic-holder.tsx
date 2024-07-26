@@ -17,8 +17,12 @@ function TopicHolder (props: ItopicComponent) {
                 <h3 className='mb-0 py-3'>
                     {props.children}
                     {
-                        props.subChild &&
-                        <span className='reduced-x'>&nbsp; ({props.subChild})</span> 
+                        props.subChild && <>
+                        {
+                            props.breakSubChild ? <br/> : <span className='reduced-x'>&nbsp; </span> 
+                        }
+                        <span className='reduced-x'>({props.subChild})</span> 
+                        </>
                     }
                 </h3>
                 <div className='line'></div>
