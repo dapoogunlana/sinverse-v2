@@ -17,7 +17,8 @@ export const externalLinkConstants = {
     mxc: 'https://www.mexc.com/exchange/SIN_USDT',
     gate_io: 'https://www.gate.io/trade/SIN_USDT',
     marketplace: 'https://marketplace.sinverse.com',
-    hyperPlay: 'https://store.hyperplay.xyz/game/sinverse'
+    hyperPlay: 'https://store.hyperplay.xyz/game/sinverse',
+    epicGames: 'https://store.epicgames.com/en-US/p/sinverse-e397cb',
 }
  
  

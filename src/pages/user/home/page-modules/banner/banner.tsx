@@ -28,8 +28,11 @@ function Hero2() {
   const downloadGame = () => {
     navigate(`/${routeConstants.download}`);
   }
-  const downloadHyperplay = () => {
-    window.open(externalLinkConstants.hyperPlay);
+  // const downloadHyperplay = () => {
+  //   window.open(externalLinkConstants.hyperPlay);
+  // }
+  const downloadEpic = () => {
+    window.open(externalLinkConstants.epicGames);
   }
   const goDown = () => {
     document.getElementById('arrow-holder')?.scrollIntoView({behavior: 'smooth'})
@@ -76,7 +79,7 @@ function Hero2() {
                   <img src={HeroDownloadGameText} alt="" />
                 </div>
                 <div className='dvd'></div>
-                <div className='hero-download-button blue' onClick={downloadHyperplay}>
+                <div className='hero-download-button black' onClick={downloadEpic}>
                   <img src={HeroHyperPlayCustomBadge} alt="" />
                 </div>
               </div>

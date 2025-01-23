@@ -138,6 +138,10 @@
                         .blue{
                             background-color: $primary-blue-bright;
                         }
+                        .black{
+                            background-color: #121216;
+                            border: 0.7px solid $white-faint3
+                        }
                         .purple{
                             display: none;
                             background-color: $primary-purple;
