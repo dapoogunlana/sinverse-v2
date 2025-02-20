@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect } from 'react';
 import Banner2 from './page-modules/banner/banner';
 import LatestNews from './page-modules/latest-news/latest-news';
 import './home.scss';

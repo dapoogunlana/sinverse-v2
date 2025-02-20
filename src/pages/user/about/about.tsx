@@ -14,7 +14,6 @@ function About(props: any) {
   const [teamModalVisible, setTeamModalVisible] = useState(false);
 
   const veiwTeam = (index: number) => {
-    console.log('trying');
     setActiveTeam(teamList[index]);
     setTeamModalVisible(true);
   }
@@ -41,22 +40,24 @@ function About(props: any) {
           <TopicHolder max={1250} className='w96 my-5 relative'>About SinVerse</TopicHolder>
           <div className='intro-writeup' data-aos='zoom-out'data-aos-delay='500'>
             <p className='mb-0'>
-              SinVerse (rebranded from Sin City Metaverse) is a virtual world and multiplayer empire building game based on 
-              underworld activities. The idea and concept were formally announced at the Agora Event in June 2021, at the 
-              “Celebrating NFT & DEFI” expedition. The project was led by an experienced team and was publicly launched on 17th 
-              October 2021 live on stage at Gitex, the Global World Expo in Dubai in front of a 1m+ audience.
+              SinVerse (formerly Sin City Metaverse) is a dynamic virtual world and multiplayer empire-building 
+              game set in an expansive open-world environment. The concept was first introduced at the Agora 
+              Event in June 2021 during the “Celebrating NFT & DeFi” expedition. Led by an experienced team, 
+              the project was officially launched on October 17, 2021, live on stage at Gitex, the Global World 
+              Expo in Dubai, in front of an audience of over 1 million.
             </p>
             <div className='w80 max600 imh mb-1 py-3'>
               <SeparationLine/>
             </div>
             <p className='mb-0'>
-              Our mission at SinVerse is to create a sustainable player-run economy in a niche but popular genre. We strive to 
-              innovate and continuously grow our game, with an emphasis on giving power back to the players. As the founding 
-              Mafia Metaverse on the Blockchain, we aim to provide an R-rated virtual world where users can play-to-earn 
-              performing their favourite mafia-styled activities.
+              At SinVerse, our mission is to create a sustainable, player-driven economy within an immersive and 
+              competitive world. We are committed to innovation and continuous growth, empowering players to 
+              shape their own experiences. As the first Mafia-inspired Metaverse on the Blockchain, we provide 
+              an interactive virtual world where players can engage in strategic gameplay, build their empire, 
+              and participate in a thriving in-game economy.
               <br/><br/>
-              Our team consists of experienced professionals with a passion for gaming and blockchain technology. We are also 
-              partnered and advised by some of the longest-standing service providers in blockchain history.
+              Our team is composed of passionate gaming and blockchain professionals, supported by partnerships 
+              and advisors from some of the longest-standing service providers in blockchain history.
             </p>
           </div>
           <SeparationLine/>

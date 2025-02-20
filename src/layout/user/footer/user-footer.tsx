@@ -142,9 +142,9 @@ function UserFooter(props: any) {
                   <Link to={`/`}><img src={LogoWhite} className="logo" alt="" /></Link>
                 </div>
                 <div className="col-sm-6">
-                  <p className="reduced-soft mb-1">
+                  {/* <p className="reduced-soft mb-1">
                     <Link to={`/${routeConstants.staking}`}>Staking</Link>
-                  </p>
+                  </p> */}
                   <p className="reduced-soft">
                     <Link to={`/${routeConstants.exchange}`}>Exchange</Link>
                   </p>

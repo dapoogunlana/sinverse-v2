@@ -8,15 +8,15 @@ function SubSpace() {
         <div className='row'>
           <div className='col-lg-5 col-md-6 py-4 center-info'>
                 <div className='w96 py-3'>
-                  <p className='font-weight-bold increased-x'>Become Rich. Become Infamous. Become a Kingpin.</p>
+                  <p className='font-weight-bold increased-x'>Become Powerful. Become Infamous. Build Your Empire.</p>
                   <p className='text'>
-                    Welcome to SinVerse, the ultimate multiplayer game for fans of Mafia games who want an even more immersive 
-                    and interactive experience. In SinVerse, you'll join a thriving player-run economy where every decision you 
-                    make can make or break your criminal empire. Rise to the top and become the ultimate kingpin, building a 
-                    criminal empire that's the envy of your rivals. But beware - in SinVerse, danger lurks around every corner, 
-                    and you'll need to be smart, ruthless, and cunning to survive. 
+                    Welcome to SinVerse, the ultimate multiplayer game for fans of mafia-inspired worlds who 
+                    crave an immersive and interactive experience. In SinVerse, you’ll join a dynamic, 
+                    player-driven economy where every decision shapes your rise to power. Strategize, expand 
+                    your influence, and build an empire that commands respect. But beware—challenges await at 
+                    every turn, and only the smartest and most cunning will thrive. 
                     <br /><br />
-                    Do you have what it takes to rule the underworld? Join us now and find out.
+                    Do you have what it takes to dominate the SinVerse? Join us now and find out.
                   </p>
                 </div>
           </div>

@@ -33,10 +33,11 @@ function GameInfo(props: any) {
           <div className='text-holder'>
             <h5 className='italic' data-aos='fade-right' data-aos-delay='200'>An Immersive Multiplayer Mafia Metaverse</h5>
             <p data-aos='fade-right' data-aos-delay='400'>
-              SinVerse is an immersive play-to-earn multiplayer mafia metaverse that combines the excitement of a mafia-themed 
-              game with the power of blockchain technology. With 17 distinct districts, each with its own properties, resources, 
-              and in-game businesses, players can dive into a dynamic world where they can shape the economy, run businesses, 
-              and make their mark.
+              SinVerse is an immersive multiplayer metaverse that blends mafia-themed gameplay with blockchain 
+              technology. Featuring 17 distinct districts, each with unique properties, resources, and in-game 
+              businesses, players can explore a dynamic world, establish enterprises and influence the in-game 
+              economy. SinVerse is designed for entertainment, fostering strategic gameplay and competition 
+              within a virtual environment.
             </p>
           </div>
         </div>
@@ -54,12 +55,9 @@ function GameInfo(props: any) {
               <div className='case-content w96 py-3'>
                 <h6 className='increased-x'>Player-Run Economy</h6>
                 <p className='increased-soft'>
-                  In SinVerse, the economy is entirely player-driven. Players and factions compete for SIN GOLD coins, the 
-                  in-game currency, through various activities such as organized crime, smuggling, and illegal activities. 
-                  SIN GOLD coins are interchangeable with SIN Tokens at a variable exchange rate, blockchain-based tokens that 
-                  can be used for various in-game transactions, including acquiring NFT-based business licenses and in-game 
-                  items such as weapons, transportation, and unique clothing. This creates a unique play-to-earn ecosystem 
-                  where players can earn real-world value from their in-game activities.
+                  SinVerse features a player-driven economy where players and factions engage in various strategic 
+                  activities to earn GOLD, the in-game currency. GOLD can be used for in-game transactions, including 
+                  acquiring and purchasing in-game items such as weapons, transportation and unique clothing.
                 </p>
               </div>
             </div>
@@ -79,13 +77,12 @@ function GameInfo(props: any) {
               <div className='case-content w96 py-3'>
                 <h6 className='increased-x'>Business Licenses in SinVerse</h6>
                 <p className='increased-soft'>
-                  Players have the opportunity to set up and run businesses in SinVerse, contributing to the game's 
-                  economy and utilizing blockchain technology. There are two main categories of business licenses: Premium 
-                  and Exclusive. These businesses are limited in number and offer a higher earning potential. Additionally, 
-                  every landowner in SinVerse receives a general license, allowing them to create a general business on their 
-                  property, providing further opportunities for customization and entrepreneurship. In order for a business 
-                  license to be activated, a user must also be a landowner within SinVerse in the designated district the 
-                  license is assigned to.
+                  Players can establish and manage businesses in SinVerse, shaping the in-game economy and 
+                  utilizing blockchain technology for ownership and customization. There are two main categories 
+                  of business licenses: Premium and Exclusive, each offering unique advantages. Additionally, 
+                  all landowners in SinVerse receive a general license, allowing them to create and operate 
+                  businesses on their property, enhancing customization and economic activity. To activate a 
+                  business license, a player must own land in the designated district assigned to that license.
                 </p>
               </div>
             </div>
@@ -110,11 +107,12 @@ function GameInfo(props: any) {
               <div className='case-content w96 py-3'>
                 <h6 className='increased-x'>Gameplay Expansion</h6>
                 <p className='increased-soft'>
-                  SinVerse offers a variety of gameplay options for players to enhance their skills and earn rewards. Daily 
-                  mafia wars, turf battles, and heists provide opportunities for competitive gameplay and rewards. NPC 
-                  interactions, mini-games, and special events, including NFT drops and limited-time offers, offer additional 
-                  avenues for players to win rare items and valuable rewards. The gameplay in SinVerse is constantly expanding, 
-                  with regular updates and new features to keep players engaged and entertained.
+                  SinVerse offers a diverse range of gameplay experiences, allowing players to test their skills 
+                  and earn in-game rewards. Engage in daily mafia wars, turf battles, and heists for competitive 
+                  action, or explore NPC interactions, mini-games, and special events. Exclusive NFT drops and 
+                  limited-time offers provide opportunities to acquire rare in-game items. With regular updates 
+                  and new features, SinVerse continues to evolve, keeping players engaged in an ever-expanding 
+                  world.
                 </p>
               </div>
             </div>
@@ -168,11 +166,11 @@ function GameInfo(props: any) {
               <div className='case-content w96 py-3'>
                 <h6 className='increased-x'>Conclusion</h6>
                 <p className='increased-soft'>
-                  SinVerse offers an immersive play-to-earn multiplayer mafia metaverse experience where players can shape the 
-                  economy, run businesses, expand their gameplay options, and connect with others in a dynamic game world. 
-                  With its player-driven economy, utilization of blockchain technology for NFT-based business licenses, 
-                  customizable businesses, expanding gameplay features, and social aspects, SinVerse provides a unique and 
-                  engaging experience for players who are looking for a virtual mafia adventure with real-world value.
+                  SinVerse delivers an immersive multiplayer mafia-themed metaverse where players can shape the in-game 
+                  economy, build businesses, and expand their gameplay experience in a dynamic virtual world. With a 
+                  player-driven economy, blockchain-powered NFT-based business licenses, customizable enterprises, and 
+                  evolving gameplay features, SinVerse offers a unique and engaging experience for those seeking a strategic 
+                  and interactive virtual underworld adventure.
                 </p>
               </div>
             </div>

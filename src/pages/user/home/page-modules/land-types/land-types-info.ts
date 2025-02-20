@@ -35,10 +35,10 @@ export const landTypesInfo = [
         active: false,
     },
     {
-        name: 'Sustainable Land Staking Rewards',
+        name: 'Landowner Incentives & Rewards',
         image: LandsRoads,
         info: `
-            Staking rewards in SinVerse are governed by a DAO and are earned by landowners who actively promote the game. These rewards are generated through initial in-game asset sales on the NFT Marketplace, future royalties, and faction taxes, creating a self-recycling profit-share opportunity for those who contribute to the ecosystem's growth.
+            SinVerse empowers landowners by offering exclusive in-game benefits and opportunities for active participants in the ecosystem. Governed by a DAO, landowners who contribute to the community’s growth can unlock special perks, including access to unique in-game assets and economic advantages tied to the evolving marketplace. These benefits are influenced by factors such as in-game transactions, marketplace activity, and faction dynamics, fostering a thriving and sustainable virtual world.
         `,
         active: false,
     },
@@ -54,7 +54,7 @@ export const landTypesInfo = [
         name: 'Business Licenses',
         image: LandsLicences,
         info: `
-            Operating a business in SinVerse is a vital aspect of the game, and as a landowner, you can obtain premium or exclusive business licenses in the form of NFTs to create businesses that generate real passive income. The possibilities are endless, from virtual pet shops to casinos. You can also lease your land and businesses to fellow gamers and benefit from profit-sharing agreements. Business licenses in SinVerse provide a unique opportunity to earn rewards and contribute to the ecosystem's growth.
+            Operating a business in SinVerse is a core gameplay feature, allowing landowners to obtain premium or exclusive business licenses in the form of NFTs. These licenses enable players to develop unique in-game enterprises, from virtual pet shops to entertainment venues. Landowners can also lease their properties to other players, fostering a dynamic and interactive economy. Business licenses offer exciting opportunities for players to expand their influence and shape the evolving SinVerse world.
         `,
         active: false,
     },

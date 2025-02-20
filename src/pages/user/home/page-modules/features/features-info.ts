@@ -4,37 +4,37 @@ import { FeaturePlayEarn, FeatureImgDigitalAssets, FeatureImgOmniverse } from '.
 
 export const features = [
     {
-        name: 'Play and Earn',
+        name: 'Dynamic Player-Driven Economy',
         image: FeaturePlayEarn,
         info: `
-            SinVerse is a player-driven economy where individuals and factions compete for SIN GOLD coins, the in-game currency, 
-            through activities like organized crime, smuggling, and other illicit ventures. These coins can be exchanged for SIN 
-            Tokens at variable rates, blockchain-based tokens that are usable for a range of in-game transactions, including the 
-            acquisition of NFT-based business licenses and unique in-game items such as clothing, weapons, and transportation. 
-            This innovative "play-and-earn" ecosystem offers players the opportunity to earn real-world value from their in-game 
-            activities.
+            SinVerse features a player-driven economy where individuals and factions compete for GOLD, the 
+            in-game currency, through strategic gameplay and various in-game activities. GOLD can be used 
+            for a wide range of transactions, including acquiring and purchasing unique in-game items such 
+            as clothing, weapons, and transportation. With a constantly evolving world and interactive economy, 
+            SinVerse provides players with opportunities to expand their influence, build their empire, and 
+            engage in an immersive metaverse experience.
         `,
     },
     {
         name: 'Digital Real Estate & In-game assets',
         image: FeatureImgDigitalAssets,
         info: `
-            SinVerse offers digital land ownership in its 17 unique districts, with each district having its own characteristics. 
-            Through blockchain technology, players can set up businesses, stimulate the economy, and create a customizable and 
-            entrepreneurial environment. A general business license is automatically granted to all SinVerse landowners, allowing 
-            them to develop businesses on their property. To activate a business license, players must own land in the specific 
-            district assigned to that license.
+            SinVerse features digital land ownership across 17 unique districts, each with its own distinct 
+            characteristics. Using blockchain technology, players can establish businesses, contribute to the 
+            in-game economy, and create a customizable, entrepreneurial environment. To activate a specific 
+            business license, players must own land in the corresponding district.
         `,
     },
     {
         name: 'Omniverse',
         image: FeatureImgOmniverse,
         info: ` 
-            SinVerse is a cutting-edge virtual world that enables limited partners to host their projects within a vast Metaverse 
-            arena, effectively creating an Omniverse. Beyond onboarding high-impact and scalable projects, SinVerse also offers 
-            suitable land locations for hosting them. Our current partners include Cashaa Bank, DWF Labs, KuCoin, and Sugar 
-            Bounce. The synergy between these projects and their capabilities in a R-Rated Metaverse creates incredible 
-            opportunities for cross-marketing, technology exchange, and community building.
+            SinVerse is an expansive virtual world that provides a platform for select partners to bring their 
+            projects into a dynamic Metaverse ecosystem. In addition to integrating high-impact and scalable 
+            initiatives, SinVerse offers designated land locations for hosting and developing immersive 
+            experiences. Our current partners include Nakamoto Games, DWF Labs, KuCoin, and BNB Chain. This 
+            collaborative environment fosters opportunities for cross-marketing, technology exchange, and 
+            community engagement within the Metaverse.
         `,
     },
 ];

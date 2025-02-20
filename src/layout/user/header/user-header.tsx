@@ -95,13 +95,13 @@ function UserHeader2(props: any) {
                     </NavLink>
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <div className="text-center">
                     <NavLink to={`/${routeConstants.staking}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>
                       <span>Staking</span>
                     </NavLink>
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <div className="text-center">
                     <NavLink to={`/${routeConstants.exchange}`} className={({isActive}) => isActive ? 'selected-nav' : ''} onClick={closeMobileMenu}>

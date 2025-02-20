@@ -19,10 +19,10 @@ export const gamePlayInfo = [
         image: GameplayImgGame,
         video: GameplayVidGame,
         info: `
-            Embedded across many districts in SinVerse is the ability of gamers to take advantage of the play and earn model 
-            that forms just a small part of the metaverse game. Players who want to have fun have multiple exciting mini-games 
-            to choose from. The experience is usually rewarding as they grind through and earn at the same time. Use your map 
-            to guide you to the nearest mini-game in your district.
+            Across many districts in SinVerse, players can engage in a variety of immersive mini-games that 
+            add to the excitement of the metaverse. These activities offer fun and rewarding experiences as 
+            players progress through challenges and unlock new opportunities. Use your map to navigate to 
+            the nearest mini-game in your district and test your skills.
         `,
         active: false,
     },
@@ -31,8 +31,8 @@ export const gamePlayInfo = [
         image: GameplayImgPickDrop,
         video: GameplayVidPickDrop,
         info: `
-            In China Town, discover the parcel pick-up and delivery quest. Earn daily rewards of Gold SIN coins for successful 
-            participation in parcel drops!
+            In Chinatown, take on the parcel pick-up and delivery quest. Complete parcel drops successfully to 
+            unlock in-game rewards, including Gold SIN coins!
         `,
         active: false,
     },
@@ -41,8 +41,9 @@ export const gamePlayInfo = [
         image: GameplayImgShootingRange,
         video: GameplayVidShootingRange,
         info: `
-            Visit China Town's shooting range for a thrilling challenge! Test your aim in single player or multiplayer mode, 
-            hitting as many targets as possible within time limits for a chance to win lucrative prizes.
+            Visit Chinatown's shooting range for a thrilling challenge! Test your aim in single-player or 
+            multiplayer mode, hitting as many targets as possible within the time limit to earn in-game 
+            rewards and bragging rights.
         `,
         active: false,
     },
