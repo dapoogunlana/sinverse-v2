@@ -13,7 +13,7 @@ const NewsDetailPage = lazy(() => import("../pages/user/news-detail/news-detail"
 const HomePage = lazy(() => import("../pages/user/home/home"));
 const ExchangePage = lazy(() => import("../pages/user/exchange/exchange"));
 const GameInfoPage = lazy(() => import("../pages/user/game-info/game-info"));
-const StakingPage = lazy(() => import("../pages/user/staking/staking"));
+// const StakingPage = lazy(() => import("../pages/user/staking/staking"));
 const DistrictRevealPage = lazy(() => import("../pages/user/district-reveal/district-reveal"));
 const DocumentPage = lazy(() => import("../pages/user/documents/documents"));
 const DownloadPage = lazy(() => import("../pages/user/downloads/downloads"));
@@ -33,7 +33,7 @@ function UserRoute() {
 
           <Route path={routeConstants.exchange} element={<ExchangePage/>}></Route>
           <Route path={routeConstants.gameInfo} element={<GameInfoPage/>}></Route>
-          <Route path={routeConstants.staking} element={<StakingPage/>}></Route>
+          {/* <Route path={routeConstants.staking} element={<StakingPage/>}></Route> */}
           <Route path={routeConstants.industryNews} element={<NewsPage/>}></Route>
           <Route path={routeConstants.industryNews + '/:id'} element={<NewsDetailPage/>}></Route>
           <Route path={routeConstants.districtReveal} element={<DistrictRevealPage/>}></Route>
