@@ -68,7 +68,7 @@ function About(props: any) {
           <h3 className='text-center'>Core Team</h3>
           <div className='row'>
             {teamList.map((member, index) => {
-              return <div className='col-lg-4 col-md-6' key={index} data-aos='fade-up' data-aos-delay={200 * index}>
+              return <div className='col-md-6' key={index} data-aos='fade-up' data-aos-delay={200 * index}>
                 <SinCard className='team-card' dark>
                   <div className='member-img'>
                     <img src={SleakRoundedCube} alt="" />

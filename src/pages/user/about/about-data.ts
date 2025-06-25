@@ -89,22 +89,22 @@ export const teamList = [
     //         player-run economy in the virtual world.
     //     `,
     // },
-    {
-        name: 'Catalin',
-        image: TeamCatalin,
-        position: 'Community & Marketing Manager',
-        linkedIn: 'https://www.linkedin.com/in/catalin-f-572a507b',
-        faceBook: 'facebook',
-        twitter: 'twitter',
-        email: 'mailto:catalin@sin-city.io',
-        info: `
-            Catalin has built an enviable reputation for himself over the years managing communities for very complex 
-            decentralized finance projects. He is a long-term crypto evangelist, investor and enthusiast. Catalin 
-            has over ten years of specialist marketing experience for blue chip companies. He compliments the team 
-            effort in providing modern marketing solutions for project growth by strategically engaging the 
-            grass-root community.
-        `,
-    },
+    // {
+    //     name: 'Catalin',
+    //     image: TeamCatalin,
+    //     position: 'Community & Marketing Manager',
+    //     linkedIn: 'https://www.linkedin.com/in/catalin-f-572a507b',
+    //     faceBook: 'facebook',
+    //     twitter: 'twitter',
+    //     email: 'mailto:catalin@sin-city.io',
+    //     info: `
+    //         Catalin has built an enviable reputation for himself over the years managing communities for very complex 
+    //         decentralized finance projects. He is a long-term crypto evangelist, investor and enthusiast. Catalin 
+    //         has over ten years of specialist marketing experience for blue chip companies. He compliments the team 
+    //         effort in providing modern marketing solutions for project growth by strategically engaging the 
+    //         grass-root community.
+    //     `,
+    // },
 ];
 
 
